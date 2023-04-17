@@ -90,3 +90,26 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+#filterPage {
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: max-content max-content max-content max-content auto 70px;
+    gap: 20px;
+    grid-template-areas:
+        "logo logo body-global-nav body-global-nav"
+        "filter fliter-results fliter-results fliter-results"
+        "filter fliter-results fliter-results fliter-results"
+        "filter fliter-results fliter-results fliter-results"
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "footer footer footer footer";
+
+}
+
+.filter {
+    grid-area: filter;
+}
+.fliter-results {
+    grid-area: fliter-results;
+}
