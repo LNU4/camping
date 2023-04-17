@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+html {
+    font-family: Montserrat, sans-serif;
+    font-size: 19px;
+    height: 100%;
+}
+
+html,
+body {
+
+    min-width: 100%;
+    background-color: rgb(250, 244, 244);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#mainPage {
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: max-content max-content max-content max-content auto 70px;
+    gap: 20px;
+    grid-template-areas:
+        "logo logo body-global-nav body-global-nav"
+        "body-box-1 body-box-1 body-box-1 body-box-1"
+        "body-box-2 body-box-2 body-box-2 body-box-2"
+        "body-box-3 body-box-3 body-box-3 body-box-3"
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "footer footer footer footer";
+
+
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.body-global-nav {
+    grid-area: body-global-nav;
+    display: flex;
+    gap: 20px;
+    border: 1px solid black;
+    
+}
+
+.body-box-1 {
+    grid-area: body-box-1;
+    display: flex;
+    border: 1px solid black;
+    gap: 20px;
+}
+
+.body-box-1 div {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.body-box-2 {
+    grid-area: body-box-2;
+    border: 1px solid black;
+}
+
+.body-box-3 {
+    grid-area: body-box-3;
+    border: 1px solid black;
+}
+
+.body-supp-nav {
+    grid-area: body-supp-nav;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    gap: 20px;
+    justify-content: center;
+}
+.body-supp-nav div {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+footer {
+    grid-area: footer;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
