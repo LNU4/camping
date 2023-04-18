@@ -25,8 +25,8 @@ body {
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
         "body-box-1 body-box-1 body-box-1 body-box-1"
-        "body-box-2 body-box-2 body-box-2 body-box-2"
-        "body-box-3 body-box-3 body-box-3 body-box-3"
+        "body-box-2 body-box-2 body-box-3 body-box-3"
+        "body-box-4 body-box-4 body-box-5 body-box-5"
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
         "footer footer footer footer";
 
@@ -45,7 +45,18 @@ body {
     display: flex;
     gap: 20px;
     border: 1px solid black;
-    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.body-global-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.body-global-nav li a{
+    text-decoration: none;
+   
 }
 
 .body-box-1 {
@@ -67,6 +78,14 @@ body {
 
 .body-box-3 {
     grid-area: body-box-3;
+    border: 1px solid black;
+}
+.body-box-4{
+    grid-area: body-box-4;
+    border: 1px solid black;
+}
+.body-box-5 {
+    grid-area: body-box-5;
     border: 1px solid black;
 }
 
@@ -99,9 +118,9 @@ footer {
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
-        "filter fliter-results fliter-results fliter-results"
-        "filter fliter-results fliter-results fliter-results"
-        "filter fliter-results fliter-results fliter-results"
+        "filter filter-results filter-results filter-results"
+        "filter filter-results filter-results filter-results"
+        "filter filter-results filter-results filter-results"
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
         "footer footer footer footer";
 
@@ -109,7 +128,9 @@ footer {
 
 .filter {
     grid-area: filter;
+    border: 1px solid black;
 }
-.fliter-results {
-    grid-area: fliter-results;
+.filter-results {
+    grid-area: filter-results;
+    border: 1px solid black;
 }
