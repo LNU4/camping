@@ -134,3 +134,43 @@ footer {
     grid-area: filter-results;
     border: 1px solid black;
 }
+
+#guidePage {
+        
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content auto 70px;
+    gap: 20px;
+    grid-template-areas:
+        "logo logo body-global-nav body-global-nav"
+        "body-images-box body-images-box body-descr-box body-descr-box"
+        "body-images-box body-images-box body-descr-box body-descr-box"
+        "body-images-box body-images-box body-descr-box body-descr-box"
+        "body-info-bar body-info-bar body-info-bar body-info-bar"
+        "body-info-tab body-info-tab body-info-tab body-info-tab"
+        "body-map-box body-map-box body-map-box body-map-box"
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "footer footer footer footer";
+
+}
+
+.body-images-box {
+    grid-area: body-images-box;
+    border: 1px solid black;
+}
+
+.body-descr-box {
+    grid-area: body-descr-box;
+    border: 1px solid black;
+}
+.body-info-bar {
+    grid-area: body-info-bar;
+    border: 1px solid black;
+}
+.body-info-tab {
+    grid-area: body-info-tab;
+}
+.body-map-box {
+    grid-area: body-map-box;
+    border: 1px solid black;
+}
