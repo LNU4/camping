@@ -10,7 +10,7 @@ html,
 body {
 
     min-width: 100%;
-    background-color: rgb(250, 244, 244);
+    background-color: #F7F6DC;
     margin: 0px;
     padding: 0px;
 
@@ -36,15 +36,19 @@ body {
 .logo {
     grid-area: logo;
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
+    flex-direction: column;
+    
+    justify-content: left;
+}
+.logoImg {
+    max-width: 200px;
 }
 
 .body-global-nav {
     grid-area: body-global-nav;
     display: flex;
     gap: 20px;
-    border: 1px solid black;
+    
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -62,23 +66,34 @@ body {
 .body-box-1 {
     grid-area: body-box-1;
     display: flex;
-    border: 1px solid black;
+    
     gap: 20px;
 }
 
 .body-box-1 div {
     border: 1px solid black;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 0.5;
+}
+.body-box-1 div:hover {
+    background-color: #7FB77E;
+    
 }
 
 .body-box-2 {
     grid-area: body-box-2;
     border: 1px solid black;
+    visibility: hidden;
 }
 
 .body-box-3 {
     grid-area: body-box-3;
     border: 1px solid black;
+    visibility: hidden;
 }
 .body-box-4{
     grid-area: body-box-4;
