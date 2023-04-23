@@ -10,9 +10,12 @@ html,
 body {
 
     min-width: 100%;
-    background-color: #F7F6DC;
     margin: 0px;
     padding: 0px;
+    background-image: url(../backgrounds/mainbackground.png);
+    background-repeat: no-repeat;
+    background-position: ;
+
 
 }
 
@@ -40,8 +43,14 @@ body {
     
     justify-content: left;
 }
-.logoImg {
+.mainlogo {
     max-width: 200px;
+}
+.logoImg {
+    width: 60px;
+    background-color: #F7F6DC;
+    padding: 10px;
+    border-radius: 60%;
 }
 
 .body-global-nav {
@@ -66,24 +75,30 @@ body {
 .body-box-1 {
     grid-area: body-box-1;
     display: flex;
-    
     gap: 20px;
+    justify-content: center;
+    background-color: white;
+
 }
 
 .body-box-1 div {
-    border: 1px solid black;
     padding: 5px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px 0.5;
+   
 }
-.body-box-1 div:hover {
-    background-color: #7FB77E;
-    
-}
+.body-box-1 div div {
+    display: flex;
+    flex-direction: column;
 
+}
+.camping-form {
+    border-right: 1px solid gray;
+
+}
+.landscape {
+    border-right: 1px solid gray;
+}
 .body-box-2 {
     grid-area: body-box-2;
     border: 1px solid black;
@@ -111,11 +126,13 @@ body {
     border: 1px solid black;
     gap: 20px;
     justify-content: center;
+    background-image: url("../backgrounds/suppnav.png");
 }
 .body-supp-nav div {
     display: flex;
     flex-direction:column;
     gap: 10px;
+    
 }
 
 footer {
@@ -123,6 +140,7 @@ footer {
     border: 1px solid black;
     display: flex;
     justify-content: center;
+    
 }
 
 #filterPage {
