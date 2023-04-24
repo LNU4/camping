@@ -27,7 +27,7 @@ body {
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
-        "body-box-1 body-box-1 body-box-1 body-box-1"
+        ". body-box-1 body-box-1 ."
         "body-box-2 body-box-2 body-box-3 body-box-3"
         "body-box-4 body-box-4 body-box-5 body-box-5"
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
@@ -75,7 +75,8 @@ body {
 .body-box-1 {
     grid-area: body-box-1;
     display: flex;
-    gap: 20px;
+    gap: 0px;
+    margin: px;
     justify-content: center;
     background-color: white;
 
@@ -85,12 +86,20 @@ body {
     padding: 5px;
     display: flex;
     align-items: center;
-   
+    flex-direction: column;
+    
+    
 }
 .body-box-1 div div {
     display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    
+}
+.body-box-1 div div div {
+    display: flex;
     flex-direction: column;
-
+    padding-bottom: 20px;
 }
 .camping-form {
     border-right: 1px solid gray;
@@ -98,6 +107,14 @@ body {
 }
 .landscape {
     border-right: 1px solid gray;
+}
+.innerbox-number {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 60%;
+    margin-bottom: -15px;
 }
 .body-box-2 {
     grid-area: body-box-2;
