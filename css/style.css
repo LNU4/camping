@@ -23,12 +23,14 @@ body {
 
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content max-content max-content max-content auto 70px;
+    grid-template-rows: max-content 200px max-content max-content max-content max-content auto 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
+        ". desc-banner desc-banner ."
         ". body-box-1 body-box-1 ."
-        "body-box-2 body-box-2 body-box-3 body-box-3"
+        ". body-box-2 body-box-2 ."
+        "body-box-3 body-box-3 body-box-3 body-box-3"
         "body-box-4 body-box-4 body-box-5 body-box-5"
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
         "footer footer footer footer";
@@ -57,7 +59,6 @@ body {
     grid-area: body-global-nav;
     display: flex;
     gap: 20px;
-    
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -71,14 +72,35 @@ body {
     text-decoration: none;
    
 }
+.desc-banner {
+    grid-area: desc-banner;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -90px;
+}
+.desc-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADCACB;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
 
 .body-box-1 {
     grid-area: body-box-1;
     display: flex;
     gap: 0px;
-    margin: px;
+    margin: 0px;
     justify-content: center;
     background-color: white;
+    border-radius: 15px;
 
 }
 
@@ -87,8 +109,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-    
+    flex-wrap: wrap;
 }
 .body-box-1 div div {
     display: flex;
@@ -118,14 +139,17 @@ body {
 }
 .body-box-2 {
     grid-area: body-box-2;
-    border: 1px solid black;
-    visibility: hidden;
+    background-color: white;
+    visibility: visible;
+    padding: 5px; 
+    border-radius: 15px;
+
 }
 
 .body-box-3 {
     grid-area: body-box-3;
     border: 1px solid black;
-    visibility: hidden;
+    visibility: visible;
 }
 .body-box-4{
     grid-area: body-box-4;
