@@ -23,7 +23,7 @@ body {
 
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content 200px max-content max-content max-content max-content auto 70px;
+    grid-template-rows: max-content 200px max-content 600px max-content max-content auto 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
@@ -140,12 +140,18 @@ body {
 .body-box-2 {
     grid-area: body-box-2;
     background-color: white;
-    visibility: visible;
+    visibility:hidden;
     padding: 5px; 
     border-radius: 15px;
-
+    display: flex;
+    flex-wrap: wrap ;
+    max-height: 600px;
 }
-
+.fliterElement {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .body-box-3 {
     grid-area: body-box-3;
     border: 1px solid black;

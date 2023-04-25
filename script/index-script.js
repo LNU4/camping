@@ -1,17 +1,20 @@
+var myApiKey = "dUZXES2j";
+
+
 function init() {
     addClickEventListeners();
   }
   
   window.addEventListener("load", init);
   
-    function addClickEventListeners() {
+function addClickEventListeners() {
     const campingTypes = document.querySelectorAll(".camping-type-trailer, .camping-type-housecar, .camping-type-tent, .camping-type-stuga, .no-perferance, .oland, .smoland, .all-landscape, .yes, .no");
   
-    let trailerCamping = document.getElementsByClassName("camping-type-trailer");
-    trailerCamping[0].addEventListener("click", hideElem);
+    /*let trailerCamping = document.getElementsByClassName("camping-type-trailer");
+    trailerCamping[0].addEventListener("click", showHiddenElem);*/
   
     for (let i = 0; i < campingTypes.length; i++) {
-      campingTypes[i].addEventListener("click", hideElem);
+      campingTypes[i].addEventListener("click", showHiddenElem);
       campingTypes[i].addEventListener("mouseover", function () {
         this.style.cursor = "pointer";
         
@@ -21,19 +24,20 @@ function init() {
     
   }
   
-function hideElem() {
-    alert("Hello! I am an alert box!!");
+function showHiddenElem() {
+    let hiddenElems = document.getElementsByClassName("body-box-2");
+  
+    for (let i = 0; i < hiddenElems.length; i++) {
+      hiddenElems[i].style.visibility = "visible";
+    }
 
-}
-
-function showFilterElem() {
+    showFilterElem();
 
 }
 
 function wedigtsHoverEffect () {
     let wedigts = document.querySelectorAll(".logoImg");
     for (let i = 0; i < wedigts.length; i++) {
-        console.log(wedigts[i])
 
       wedigts[i].addEventListener("mouseover", function () {
         wedigts[i].style.border = "1px solid black";
@@ -44,4 +48,27 @@ function wedigtsHoverEffect () {
       }, false);
     }
     
+}
+
+function showFilterElem() {
+    
+    
+    let request = new XMLHttpRequest(); 
+    request.open("GET", "https://smapi.lnu.se/api/?api_key=" +myApiKey+"&debug=true&controller=establishment&method=getall", true);
+    request.send(null); 
+    request.onreadystatechange = function () { 
+        if (request.readyState == 4) 
+            if (request.status == 200) info (request.responseText); 
+            
+    };
+}
+
+function info(JSONtext) {
+    let detailElem = JSON.parse(JSONtext).payload;
+    let resultatElem = document.getElementsByClassName("fliterElement")[0];
+    let htmlCode = "";
+    for (let i = 0; i < detailElem.length; i++) {
+        htmlCode += "<h4>"+detailElem[i].type+ "</h4>";
+    }
+    resultatElem.innerHTML = htmlCode;
 }
