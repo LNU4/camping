@@ -54,12 +54,13 @@ function showFilterElem() {
     
     
     let request = new XMLHttpRequest(); 
-    request.open("GET", "https://smapi.lnu.se/api/?api_key=" +myApiKey+"&debug=true&controller=establishment&method=getall", true);
+    request.open("GET", "https://smapi.lnu.se/api/?api_key=" +myApiKey+"&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping&min_rating=2", true);
     request.send(null); 
     request.onreadystatechange = function () { 
         if (request.readyState == 4) 
             if (request.status == 200) info (request.responseText); 
             
+
     };
 }
 
@@ -68,7 +69,8 @@ function info(JSONtext) {
     let resultatElem = document.getElementsByClassName("fliterElement")[0];
     let htmlCode = "";
     for (let i = 0; i < detailElem.length; i++) {
-        htmlCode += "<h4>"+detailElem[i].type+ "</h4>";
+        htmlCode += "<p>"+detailElem[i].name+ "</p>";
+        htmlCode+= "<p>"+detailElem[i].rating+"</p>";
     }
     resultatElem.innerHTML = htmlCode;
 }

@@ -12,9 +12,10 @@ body {
     min-width: 100%;
     margin: 0px;
     padding: 0px;
-    background-image: url(../backgrounds/mainbackground.png);
+    background: rgb(127,183,126);
+    background: radial-gradient(circle, rgba(127,183,126,1) 0%, rgba(176,202,201,1) 19%, rgba(247,246,220,1) 50%, rgba(173,202,203,1) 69%, rgba(255,192,144,1) 100%);
     background-repeat: no-repeat;
-    background-position: ;
+    background-position: top;
 
 
 }
@@ -23,7 +24,7 @@ body {
 
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content 200px max-content 600px max-content max-content auto 70px;
+    grid-template-rows: max-content 200px max-content max-content max-content max-content auto 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
@@ -145,12 +146,13 @@ body {
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap ;
-    max-height: 600px;
+    justify-content: stretch;
 }
 .fliterElement {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: stretch;
 }
 .body-box-3 {
     grid-area: body-box-3;
