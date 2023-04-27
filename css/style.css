@@ -12,11 +12,10 @@ body {
     min-width: 100%;
     margin: 0px;
     padding: 0px;
-    background: rgb(127,183,126);
-    background: radial-gradient(circle, rgba(127,183,126,1) 0%, rgba(176,202,201,1) 19%, rgba(247,246,220,1) 50%, rgba(173,202,203,1) 69%, rgba(255,192,144,1) 100%);
+    background-image: url(../backgrounds/Wave.svg) ;
     background-repeat: no-repeat;
-    background-position: top;
-
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -50,10 +49,10 @@ body {
     max-width: 200px;
 }
 .logoImg {
-    width: 60px;
+    width: 50px;
     background-color: #F7F6DC;
     padding: 10px;
-    border-radius: 60%;
+    border-radius: 60%; 
 }
 
 .body-global-nav {
@@ -279,6 +278,8 @@ footer {
 .body-images-box {
     grid-area: body-images-box;
     border: 1px solid black;
+    background-color: white; 
+    border-radius: 5px;
 }
 
 .body-descr-box {
