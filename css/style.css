@@ -12,10 +12,8 @@ body {
     min-width: 100%;
     margin: 0px;
     padding: 0px;
-    background-image: url(../backgrounds/Wave.svg) ;
-    background-repeat: no-repeat;
+    background-image: url(../backgrounds/Wave.svg);
     background-position: center;
-    background-repeat: no-repeat;
 
 }
 
@@ -117,16 +115,17 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: -20px;
-    
+    flex: 1 1 0px;
 }
 .body-box-1 div div div {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+   
 }
 .camping-form {
     border-right: 1px solid gray;
-
+    
 }
 .landscape {
     border-right: 1px solid gray;
@@ -142,14 +141,13 @@ body {
 .body-box-2 {
     grid-area: body-box-2;
     background-color: white;
-    visibility:hidden;
     padding: 5px; 
     border-radius: 15px;
-    display: grid; 
+    display: none; 
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 200px max-content auto max-content max-content max-content;
     gap: 10px; 
-    grid-template-areas: "filterSpecs fliterSpcs fliterSpcs"
+    grid-template-areas: "filterspecs filterspecs filterspecs"
                          "filterMain filterElemnt filterElemnt"
                          "filterMain filterElemnt filterElemnt"
                          "filterMain filterElemnt filterElemnt"
@@ -164,9 +162,11 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: 600px;
+    overflow-y:auto;
 }
-.filterSpecs {
-    grid-area: filterSpecs;
+.filterspecs {
+    grid-area: filterspecs;
     border: 1px solid black;
 }
 .filterMain {
@@ -214,7 +214,7 @@ body {
     border: 1px solid black;
     gap: 20px;
     justify-content: center;
-    background-image: url("../backgrounds/suppnav.png");
+    /*background-image: url("../backgrounds/suppnav.png");*/
 }
 .body-supp-nav div {
     display: flex;

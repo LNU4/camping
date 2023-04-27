@@ -28,7 +28,7 @@ function showHiddenElem() {
     let hiddenElems = document.getElementsByClassName("body-box-2");
   
     for (let i = 0; i < hiddenElems.length; i++) {
-      hiddenElems[i].style.visibility = "visible";
+      hiddenElems[i].style.display = "grid";
     }
 
     showFilterElem();
