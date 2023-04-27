@@ -146,15 +146,41 @@ body {
     visibility:hidden;
     padding: 5px; 
     border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: stretch;
+    display: grid; 
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 200px max-content auto max-content max-content max-content;
+    gap: 10px; 
+    grid-template-areas: "filterSpecs fliterSpcs fliterSpcs"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                        
+    ;
 }
-.fliterElement {
+.filterElemnt {
+    grid-area: filterElemnt;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
+    width: 100%;
+}
+.filterSpecs {
+    grid-area: filterSpecs;
+    border: 1px solid black;
+}
+.filterMain {
+    grid-area: filterMain;
+    border: 1px solid black;
+}
+.filterElemenDiv {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex: 2 1 auto;
+    flex-direction: column; 
+    padding: 5px;
+    margin: 10px;
 }
 .body-box-3 {
     grid-area: body-box-3;
