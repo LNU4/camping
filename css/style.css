@@ -21,7 +21,7 @@ body {
 
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content 200px max-content max-content max-content max-content auto 70px;
+    grid-template-rows: max-content 200px max-content max-content max-content auto max-content 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
@@ -212,47 +212,17 @@ body {
     grid-area: body-supp-nav;
     display: flex;
     flex-direction: row;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     gap: 20px;
     justify-content: left;
-    background-image: url("../backgrounds/suppnav.png");
-    bottom: 0;
-    background-position: bottom;
-    background
-
-    
-    
+    justify-content: center;
 }
 
 .body-supp-nav div {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 12px;    
 }
-
-.supp-nav-info {
-    padding-top: 14%;
-    padding-bottom: 3%;
-}
-.body-supp-nav div p {
-    font-size: 14px;
-    margin: 6px;
-    
-    
-}
-
-.supp-nav-copyLink {
-    align-items: center;
-    padding-top: 20%;
-    
-}
-
-.supp-nav-logo {
-    position: relative;
-    justify-content: right;;
-}
-
-
 footer {
     grid-area: footer;
     margin: 0;

@@ -65,26 +65,26 @@ function showFilterElem() {
 }
 
 function info(JSONtext) {
-  
+
     let detailElem = JSON.parse(JSONtext).payload;
     let resultatElem = document.getElementsByClassName("filterElemnt")[0];
 
 for (let i = 0; i < detailElem.length; i++) {
-  const pElem1 = document.createElement("p");
-  pElem1.innerText = detailElem[i].name;
-  pElem1.innerText += " " +detailElem[i].county;
+  let pElement = document.createElement("p");
+  pElement.innerText = detailElem[i].name;
+  pElement.innerText += " " +detailElem[i].county;
 
   
-  const pElem2 = document.createElement("p");
-  pElem2.innerText = detailElem[i].rating;
+  let pEleement2 = document.createElement("p");
+  pEleement2.innerText = detailElem[i].rating;
   
-  const pElem3 = document.createElement("p");
-  pElem3.innerText = detailElem[i].price_range;
+  let pEleement3 = document.createElement("p");
+  pEleement3.innerText = detailElem[i].price_range;
   
-  const childDiv = document.createElement("div");
-  childDiv.append(pElem1, pElem2, pElem3);
+  let childDiv = document.createElement("div");
+  childDiv.append(pElement, pEleement2, pEleement3);
   resultatElem.append(childDiv);
 
-  childDiv.classList.add("filterElemenDiv")  
+  childDiv.classList.add("filterElemenDiv");
 }
 }
