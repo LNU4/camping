@@ -117,20 +117,15 @@ body {
     flex-direction: row;
     margin-top: -20px;
     flex: 1 1 0px;
+    
 }
 .body-box-1 div div div {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-   
+    flex: 1 1 0px;
 }
-.camping-form {
-    border-right: 1px solid gray;
-    
-}
-.landscape {
-    border-right: 1px solid gray;
-}
+
 .innerbox-number {
     border: 1px solid black;
     padding: 5px;

@@ -1,0 +1,839 @@
+{
+	"camping": [
+		{
+			"name": "Skeppevik",
+			"bilder": [
+				{
+					"url": "https://usercontent.one/wp/www.skeppevik.com/wp-content/uploads/2017/06/20170719_200521.jpg",
+					"caption": "photo 1"
+				},
+				{
+					"url": "https://usercontent.one/wp/www.skeppevik.com/wp-content/uploads/2021/04/B6BF5094-F38D-4220-A0BF-5D4C9A223650.jpeg",
+					"caption": "photo 2"
+				},
+				{
+					"url": "https://usercontent.one/wp/www.skeppevik.com/wp-content/uploads/2017/06/skeppevik-32.jpg",
+					"caption": "photo 3"
+				}
+			]
+		},
+		{
+			"name": "Dalskarscamping",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/337423896_607985097485216_3080022641079212070_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Yc4_QW_ZjY0AX-SP9Pk&_nc_ht=scontent-cph2-1.xx&oh=00_AfABK-ayiKqq_YTCBeHsr1iN7L3bZYTNt6A_psbqStzTGg&oe=64511081",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/300236789_507548004704834_1589264931890191411_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=f3Ac-CLqkQcAX9avQJN&_nc_ht=scontent-cph2-1.xx&oh=00_AfBiUEovSEYXC_m8rOGgDA0DnUuSXhTJUPKyq-gibJErKg&oe=64503CB9",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/300113382_507547954704839_8953133028541877041_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_rCfcuEcSDMAX8V67yd&_nc_ht=scontent-cph2-1.xx&oh=00_AfDjUuaQr5WU1rnydxI4CH4C0flVvAkxmEFs4pIP_tHUdQ&oe=64510E54",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+
+        {
+            "name": "Kolbodabaden",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/135004552_3614718791975915_627849762357880273_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=sdJUcApjyDcAX8vhz94&_nc_oc=AQnx23z7rOSPAOhrLonUhsfxohVeJgolmscmTqQ31WeaTEpZAYYYy44A3uioJgyUrGuPC-sNSqNvpWzRJ8wdWNAx&_nc_ht=scontent-cph2-1.xx&oh=00_AfAzUeiqqbV0c2dl5Df1rrXVT4CYav8MJsvkCd2jr1jvpg&oe=647379E0",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/97900080_2992439800870487_2127934198114156544_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=cGwSohuLP94AX-ou_Yx&_nc_ht=scontent-cph2-1.xx&oh=00_AfDG3-nQBvRgRphj0mNxQ2iRrVK-eEAi8YT3UHBEYJCLhg&oe=6473590C",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/94880393_2929916483789486_9048734723819438080_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=H80djX2VKK0AX94kcwC&_nc_ht=scontent-cph2-1.xx&oh=00_AfASjm9Y3JBR4yufdhBeVclbp4OgBD95u6yg9Ep-JFdqmg&oe=64735349",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+
+        {
+            "name": "Vita Sand",
+            "bilder": [
+                {
+                    "url": "https://static.wixstatic.com/media/f5c0b8_9c09b00c46fb4454bcd3dd615a3215dd~mv2.png/v1/fill/w_980,h_420,al_c,q_90,enc_auto/f5c0b8_9c09b00c46fb4454bcd3dd615a3215dd~mv2.png",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://static.wixstatic.com/media/f5c0b8_167fb7e8bc1a4294ae79208e7edf835a~mv2.png/v1/fill/w_980,h_420,al_c,q_90,enc_auto/f5c0b8_167fb7e8bc1a4294ae79208e7edf835a~mv2.png",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://static.wixstatic.com/media/f5c0b8_07f3400ecd7a43cda7729ed96bc78892~mv2.png/v1/fill/w_980,h_420,al_c,q_90,enc_auto/f5c0b8_07f3400ecd7a43cda7729ed96bc78892~mv2.png",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Stensjö Camping",
+            "bilder": [
+                {
+                    "url": "https://zwedencamping.nl/wp-content/uploads/2017/12/IMG_20160731_115557-1.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://zwedencamping.nl/wp-content/uploads/2017/08/book-your-accommodation-2.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "http://zwedencamping.nl/wp-content/uploads/2017/08/campsite.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Joelskogens camping",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/276173255_106862911968113_1671421028158668556_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=fnsgsUZOKGEAX-Blen_&_nc_ht=scontent-cph2-1.xx&oh=00_AfCMrpyrIPviZuPnw5d4KG6qTS2byR8McCTiql17HwdO2w&oe=64515A9E",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/336786929_5883873865050145_1654708021447311153_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=PfgNm7yq0-sAX_S146g&_nc_ht=scontent-cph2-1.xx&oh=00_AfBkQSW2wkZAEZ-yvFbapUAaVVOMQrJ8f9_-RQbVcan9nA&oe=645065A1",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/276036026_106851471969257_8337354608940451289_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=OAx5f2WDtMQAX-jMWPB&_nc_ht=scontent-cph2-1.xx&oh=00_AfAJYuxmLFxYsWaMXn9xGuZPoiEJZe8J4-XeGit3e-P9tw&oe=64516D39",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Caravan club Camping Timmernabben",
+            "bilder": [
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipOrCLYW6K5SoH8txsSv6nIKdcUTgalRoZ8nie8-=s1360-w1360-h1020",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipOlGm9ciKo3odtRpw9wpvZrJdYp8vcD-Lx2M0TO=s1360-w1360-h1020",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipMt_TYWys4H2MNdR7L-2N6DPW8Qk7DDqALaAEG-=s1360-w1360-h1020",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Kaffeetorpets Camping",
+            "bilder": [
+                {
+                    "url": "https://kaffetorpetscamping.com/____impro/1/onewebmedia/IMG_4996.JPG?etag=W%2F%22613828-6443c869%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1445%2B1084&extract=322%2B0%2B904%2B1084&quality=85",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://kaffetorpetscamping.com/____impro/1/onewebmedia/IMG_5274.PNG?etag=W%2F%227c7918-6404c480%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=2079%2B960&extract=337%2B80%2B725%2B879",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://kaffetorpetscamping.com/____impro/1/onewebmedia/Karta%20202204.jpg?etag=W%2F%226bcb5-6256c924%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=744%2B1052&extract=16%2B21%2B710%2B1030",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "First Camp Gunnarsö",
+            "bilder": [
+                {
+                    "url": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2022%2F05%2FOskarshamn-Gunnarso-27-1024x683.jpg&w=1920&q=75",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2022%2F05%2FOskarshamn-Gunnarso01.jpg&w=750&q=75",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2022%2F05%2FOskarshamn-Gunnarso25-1024x683.jpg&w=750&q=75",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Havslätts Camping",
+            "bilder": [
+                {
+                    "url": "http://www.havslatt.se/Get/Image.aspx?id=0&save_filename=36947_0_440.jpg&action=save&category=width&width=440&file_name=36947.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "http://www.havslatt.se/Get/Image.aspx?id=0&save_filename=36964_0_440.jpg&action=save&category=width&width=440&file_name=36964.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "http://www.havslatt.se/Get/Image.aspx?id=0&save_filename=36963_0_440.jpg&action=save&category=width&width=440&file_name=36963.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Gösjön Camping",
+            "bilder": [
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipNLu9rnZw5dPzIOdd7yRSABWrsYLrIU92X2jnx2=w592-h404-n-k-rw-no-v1",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipP2ioo7tTRNXDqlgHMvlX9e7K5-5DuFl4fNy8gM=w592-h404-n-k-rw-no-v1",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipOCCxbrXz8JE4UjHZzlZOPfiwR_59lLA34_o3R0=w592-h404-n-k-rw-no-v1",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Långsjön stugor & Camping i Ankarsrum AB",
+            "bilder": [
+                {
+                    "url": "https://langsjon.se/wp-content/uploads/D75_1335-1500x630.png",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://langsjon.se/wp-content/uploads/D75_1348-1500x630.png",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://langsjon.se/wp-content/uploads/2019-05-12-08.48.54-1-1500x630.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Vimmerby Camping Nossenbaden",
+            "bilder": [
+                {
+                    "url": "https://www.vimmerbycamping.se/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/01/DSC_0038-2048x1370.jpg.webp",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.vimmerbycamping.se/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/01/foto.Astrid-Lindgrens-Varld-1-2048x1243.jpg.webp",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.vimmerbycamping.se/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/01/1000920-2048x1536.jpg.webp",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Astrid Lindgrens Värld Camping & Stugby",
+            "bilder": [
+                {
+                    "url": "https://astridlindgrensvarld.se/wp-content/uploads/2018/09/bullerbyn2_1280x640.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://astridlindgrensvarld.se/wp-content/uploads/2022/11/pippi-katthult-wide-1920x1080-1.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://astridlindgrensvarld.se/wp-content/uploads/2018/09/lilla-lilla2_1280x640.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Spilhammars Camping",
+            "bilder": [
+                {
+                    "url": "https://en.spilhammarscamping.com/resources/images/omgeving/category/standard/thumb_nils_holgerssons_v_rld_1_.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://en.spilhammarscamping.com/resources/images/omgeving/category/standard/nils_holgersson_varld_800x600.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://en.spilhammarscamping.com/resources/images/omgeving/category/standard/thumb_alv_ronjadsc_8115_800x600_1.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Camping Hultsfred",
+            "bilder": [
+                {
+                    "url": "https://hultsfredstrandcamping.se/wp-content/uploads/2021/08/Hultsfred-Strandcamping-overblick.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://hultsfredstrandcamping.se/wp-content/uploads/2022/03/HULTSFREDS-STRANDCAMPING-28_opt.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://hultsfredstrandcamping.se/wp-content/uploads/2022/03/HULTSFREDS-STRANDCAMPING-38_opt.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Blankaholm Allservice & Camping AB",
+            "bilder": [
+                {
+                    "url": "https://blankaholmscamping.se/____impro/1/onewebmedia/Dezember2017%20131.jpg?etag=%225671d-5cae352b%22&sourceContentType=image%2Fjpeg&quality=85&ignoreAspectRatio&resize=1500,847",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://blankaholmscamping.se/____impro/1/onewebmedia/Stuga%201-5%20lekplats.jpg?etag=%22778ddc-612e0838%22&sourceContentType=image%2Fjpeg&quality=85&ignoreAspectRatio&resize=2500,1667",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://blankaholmscamping.se/____impro/1/onewebmedia/Sophie&Laura1.jpg?etag=%221e079-5de58a73%22&sourceContentType=image%2Fjpeg&quality=85&ignoreAspectRatio&resize=1500,1125",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Movänta Camping",
+            "bilder": [
+                {
+                    "url": "https://www.movantacamping.se/wp-content/uploads/2020/03/Movanta_badplats.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.movantacamping.se/wp-content/uploads/2020/02/100_0567-stugor-ho%CC%88st-2-scaled.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.movantacamping.se/wp-content/uploads/2020/03/Stuga1.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Eksjö Camping & Konferens",
+            "bilder": [
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7263518&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7263508&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7263511&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Camping Vättersmålen",
+            "bilder": [
+                {
+                    "url": "https://campingvattersmalen.se/____impro/1/onewebmedia/husvagnar.jpg?etag=%227c43-5b1c2d91%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=267%2B200&extract=0%2B0%2B267%2B187&quality=85",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://campingvattersmalen.se/____impro/1/onewebmedia/IMG_1717.jpg?etag=%2218ba50-60f5a93b%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=267%2B200&extract=0%2B0%2B267%2B200&quality=85",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://campingvattersmalen.se/____impro/1/onewebmedia/IMG_1720.jpg?etag=%22150f66-60f5ab36%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=267%2B200&extract=0%2B0%2B267%2B200&quality=85",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Habo Camping & Stugby",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/292728866_435248548608236_1310945890290130136_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=aU81M5mS9OQAX9dU4ro&_nc_ht=scontent-cph2-1.xx&oh=00_AfADfz-vwfgXPMEIPaHM-ae5oSbkBjiIk0GBTvgg-eS6gg&oe=64511A26",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/193732037_171292245003869_4087373300815781482_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=RGqkcUK5CfwAX-Y4-FK&_nc_ht=scontent-cph2-1.xx&oh=00_AfCqupfmLJqHZVqNFgPJdm9dUaSs7ST0OD_lUdswKHNonQ&oe=64736122",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/196623089_167602975372796_8732929312146447472_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=qgqqBlRFLFgAX9Q8xDW&_nc_ht=scontent-cph2-1.xx&oh=00_AfDqJNDNY_HQtJ--vjtvmOuuV6Xdk01nc-0n_wvEL-HScQ&oe=647349E5",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Sävsjö camping",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/38454789_966611160194870_1400717186028273664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=eJR_Y0K9TU0AX9MX-hG&_nc_ht=scontent-cph2-1.xx&oh=00_AfBej0l2ilvcrvnBzWbgVhccpRzl7KkFJ4bpmafzvnNPJw&oe=64733E12",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/38487562_966610753528244_398110839472652288_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nkSgXbspTDoAX8FlkJI&_nc_ht=scontent-cph2-1.xx&oh=00_AfDsATo4HJTIvT48_uftCjr00FiwzMwGCw7bGNR7WNLynA&oe=647346D2",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/73342348_1265464963642820_6768290819754426368_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=oFUzf9Ix_w8AX9Xusct&_nc_ht=scontent-cph2-1.xx&oh=00_AfA4bX5Ou2m2J7rAVhOqbo87pgLRNC_RuCX49AcuTC4g8w&oe=64733881",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Värnamo Camping",
+            "bilder": [
+                {
+                    "url": "https://camping.se/sites/cb_camping/files/V%C3%A4rnamo%20Camping%20Prostsj%C3%B6n3JPG.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://camping.se/sites/cb_camping/files/V%C3%A4rnamo%20Camping%20Prostsj%C3%B6n2.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://camping.se/sites/cb_camping/files/V%C3%A4rnamo%20Camping%20Prostsj%C3%B6n.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "E4:ans Camping",
+            "bilder": [
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418625&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418624&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418627&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Braås Camping",
+            "bilder": [
+                {
+                    "url": "http://braascamping.se/images/stuga/DSC_0021b.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "http://braascamping.se/images/stuga/DSC_5410b.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "http://braascamping.se/images/bilder22/W-220505-104600.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Östanå Camping",
+            "bilder": [
+                {
+                    "url": "https://www.ostanacamping.se/files/top-img.png",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.ostanacamping.se/files/IMG_0277.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.ostanacamping.se/files/IMG_0315.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Lovsjöbadens Camping",
+            "bilder": [
+                {
+                    "url": "https://usercontent.one/wp/www.lovsjocamping.se/wp-content/uploads/2022/11/solnedgang-camping-smaland.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://usercontent.one/wp/www.lovsjocamping.se/wp-content/uploads/2022/12/aftertorpet21.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://usercontent.one/wp/www.lovsjocamping.se/wp-content/uploads/2022/12/04.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Axamo Strand & Camping",
+            "bilder": [
+                {
+                    "url": "http://www.axamostrand.se/photos/calle2.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "http://www.axamostrand.se/photos/calle3.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "http://www.axamostrand.se/images/13780700.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Hoks Naturcamping",
+            "bilder": [
+                {
+                    "url": "https://osterskog.se/wp-content/uploads/2019/06/Bada_fiska_naturcamping_fyrkantigt.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://osterskog.se/wp-content/uploads/2019/06/tallen-1024x900.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://osterskog.se/wp-content/uploads/2019/06/campingplats.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Hjortsjöns camping",
+            "bilder": [
+                {
+                    "url": "https://www.vaggeryd.se/images/18.6192d7f21633b3439ba78bdb/1526980946274/hjortsjonscamping.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418435&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418433&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Resort Hok Yxenhaga",
+            "bilder": [
+                {
+                    "url": "https://www.resortyxenhaga.se/thumbs/640x640r/remoteimage/96d921168fac9fecb94b0c46595ffd4b64da3e05764c5c9ed1a0a91eaccc3796.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.resortyxenhaga.se/thumbs/640x640r/remoteimage/8ed36560aba8429a64a1eb28c4862f64d2025a058b32f40a77b3080ab8cc25e2.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.vaggeryd.se/images/200.4156127a173049809452942/1593524403607/the_yxenhaga_resortx.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Adventure of Småland",
+            "bilder": [
+                {
+                    "url": "https://www.smalandreisen.de/wp-content/uploads/schweden-ferienhaus-schweden-aussen-02-500-375.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.smalandreisen.de/wp-content/uploads/schweden-smaland-ferienhaus-am-see-14k-1920-530.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.smalandreisen.de/wp-content/uploads/schweden-ferienhaus-knaeppen-aussen-01-500-375.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Flatenbadet i Småland Camping",
+            "bilder": [
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7717255&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7717253&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7717252&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Hagens Camping",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/294490112_464026665729734_6692413767367524930_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xNrtuPf6XxwAX80D0iD&_nc_ht=scontent-cph2-1.xx&oh=00_AfBhns7dbPz_g8mcBaHD_wtawtnwAFdm-ypzyCQL0ZdXDw&oe=6451C0DD",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t31.18172-8/14207655_1201149476592936_4486236265902996889_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=19026a&_nc_ohc=gtib2hk7Gt8AX-CkqTy&_nc_ht=scontent-cph2-1.xx&oh=00_AfC0ksa7XIHT0M3AzIBk9XcOwTqRGSHQk7bMI4VTOP_DNQ&oe=647360A3",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t31.18172-8/10506979_755577191150169_6226405780879139157_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=OeIJ1-wvLM4AX87NDTE&_nc_ht=scontent-cph2-1.xx&oh=00_AfBcaLMXR2eMbyQ3TPHjWRvy7tpnw9S-n-1GbKWZ7C0Aog&oe=64733AF7",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Torne camping",
+            "bilder": [
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=6308040&width=600&height=400&crop=1",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=6308048&width=600&height=400&crop=1",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=6308055&width=600&height=400&crop=1",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Sandsjöbadens camping",
+            "bilder": [
+                {
+                    "url": "https://nassjo.se/images/18.230d8b491818082fbd77c28/1656508827742/Sandsj%C3%B6badens%20camping.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://nassjo.se/images/18.230d8b491818082fbd76503/1656402975062/Sandsj%C3%B6%20Hembygdsg%C3%A5rd.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://nassjo.se/images/18.6d66060a180f9c59d098968/1655717073853/Fiske%2012.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Sjöstugans Camping & Vandrarhem",
+            "bilder": [
+                {
+                    "url": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2023%2F01%2FSjostugan_08-1024x767.jpg&w=750&q=75",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2023%2F01%2FSjostugan_07-1024x767.jpg&w=750&q=75",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2023%2F02%2FSkarmavbild-2018-03-12-kl.-14.38.54-1024x669-1.jpg&w=750&q=75",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Mjölknabbens camping",
+            "bilder": [
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418082&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418083&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418084&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Getnö Gård - Lake Åsnen Resort",
+            "bilder": [
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipNRFlFU-FdnMTiFtaqjYAOpA1HgYUyf5INZ2Chr=s1360-w1360-h1020",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipMD8Ir8YfPVrid3VNUHYpmweUa-mOsvFOdk6lks=s1360-w1360-h1020",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/p/AF1QipNCsOxky4RNj38RtBbOAJlgPYdHohXd1DyGAP1M=s1360-w1360-h1020",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Evedals Camping",
+            "bilder": [
+                {
+                    "url": "https://img.campercontact.com/media/photos/4222124650785604.jpg?imgeng=/w_710",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://img.campercontact.com/media/photos/4222124650772288.jpg?imgeng=/w_710",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://img.campercontact.com/media/photos/4222124650756784.jpg?imgeng=/w_710",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Ekna naturcamping",
+            "bilder": [
+                {
+                    "url": "https://uploads.naturkartan-cdn.se/87c7e8f6bab5c31299500b0920e8bb93.jpg?w=960&h=640&fit=crop&dpr=2&q=50",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://uploads.naturkartan-cdn.se/329bbeba0374bf65d6f7c7ea7abe7418.jpg?w=960&h=640&fit=crop&dpr=2&q=50",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://uploads.naturkartan-cdn.se/96bbd218a0f76fcafecaef9852f28b0d.jpg?w=960&h=640&fit=crop&dpr=2&q=50",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Gökaskratts Camping",
+            "bilder": [
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7263818",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7577809",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7577810",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Norraryds Camping",
+            "bilder": [
+                {
+                    "url": "https://www.norrarydscamping.se/_data/VFS_1ab7fdc2d1d5fdc95d4fd9dfefd00921.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.norrarydscamping.se/_data/VFS_7f45a823018260acf2103be580fa254d.PNG",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.norrarydscamping.se/images/camping-par.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Linneryds Camping",
+            "bilder": [
+                {
+                    "url": "http://images.citybreakcdn.com/image.aspx?ImageId=3186847&width=600&height=600&fitaspect=1",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "http://images.citybreakcdn.com/image.aspx?ImageId=3186746&width=600&height=600&fitaspect=1",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "http://images.citybreakcdn.com/image.aspx?ImageId=7171052&width=600&height=600&fitaspect=1",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Orrefors Camping",
+            "bilder": [
+                {
+                    "url": "https://www.orrefors-camping.se/uploads/3/1/2/0/31206881/img-0065_3.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.orrefors-camping.se/uploads/3/1/2/0/31206881/20180706-202346-film1_3_orig.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.orrefors-camping.se/uploads/3/1/2/0/31206881/20180708-212206-film3_3_orig.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Emmaboda camping",
+            "bilder": [
+                {
+                    "url": "https://www.emmaboda.se/images/18.16a7905f1773f8f34f38129/1612971849986/emmaboda_camping_1.jpg",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://www.emmaboda.se/images/18.16a7905f1773f8f34f3812b/1612971850074/emmaboda_camping_2.jpg",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://www.emmaboda.se/images/18.16a7905f1773f8f34f3812c/1612971850126/emmaboda_camping_3.jpg",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Hätteboda Vildmarkscamping",
+            "bilder": [
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418378&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418380&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418382&width=2232&height=980&crop=1&scale=downscaleonly",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Abrahams Camp",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/342776374_759285745771349_7284784381111509603_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=YwPEU9x1Hn8AX_px5U8&_nc_ht=scontent-cph2-1.xx&oh=00_AfCFbc9S7TaFafCo0FTrQzgNdnZdizAdmyZW9gT80Zecag&oe=64502200",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/308432618_518235790306743_7695585713884283477_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Jd_RslRb2UgAX8-LCwy&_nc_oc=AQmhksYc9VJTPGlAaaTb32m3eeixfsAgvrgcu_TP2o4mcnr0woVg4f5l7miqTZmh6Fvrg5cMXg0N4VVBiJs4FmwV&_nc_ht=scontent-cph2-1.xx&oh=00_AfBj_KPRvb5nlQ-aeGdXFyFeZrbfNYJ-E4VXKC3sEi767w&oe=6451CF6B",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/294756835_5502326473153214_7587553804757259791_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=q8ygDxR8yA8AX9Ih2XP&_nc_ht=scontent-cph2-1.xx&oh=00_AfBCRoiWOzjTKmnjBmtfFBRGUDo68wEcsHknVrrNDFEe-A&oe=6450685B",
+                    "caption": "photo 3"
+                }
+            ]
+        },
+        {
+            "name": "Abrahams Camp",
+            "bilder": [
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/342776374_759285745771349_7284784381111509603_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=YwPEU9x1Hn8AX_px5U8&_nc_ht=scontent-cph2-1.xx&oh=00_AfCFbc9S7TaFafCo0FTrQzgNdnZdizAdmyZW9gT80Zecag&oe=64502200",
+                    "caption": "photo 1"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/308432618_518235790306743_7695585713884283477_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Jd_RslRb2UgAX8-LCwy&_nc_oc=AQmhksYc9VJTPGlAaaTb32m3eeixfsAgvrgcu_TP2o4mcnr0woVg4f5l7miqTZmh6Fvrg5cMXg0N4VVBiJs4FmwV&_nc_ht=scontent-cph2-1.xx&oh=00_AfBj_KPRvb5nlQ-aeGdXFyFeZrbfNYJ-E4VXKC3sEi767w&oe=6451CF6B",
+                    "caption": "photo 2"
+                },
+                {
+                    "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/294756835_5502326473153214_7587553804757259791_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=q8ygDxR8yA8AX9Ih2XP&_nc_ht=scontent-cph2-1.xx&oh=00_AfBCRoiWOzjTKmnjBmtfFBRGUDo68wEcsHknVrrNDFEe-A&oe=6450685B",
+                    "caption": "photo 3"
+                }
+            ]
+        }
+    ]
+}
