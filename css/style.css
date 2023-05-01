@@ -12,10 +12,8 @@ body {
     min-width: 100%;
     margin: 0px;
     padding: 0px;
-    background-image: url(../backgrounds/Wave.svg) ;
-    background-repeat: no-repeat;
+    background-image: url(../backgrounds/Wave.svg);
     background-position: center;
-    background-repeat: no-repeat;
 
 }
 
@@ -23,7 +21,7 @@ body {
 
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content 200px max-content max-content max-content max-content auto 70px;
+    grid-template-rows: max-content 200px max-content max-content max-content auto max-content 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
@@ -46,12 +44,13 @@ body {
     justify-content: left;
 }
 .mainlogo {
-    max-width: 200px;
+    max-width: 120px;
+    padding: 5%;
 }
 .logoImg {
     width: 50px;
     background-color: #F7F6DC;
-    padding: 10px;
+    padding: 10%;
     border-radius: 60%; 
 }
 
@@ -117,20 +116,16 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: -20px;
+    flex: 1 1 0px;
     
 }
 .body-box-1 div div div {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    flex: 1 1 0px;
 }
-.camping-form {
-    border-right: 1px solid gray;
 
-}
-.landscape {
-    border-right: 1px solid gray;
-}
 .innerbox-number {
     border: 1px solid black;
     padding: 5px;
@@ -142,18 +137,45 @@ body {
 .body-box-2 {
     grid-area: body-box-2;
     background-color: white;
-    visibility:hidden;
     padding: 5px; 
     border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: stretch;
+    display: none; 
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 200px max-content auto max-content max-content max-content;
+    gap: 10px; 
+    grid-template-areas: "filterspecs filterspecs filterspecs"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                         "filterMain filterElemnt filterElemnt"
+                        
+    ;
 }
-.fliterElement {
+.filterElemnt {
+    grid-area: filterElemnt;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    overflow-y:auto;
+}
+.filterspecs {
+    grid-area: filterspecs;
+    border: 1px solid black;
+}
+.filterMain {
+    grid-area: filterMain;
+    border: 1px solid black;
+}
+.filterElemenDiv {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex: 2 1 auto;
+    flex-direction: column; 
+    padding: 5px;
+    margin: 10px;
 }
 .body-box-3 {
     grid-area: body-box-3;
@@ -187,21 +209,22 @@ body {
     flex-direction: row;
     border: 1px solid black;
     gap: 20px;
+    justify-content: left;
     justify-content: center;
-    background-image: url("../backgrounds/suppnav.png");
-}
-.body-supp-nav div {
-    display: flex;
-    flex-direction:column;
-    gap: 10px;
-    
 }
 
+.body-supp-nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;    
+}
 footer {
     grid-area: footer;
-    border: 1px solid black;
+    margin: 0;
     display: flex;
     justify-content: center;
+    background-color: #F7F6DC;
+    padding: 0;
     
 }
 
