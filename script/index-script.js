@@ -61,7 +61,7 @@ function showFilterElem() {
   } else if (btnSelector === "all-landscape") {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&descriptions=camping&min_rating=2";
   }
-
+    //skriv logik till fliter, hur ska programmet veta om det är ölad eller småland? hold the links, however change the selection based on the button. 
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -106,7 +106,7 @@ function info(JSONtext) {
     container.append(pElement0, pElement, pElement2, pElement3, logo);
     resultatElem.append(container);
 
-    container.classList.add("filterElemenDiv");
+   // container.classList.add("filterElemenDiv");
   }
   imgUrlCall()
 }
