@@ -1,12 +1,14 @@
 var myApiKey = "dUZXES2j";
 var resultatElem;
 var detailElem
+
+
 function init() {
   resultatElem = document.getElementsByClassName("filterElemnt")[0];
 
   addClickEventListeners();
   wedigtsHoverEffect();
-  
+
 }
 
 window.addEventListener("load", init);
@@ -80,8 +82,12 @@ function showFilterElem() {
 
 function info(JSONtext) {
   let detailElem = JSON.parse(JSONtext).payload;
-  
-  for (let i = 0; i < detailElem.length; i++) { 
+
+  for (let i = 0; i < detailElem.length; i++) {
+    let container = document.createElement("div");
+    container.classList.add("campingRes"); 
+
+    container.setAttribute("cid", detailElem[i].id);
     let pElement0 = document.createElement("p");
     pElement0.innerText = detailElem[i].id;
 
@@ -94,11 +100,13 @@ function info(JSONtext) {
     let pElement3 = document.createElement("p");
     pElement3.innerText = detailElem[i].price_range;
 
-    let childDiv = document.createElement("div");
-    childDiv.append(pElement0, pElement, pElement2, pElement3);
-    resultatElem.append(childDiv);
+    let logo = document.createElement("img");
 
-    childDiv.classList.add("filterElemenDiv");
+   /* let childDiv = document.createElement("div");*/
+    container.append(pElement0, pElement, pElement2, pElement3, logo);
+    resultatElem.append(container);
+
+    container.classList.add("filterElemenDiv");
   }
   imgUrlCall()
 }
@@ -115,7 +123,7 @@ function imgUrlCall() {
       }
     })
     .then(imgData => {
-      let imgDataElement = imgData.camping;
+      /*let imgDataElement = imgData.camping;
       let nameElements = document.querySelectorAll(".filterElemenDiv p:nth-of-type(1)");
 
       for (let i = 0; i < nameElements.length; i++) {
@@ -124,17 +132,33 @@ function imgUrlCall() {
           let imgDataName = imgDataElement[j].id;
           if (elemName == imgDataName) {
             let divHost = document.getElementsByClassName("filterElemenDiv")[i];
- 
+
             let imgElem = document.createElement("img"); // Issues with the current code as images are not showing on certain elements meanwhile 2-3 on others 
-            imgElem.src = imgDataElement[j].logo; 
+            imgElem.src = imgDataElement[j].logo;
             divHost.appendChild(imgElem);
             resultatElem.append(divHost);
-            break; 
+            break;
           }
         }
-      } 
+      }*/
+      let res = document.getElementsByClassName("campingRes"); 
+      for (let i = 0; i < res.length; i++) {
+        let elem = res[i]; 
+        let cid = elem.getAttribute("cid"); 
+        elem.getElementsByTagName("img")[0].src = findIn(imgData.camping, "id", cid).logo;
+      }
     })
     .catch(error => {
       console.error("Det finns problem med kommunikationen", error);
     });
+}
+
+function findIn (stack, key, value) {
+  for (let i = 0; i < stack.length; i++) {
+    if ( stack[i][key] == value) {
+      return stack[i];
+    }
+  }
+
+  return null;
 }
