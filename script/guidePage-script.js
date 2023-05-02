@@ -141,7 +141,7 @@ function imgUrlCall() {
 async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
 
-  myMap = new Map(document.getElementsByClassName("body-map-box"), {
+  myMap = new Map(document.getElementsByClassName("body-map-box")[0], {
     center: { lat: -34.397, lng: 150.644 },
     zoom: 8,
     styles: [
