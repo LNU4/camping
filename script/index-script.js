@@ -82,6 +82,9 @@ function info(JSONtext) {
   let detailElem = JSON.parse(JSONtext).payload;
   
   for (let i = 0; i < detailElem.length; i++) { 
+    let pElement0 = document.createElement("p");
+    pElement0.innerText = detailElem[i].id;
+
     let pElement = document.createElement("p");
     pElement.innerText = detailElem[i].name;
 
@@ -92,7 +95,7 @@ function info(JSONtext) {
     pElement3.innerText = detailElem[i].price_range;
 
     let childDiv = document.createElement("div");
-    childDiv.append(pElement, pElement2, pElement3);
+    childDiv.append(pElement0, pElement, pElement2, pElement3);
     resultatElem.append(childDiv);
 
     childDiv.classList.add("filterElemenDiv");
@@ -113,20 +116,20 @@ function imgUrlCall() {
     })
     .then(imgData => {
       let imgDataElement = imgData.camping;
-      let nameElements = document.querySelectorAll(".filterElemnt div p:nth-of-type(1)");
+      let nameElements = document.querySelectorAll(".filterElemenDiv p:nth-of-type(1)");
 
       for (let i = 0; i < nameElements.length; i++) {
         let elemName = nameElements[i].textContent;
         for (let j = 0; j < imgDataElement.length; j++) {
-          let imgDataName = imgDataElement[j].name;
+          let imgDataName = imgDataElement[j].id;
           if (elemName == imgDataName) {
             let divHost = document.getElementsByClassName("filterElemenDiv")[i];
  
-            let imgElem = document.createElement("img");
-            imgElem.src = imgDataElement[j].bilder[0].url; // Get only the first image URL
+            let imgElem = document.createElement("img"); // Issues with the current code as images are not showing on certain elements meanwhile 2-3 on others 
+            imgElem.src = imgDataElement[j].logo; 
             divHost.appendChild(imgElem);
             resultatElem.append(divHost);
-            break; // Break out of the inner loop after assigning the first image URL
+            break; 
           }
         }
       } 
