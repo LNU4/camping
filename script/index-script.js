@@ -3,14 +3,13 @@ var resultatElem;
 var detailElem
 function init() {
   resultatElem = document.getElementsByClassName("filterElemnt")[0];
-
   addClickEventListeners();
   wedigtsHoverEffect();
-  
 }
 
 window.addEventListener("load", init);
 
+// Lägger till eventlistener för knapparna
 function addClickEventListeners() {
   const campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
 
@@ -21,11 +20,9 @@ function addClickEventListeners() {
 
     }, false);
   }
-
-
 }
 
-
+// Hover effekt för knapparna
 function wedigtsHoverEffect() {
   let wedigtsdiv = document.querySelectorAll(".landscape div")
   let wedigts = document.querySelectorAll(".logoImg");
@@ -42,6 +39,7 @@ function wedigtsHoverEffect() {
 
 }
 
+// showFilterElem, funktion för knapparna för Ölan & Småland. For loop för alla element som ska visas. Sedan används fetch för att översätta infon från SMAPI
 function showFilterElem() {
   let btnSelector = this.className;
   let hiddenElems = document.getElementsByClassName("body-box-2");
@@ -72,12 +70,11 @@ function showFilterElem() {
       info(JSON.stringify(data));
     })
     .catch(error => {
-      console.error("Det finns probleme med kommunikationen", error);
+      console.error("Det finns problem med kommunikationen", error);
     });
-
-
 }
 
+// Skriver ut namn, rating & price range som p element för varje campingplats
 function info(JSONtext) {
   let detailElem = JSON.parse(JSONtext).payload;
   
@@ -100,6 +97,7 @@ function info(JSONtext) {
   imgUrlCall()
 }
 
+// Hämtar bilderna för campingplatserna från egen json fil och placerar ut dem för varje campingplats (imageforplaces.json)
 function imgUrlCall() {
   let imgUrl = "data/imageforplaces.json";
 
