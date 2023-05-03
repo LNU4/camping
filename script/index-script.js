@@ -15,7 +15,7 @@ window.addEventListener("load", init);
 
 function addClickEventListeners() {
   const campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
-  document.getElementById("subjectMenu").addEventListener("change", selectSubject);
+  /*document.getElementById("filterDropMenu").addEventListener("change", selectSubject); */
   for (let i = 0; i < campingTypes.length; i++) {
     campingTypes[i].addEventListener("click", showFilterElem);
     campingTypes[i].addEventListener("mouseover", function () {
