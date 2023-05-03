@@ -15,7 +15,7 @@ window.addEventListener("load", init);
 
 function addClickEventListeners() {
   const campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
-
+  document.getElementById("subjectMenu").addEventListener("change", selectSubject);
   for (let i = 0; i < campingTypes.length; i++) {
     campingTypes[i].addEventListener("click", showFilterElem);
     campingTypes[i].addEventListener("mouseover", function () {
@@ -47,6 +47,7 @@ function wedigtsHoverEffect() {
 function showFilterElem() {
   let btnSelector = this.className;
   let hiddenElems = document.getElementsByClassName("body-box-2");
+  
   resultatElem.innerHTML = "";
   console.log(btnSelector)
   for (let i = 0; i < hiddenElems.length; i++) {
@@ -88,22 +89,36 @@ function info(JSONtext) {
     container.classList.add("campingRes"); 
 
     container.setAttribute("cid", detailElem[i].id);
+
     let pElement0 = document.createElement("p");
     pElement0.innerText = detailElem[i].id;
+    pElement0.classList.add("idElement"); 
+
 
     let pElement = document.createElement("p");
     pElement.innerText = detailElem[i].name;
+    pElement.classList.add("nameElement"); 
 
     let pElement2 = document.createElement("p");
     pElement2.innerText = detailElem[i].rating;
+    pElement2.classList.add("ratingElement"); 
 
     let pElement3 = document.createElement("p");
     pElement3.innerText = detailElem[i].price_range;
+    pElement3.classList.add("priceRangeElement"); 
+
+    let pElement4 = document.createElement("p"); 
+    pElement4.innerText = detailElem[i].text; 
+    pElement4.classList.add("textElement"); 
 
     let logo = document.createElement("img");
 
+    let linkElement = document.createElement("p"); 
+    linkElement.innerText = " Mer info "
+    linkElement.classList.add("linkButton");
+
    /* let childDiv = document.createElement("div");*/
-    container.append(pElement0, pElement, pElement2, pElement3, logo);
+    container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
     resultatElem.append(container);
 
    // container.classList.add("filterElemenDiv");
@@ -154,6 +169,7 @@ function imgUrlCall() {
 }
 
 function findIn (stack, key, value) {
+  console.log(value)
   for (let i = 0; i < stack.length; i++) {
     if ( stack[i][key] == value) {
       return stack[i];

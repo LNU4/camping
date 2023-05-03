@@ -147,37 +147,49 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: auto auto max-content max-content;
     margin: 5px;
     grid-template-areas:
-        "imgElement pElementOne pElementOne pElementOne"
-        "imgElement  pElementTwo pElementTwo pElementTwo"
-        "imgElement pElementThree pElementThree pElementThree"
+        "imgElement nameElement nameElement nameElement"
+        "imgElement  ratingElement priceRangeElement linkButton"
+        "imgElement textElement textElement textElement"
         "imgElement pElementFour pElementFour pElementFour";
 
 
 }
 
-.campingRes p:nth-of-type(1) {
-    grid-area: pElementOne;
+.nameElement {
+    grid-area: nameElement;
 }
 
-.campingRes p:nth-of-type(2) {
-    grid-area: pElementTwo;
+.ratingElement {
+    grid-area: ratingElement;
 }
 
-.campingRes p:nth-of-type(3) {
-    grid-area: pElementThree;
+.priceRangeElement {
+    grid-area: priceRangeElement;
 }
 
-.campingRes p:nth-of-type(4) {
-    grid-area: pElementFour;
+.textElement {
+    grid-area: textElement;
 }
 
+.linkButton{
+    grid-area: linkButton;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+}
+.linkButton:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
 .campingRes img {
     grid-area: imgElement;
-    max-width: 300px;
+    width: 400px;
+    height: 300px;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -192,11 +204,11 @@ body {
     grid-template-rows: 200px max-content auto max-content max-content max-content;
     gap: 10px;
     grid-template-areas: "filterspecs filterspecs filterspecs"
-        "filterMain filterElemnt filterElemnt"
-        "filterMain filterElemnt filterElemnt"
-        "filterMain filterElemnt filterElemnt"
-        "filterMain filterElemnt filterElemnt"
-        "filterMain filterElemnt filterElemnt"
+        "filterElemnt filterElemnt filterElemnt"
+        "filterElemnt filterElemnt filterElemnt"
+        "filterElemnt filterElemnt filterElemnt"
+        "filterElemnt filterElemnt filterElemnt"
+        "filterElemnt filterElemnt filterElemnt"
 
     ;
 }
@@ -206,21 +218,19 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    flex: 2 1 auto;
     width: 100%;
-    height: fit-content;
+    height: 900px;
     overflow-y: auto;
 }
 
 .filterspecs {
     grid-area: filterspecs;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
-.filterMain {
-    grid-area: filterMain;
-    border: 1px solid black;
-}
 
 .filterElemenDiv {
     border-bottom: 1px solid black;
