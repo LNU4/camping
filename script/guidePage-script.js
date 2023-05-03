@@ -1,5 +1,5 @@
 var myMap;				// Objekt för kartan
-var gApikey = "AIzaSyCqZ5C_8bp3CvsU8bIFgul3eMepya-9RWk";
+var gApikey = "AIzaSyB19g_qYmTuOUhxZZ3LrdbTYU8qtCFf36s";  // Google API nyckel
 var myApiKey = "dUZXES2j";
 var resultatElem;
 var detailElem;
@@ -10,7 +10,7 @@ function init() {
   resultatElem = document.getElementsByClassName("filterElemnt")[0];
 //  addClickEventListeners();
   initMap();
-  showFilterElem();
+//  showFilterElem();
   wedigtsHoverEffect();
 }
 
@@ -78,8 +78,6 @@ function showFilterElem() {
 function info(JSONtext) {
   let detailElem = JSON.parse(JSONtext).payload;
 
-  
-  
   for (let i = 0; i < detailElem.length; i++) { 
     let pElement = document.createElement("p");
     pElement.innerText = detailElem[i].name;
@@ -151,7 +149,7 @@ async function initMap() {
   });
 }
 
-initMap();
+
 /*	myMap = new google.maps.Map(
 			document.getElementByClassName("body-map-box"),
 			{
