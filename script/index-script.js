@@ -1,11 +1,11 @@
 var myApiKey = "dUZXES2j";
 var resultatElem;
 var detailElem
-
-
+let campingTypes
+let url
 function init() {
   resultatElem = document.getElementsByClassName("filterElemnt")[0];
-
+  campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
   addClickEventListeners();
   wedigtsHoverEffect();
 
@@ -14,10 +14,11 @@ function init() {
 window.addEventListener("load", init);
 
 function addClickEventListeners() {
-  const campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
-  /*document.getElementById("filterDropMenu").addEventListener("change", selectSubject); */
+  
+  document.getElementById("filterDropMenu").addEventListener("change", SelectedOption);
+
   for (let i = 0; i < campingTypes.length; i++) {
-    campingTypes[i].addEventListener("click", showFilterElem);
+    campingTypes[i].addEventListener("click", SelectedOption);
     campingTypes[i].addEventListener("mouseover", function () {
       this.style.cursor = "pointer";
 
@@ -44,25 +45,46 @@ function wedigtsHoverEffect() {
 
 }
 
-function showFilterElem() {
-  let btnSelector = this.className;
+function SelectedOption() {
+  let filterOption = document.getElementById("filterDropMenu");
+  let selectedFliterOption = filterOption.value;
+  let btnSelector = this.classList;  
+  filterOption.selectedIndex = 0;
+  showFilterElem(selectedFliterOption, btnSelector);
+
+}
+
+function showFilterElem(selectedFliterOption, btnSelector) {
   let hiddenElems = document.getElementsByClassName("body-box-2");
   
   resultatElem.innerHTML = "";
-  console.log(btnSelector)
+  
   for (let i = 0; i < hiddenElems.length; i++) {
     hiddenElems[i].style.display = "grid";
   }
-
-  let url = "";
-  if (btnSelector === "smoland") {
+  console.log(btnSelector)
+  
+  if (btnSelector.contains("smoland")){
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping&min_rating=2";
-  } else if (btnSelector === "oland") {
+  
+  } 
+  else if (btnSelector.contains("oland")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=öland&descriptions=camping&min_rating=2";
-  } else if (btnSelector === "all-landscape") {
+
+  }
+   else if (btnSelector.contains ("all-landscape")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&descriptions=camping&min_rating=2";
   }
-    //skriv logik till fliter, hur ska programmet veta om det är ölad eller småland? hold the links, however change the selection based on the button. 
+
+  if (selectedFliterOption === "Pris") {
+     url += "&sort_in=ASC&order_by=price_range";
+    console.log(url)
+  
+  } 
+  else if (selectedFliterOption === "Omdöme") {
+  url += "&sort_in=DESC&order_by=rating";
+  }
+
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -86,42 +108,42 @@ function info(JSONtext) {
 
   for (let i = 0; i < detailElem.length; i++) {
     let container = document.createElement("div");
-    container.classList.add("campingRes"); 
+    container.classList.add("campingRes");
 
     container.setAttribute("cid", detailElem[i].id);
 
     let pElement0 = document.createElement("p");
     pElement0.innerText = detailElem[i].id;
-    pElement0.classList.add("idElement"); 
+    pElement0.classList.add("idElement");
 
 
     let pElement = document.createElement("p");
     pElement.innerText = detailElem[i].name;
-    pElement.classList.add("nameElement"); 
+    pElement.classList.add("nameElement");
 
     let pElement2 = document.createElement("p");
     pElement2.innerText = detailElem[i].rating;
-    pElement2.classList.add("ratingElement"); 
+    pElement2.classList.add("ratingElement");
 
     let pElement3 = document.createElement("p");
     pElement3.innerText = detailElem[i].price_range;
-    pElement3.classList.add("priceRangeElement"); 
+    pElement3.classList.add("priceRangeElement");
 
-    let pElement4 = document.createElement("p"); 
-    pElement4.innerText = detailElem[i].text; 
-    pElement4.classList.add("textElement"); 
+    let pElement4 = document.createElement("p");
+    pElement4.innerText = detailElem[i].text;
+    pElement4.classList.add("textElement");
 
     let logo = document.createElement("img");
 
-    let linkElement = document.createElement("p"); 
+    let linkElement = document.createElement("p");
     linkElement.innerText = " Mer info "
     linkElement.classList.add("linkButton");
 
-   /* let childDiv = document.createElement("div");*/
+    /* let childDiv = document.createElement("div");*/
     container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
     resultatElem.append(container);
 
-   // container.classList.add("filterElemenDiv");
+    // container.classList.add("filterElemenDiv");
   }
   imgUrlCall()
 }
@@ -156,10 +178,10 @@ function imgUrlCall() {
           }
         }
       }*/
-      let res = document.getElementsByClassName("campingRes"); 
+      let res = document.getElementsByClassName("campingRes");
       for (let i = 0; i < res.length; i++) {
-        let elem = res[i]; 
-        let cid = elem.getAttribute("cid"); 
+        let elem = res[i];
+        let cid = elem.getAttribute("cid");
         elem.getElementsByTagName("img")[0].src = findIn(imgData.camping, "id", cid).logo;
       }
     })
@@ -168,10 +190,10 @@ function imgUrlCall() {
     });
 }
 
-function findIn (stack, key, value) {
-  console.log(value)
+function findIn(stack, key, value) {
+
   for (let i = 0; i < stack.length; i++) {
-    if ( stack[i][key] == value) {
+    if (stack[i][key] == value) {
       return stack[i];
     }
   }
