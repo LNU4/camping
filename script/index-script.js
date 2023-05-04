@@ -5,14 +5,14 @@ let campingTypes
 let url
 function init() {
   resultatElem = document.getElementsByClassName("filterElemnt")[0];
-
+  campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
   addClickEventListeners();
   wedigtsHoverEffect();
+
 }
 
 window.addEventListener("load", init);
 
-// Lägger till eventlistener för knapparna
 function addClickEventListeners() {
   
   document.getElementById("filterDropMenu").addEventListener("change", SelectedOption);
@@ -24,9 +24,11 @@ function addClickEventListeners() {
 
     }, false);
   }
+
+
 }
 
-// Hover effekt för knapparna
+
 function wedigtsHoverEffect() {
   let wedigtsdiv = document.querySelectorAll(".landscape div")
   let wedigts = document.querySelectorAll(".logoImg");
@@ -43,6 +45,16 @@ function wedigtsHoverEffect() {
 
 }
 
+function SelectedOption() {
+  let filterOption = document.getElementById("filterDropMenu");
+  let selectedFliterOption = filterOption.value;
+  let btnSelector = this.classList;  
+  filterOption.selectedIndex = 0;
+  showFilterElem(selectedFliterOption, btnSelector);
+
+}
+
+function showFilterElem(selectedFliterOption, btnSelector) {
   let hiddenElems = document.getElementsByClassName("body-box-2");
   
   resultatElem.innerHTML = "";
@@ -85,11 +97,12 @@ function wedigtsHoverEffect() {
       info(JSON.stringify(data));
     })
     .catch(error => {
-      console.error("Det finns problem med kommunikationen", error);
+      console.error("Det finns probleme med kommunikationen", error);
     });
+
+
 }
 
-// Skriver ut namn, rating & price range som p element för varje campingplats
 function info(JSONtext) {
   let detailElem = JSON.parse(JSONtext).payload;
 
@@ -135,7 +148,6 @@ function info(JSONtext) {
   imgUrlCall()
 }
 
-// Hämtar bilderna för campingplatserna från egen json fil och placerar ut dem för varje campingplats (imageforplaces.json)
 function imgUrlCall() {
   let imgUrl = "data/imageforplaces.json";
 
