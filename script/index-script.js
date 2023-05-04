@@ -138,6 +138,7 @@ function info(JSONtext) {
     let linkElement = document.createElement("p");
     linkElement.innerText = " Mer info "
     linkElement.classList.add("linkButton");
+    linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));
 
     /* let childDiv = document.createElement("div");*/
     container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
@@ -199,4 +200,9 @@ function findIn(stack, key, value) {
   }
 
   return null;
+}
+
+function linkToFilterPage(id) {
+  let url = "guidePage.html?id=" +id;
+  window.location.href = url;  
 }

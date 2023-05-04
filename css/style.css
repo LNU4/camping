@@ -229,6 +229,15 @@ body {
     grid-area: filterspecs;
     border: 1px solid black;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#filterDropMenu {
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #F7F6DC;
+    font-size: 20px;
 }
 
 
