@@ -98,6 +98,10 @@ function showActivity() {
             let pElement = document.createElement("p");
             pElement.innerText = activityElem[i].name;
             pElement.classList.add("activity-Element");
+
+            let pElement1 = document.createElement("p");
+            pElement1.innerText = activityElem[i].description;
+            pElement1.classList.add("activity-Element");
     
             let pElement2 = document.createElement("p");
             pElement2.innerText = activityElem[i].child_support;
@@ -107,7 +111,7 @@ function showActivity() {
             pElement3.innerText = "min age: " + activityElem[i].min_age;
             pElement3.classList.add("activity-Element");
     
-            activityContainer.append(pElement, pElement2, pElement3);
+            activityContainer.append(pElement, pElement1, pElement2, pElement3);
             resultElem.append(activityContainer);
 
         }

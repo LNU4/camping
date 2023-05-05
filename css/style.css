@@ -401,9 +401,9 @@ footer {
 .body-result-box {
     grid-area: body-result-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    height: 300px;
+    border: 1px ;
     border: 0px solid black;
     border-radius: 20px;
     
@@ -434,5 +434,6 @@ footer {
   
 .activity-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    border: 1px solid black;
 }
