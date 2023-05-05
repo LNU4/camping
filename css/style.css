@@ -333,8 +333,9 @@ footer {
 #guidePage {
 
     display: grid;
-    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content auto 70px;
+    background-color: white;
+    grid-template-columns: 1fr 2fr 2fr 1fr; 
+    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content max-content auto 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
@@ -343,7 +344,8 @@ footer {
         "body-images-box body-images-box body-descr-box body-descr-box"
         ". body-info-bar body-info-bar ."
         ". body-info-tab body-info-tab ."
-        ". body-map-box body-map-box ."
+        ". body-result-box body-result-box ."
+        ". body-result-box body-result-box ."
         ". body-supp-nav body-supp-nav ."
         "footer footer footer footer";
 
@@ -354,6 +356,8 @@ footer {
     border: 1px solid black;
     background-color: white;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .body-descr-box {
@@ -364,11 +368,12 @@ footer {
 .body-info-bar {
     grid-area: body-info-bar;
     background-color: white;
+    display: flex;
+    padding: 10px;
+    
     border-radius: 5px;
-    margin: 10px;
     justify-content: center;
-    text-align:center;
-    height: 1000px;
+    align-items: center;
 
 }
 
@@ -377,42 +382,31 @@ footer {
     border: 1px solid black
 }
 
-.body-map-box {
-    grid-area: body-map-box;
+.body-result-box {
+    grid-area: body-result-box;
     display: flex;
     justify-content: center;
     height: 300px;
-    width: 45%;
     border: 0px solid black;
     border-radius: 5px;
-    margin-left: 700px;
-    margin-top: 50px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
 }
 
-.body-image-box{
-    width: 600px;
-    height: 400px;
-    border: 1px solid black;
-    margin: 50px;
-    text-align: center;
-}
 
 .button  {
     border: 2px solid black;
     color: black;
-    padding: 10px 25px;
+    padding: 10px;
+    margin: 10px;
     justify-content: center;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 4px 10px;
     cursor: pointer;
     background-color: #F7F6DC;
     border-radius: 50px;
     justify-content: center;
-    margin-top: 50px;
     transition-duration: 100ms;
     font-family: Montserrat, sans-serif;
   }
