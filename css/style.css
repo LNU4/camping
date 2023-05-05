@@ -333,21 +333,37 @@ footer {
 #guidePage {
 
     display: grid;
-    background-color: white;
-    grid-template-columns: 1fr 2fr 2fr 1fr; 
-    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content max-content auto 70px;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr; 
+    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content auto 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
-        "body-images-box body-images-box body-descr-box body-descr-box"
-        "body-images-box body-images-box body-descr-box body-descr-box"
-        "body-images-box body-images-box body-descr-box body-descr-box"
-        ". body-info-bar body-info-bar ."
-        ". body-info-tab body-info-tab ."
-        ". body-result-box body-result-box ."
-        ". body-result-box body-result-box ."
+        ". innerGuide innerGuide ."
+        ". innerGuide innerGuide ."
+        ". innerGuide innerGuide ."
+        ". innerGuide innerGuide ."
+        ". innerGuide innerGuide ."
+        ". innerGuide innerGuide ."
         ". body-supp-nav body-supp-nav ."
         "footer footer footer footer";
+
+}
+
+#innerGuide {
+    grid-area: innerGuide;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content auto;
+    gap: 20px;
+    grid-template-areas: "body-images-box body-images-box body-descr-box body-descr-box"
+                         "body-images-box body-images-box body-descr-box body-descr-box"
+                         "body-images-box body-images-box body-descr-box body-descr-box"
+                         ". body-info-bar body-info-bar ."
+                         ". body-info-tab body-info-tab ."
+                         ". body-result-box body-result-box ."
+                         ". body-result-box body-result-box .";
 
 }
 
@@ -385,10 +401,11 @@ footer {
 .body-result-box {
     grid-area: body-result-box;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     height: 300px;
     border: 0px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
     
 }
 
@@ -415,3 +432,7 @@ footer {
     border: 2px solid #7FB77E;
 }
   
+.activity-container {
+    display: flex;
+    flex-direction: row;
+}
