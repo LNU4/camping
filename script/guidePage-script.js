@@ -14,7 +14,8 @@ function init() {
     weatherButton.addEventListener("click", showWeather); 
   
     resultElem = document.getElementsByClassName("body-result-box")[0];
-    showinfo(); 
+    showinfo();
+    imgUrlCall();
 }
 
 window.addEventListener("load", init);
@@ -56,8 +57,9 @@ function info (JSONtext) {
     console.log(lat,lng)
     let container = document.createElement("div");
     container.classList.add("guidePageCampingRes");
-    container.setAttribute("cid", id);
 
+    let bodyImages = document.getElementsByClassName("body-images-box")[0];
+    bodyImages.setAttribute("cid", id);
     let pElement = document.createElement("p");
     pElement.innerText = detailElem.name;
     pElement.classList.add("guideNameElement");
@@ -74,6 +76,7 @@ function info (JSONtext) {
     pElement4.innerText = detailElem.text;
     pElement4.classList.add("guideTextElement");
 
+  
     container.append(pElement, pElement2, pElement3, pElement4);
     descBox.append(container);
 }
@@ -149,9 +152,9 @@ function showWeather() {
         activityContainer.classList.add("activity-container"); 
       
         let pElement = document.createElement("p");
-        pElement.innerText = timeResult[i] + "\n";
-        pElement.innerText += weatherResult[i] + "\n";
-        pElement.innerText += "Temp max: " + maxTempResult[i] + "\n";
+        pElement.innerText = timeResult[i] + " ";
+        pElement.innerText += weatherResult[i] + " ";
+        pElement.innerText += "Temp max: " + maxTempResult[i] + " ";
         pElement.innerText += "Temp min: " + minTempResult[i];
         pElement.classList.add("activity-Element");
       
@@ -166,4 +169,58 @@ function showWeather() {
     });
 
 
+}
+
+function imgUrlCall() {
+  let imgUrl = "data/imageforplaces.json";
+
+  fetch(imgUrl)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Den begärda resursen finns inte.");
+      }
+    })
+    .then(imgData => {
+      /*let imgDataElement = imgData.camping;
+      let nameElements = document.querySelectorAll(".filterElemenDiv p:nth-of-type(1)");
+
+      for (let i = 0; i < nameElements.length; i++) {
+        let elemName = nameElements[i].textContent;
+        for (let j = 0; j < imgDataElement.length; j++) {
+          let imgDataName = imgDataElement[j].id;
+          if (elemName == imgDataName) {
+            let divHost = document.getElementsByClassName("filterElemenDiv")[i];
+
+            let imgElem = document.createElement("img"); // Issues with the current code as images are not showing on certain elements meanwhile 2-3 on others 
+            imgElem.src = imgDataElement[j].logo;
+            divHost.appendChild(imgElem);
+            resultatElem.append(divHost);
+            break;
+          }
+        }
+      }*/
+      let res = document.getElementsByClassName("largeImg")[0];
+      
+        let elem = res;
+        let cid = elem.getAttribute("cid");
+        elem.getElementsByTagName("img")[0].src = findIn(imgData.camping, "id", cid).logo;
+          
+      
+    })
+    .catch(error => {
+      console.error("Det finns problem med kommunikationen", error);
+    });
+}
+
+function findIn(stack, key, value) {
+  console.log(value)
+  for (let i = 0; i < stack.length; i++) {
+    if (stack[i][key] == value) {
+      return stack[i];
+    }
+  }
+
+  return null;
 }
