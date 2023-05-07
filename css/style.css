@@ -14,11 +14,19 @@ body {
     padding: 0px;
     background-image: url(../backgrounds/Wave.svg);
     background-position: center;
+}
 
+
+h1{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+h4{
+    font-weight: 600;
 }
 
 #mainPage {
-
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
     grid-template-rows: max-content 200px max-content max-content max-content auto max-content 70px;
@@ -32,8 +40,6 @@ body {
         "body-box-4 body-box-4 body-box-5 body-box-5"
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
         "footer footer footer footer";
-
-
 }
 
 .logo {
@@ -54,6 +60,7 @@ body {
     background-color: #F7F6DC;
     padding: 10%;
     border-radius: 60%;
+    border: 1px solid black;
 }
 
 .body-global-nav {
@@ -238,8 +245,19 @@ body {
     border-radius: 5px;
     background-color: #F7F6DC;
     font-size: 20px;
+    padding: 10px 8px 10px 14px;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    min-width: 20%;
+    z-index: 10;
+    margin-left: 20px;
 }
 
+#filterDropMenu .select{
+    background:url('arrow.png') no-repeat;
+}
 
 .filterElemenDiv {
     border-bottom: 1px solid black;
@@ -389,9 +407,7 @@ footer {
     height: 300px;
     border: 0px solid black;
     border-radius: 5px;
-    
 }
-
 
 .button  {
     border: 2px solid black;
@@ -415,3 +431,42 @@ footer {
     border: 2px solid #7FB77E;
 }
   
+#omOss {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 2fr 2fr 1fr; 
+    grid-template-rows: max-content max-content max-content max-content max-content max-content auto 70px;
+    gap: 20px;
+    grid-template-areas:
+        "logo logo body-global-nav body-global-nav"
+        ". om-oss-img om-oss-img ."
+        ". body-mainContent-box body-mainContent-box ."
+        ". body-mainContent-box body-mainContent-box ."
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "footer footer footer footer";
+    }
+
+.body-mainContent-box{
+    grid-area: body-mainContent-box;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.om-oss-img{
+    grid-area: om-oss-img;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 200px;
+}
+
+.body-mainContent-box-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
