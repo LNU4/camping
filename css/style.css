@@ -328,7 +328,6 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     grid-area: body-box-3;
     background-color: white;
     display: block;
-    max-width: 700px;
     justify-content: center;
     border: none;
     visibility: visible;
