@@ -145,10 +145,10 @@ function info(JSONtext) {
     /* let childDiv = document.createElement("div");*/
     container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
     resultatElem.append(container);
-    imgUrlCall();
+    
     // container.classList.add("filterElemenDiv");
   }
-  
+  imgUrlCall();
 }
 
 function imgUrlCall() {
