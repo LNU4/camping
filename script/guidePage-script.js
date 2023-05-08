@@ -41,13 +41,11 @@ function showinfo() {
             info(JSON.stringify(data));
           })
           .catch(error => {
-            console.error("Det finns probleme med kommunikationen", error);
+            console.error("Det finns problem med kommunikationen", error);
           });
-      
-
 }
 
-function info (JSONtext) {
+function info(JSONtext) {
 
     let descBox = document.getElementsByClassName("body-descr-box")[0];
 
@@ -87,8 +85,35 @@ function info (JSONtext) {
 }
 
 function showActivity() {
+    let searchParameter = new URLSearchParams(window.location.search);
+    id = searchParameter.get("id");
+
     let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=activity&method=getfromlatlng&lat=" + lat +"&lng=" +lng;
+    let url2 = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&ids=" + id;
     resultElem.innerHTML = ""; 
+
+    fetch(url2)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Den begärda resursen finns inte.");
+      }
+    })
+    .then(data => {
+      console.log("works")
+      let titleElem = data.payload;
+      console.log(titleElem);
+
+      for (let i = 0; i < titleElem.length; i++) {
+          let pNameElement = document.getElementsByClassName("body-info-tab")[0];
+          pNameElement.innerText = "Aktiviter vid " + titleElem[i].name; 
+      }
+    })
+    .catch(error => {
+      console.error("Det finns problem med kommunikationen", error);
+    });
+
     fetch(url)
       .then(response => {
         if (response.ok) {
@@ -101,6 +126,7 @@ function showActivity() {
         console.log("works")
         let activityElem = data.payload;
         console.log(activityElem);
+
         for (let i = 0; i < activityElem.length; i++) {
             let activityContainer = document.createElement("div");
             activityContainer.classList.add("activity-container"); 
@@ -110,33 +136,56 @@ function showActivity() {
             pElement.classList.add("activity-Element");
 
             let pElement1 = document.createElement("p");
-            pElement1.innerText = activityElem[i].description;
+            pElement1.innerText = " Typ av aktivitet: " + activityElem[i].description;
             pElement1.classList.add("activity-Element");
     
+            console.log(activityElem[i].name +" är barnvänligt?: " + activityElem[i].child_support + " och lägsta ålder: " + activityElem[i].min_age);
+            /*
             let pElement2 = document.createElement("p");
             pElement2.innerText = activityElem[i].child_support;
             pElement2.classList.add("activity-Element");
-    
+            */
+            /*
             let pElement3 = document.createElement("p");
             pElement3.innerText = "min age: " + activityElem[i].min_age;
             pElement3.classList.add("activity-Element");
-    
-            activityContainer.append(pElement, pElement1, pElement2, pElement3);
+            */
+            activityContainer.append(pElement, pElement1,);
             resultElem.append(activityContainer);
-
         }
-
       })
       .catch(error => {
-        console.error("Det finns probleme med kommunikationen", error);
+        console.error("Det finns problem med kommunikationen", error);
       });
-  
 }
 
 function showWeather() {
-
   let url = "https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude=" +lng+"&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,rain_sum,showers_sum,snowfall_sum,windspeed_10m_max&forecast_days=16&timezone=Europe%2FBerlin";
+  let url2 = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&ids=" + id;
   resultElem.innerHTML = ""; 
+
+  fetch(url2)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Den begärda resursen finns inte.");
+      }
+    })
+    .then(data => {
+      console.log("works")
+      let titleElem = data.payload;
+      console.log(titleElem);
+
+      for (let i = 0; i < titleElem.length; i++) {
+          let pNameElement = document.getElementsByClassName("body-info-tab")[0];   // Utskriving av namnet för campingen tillsammans med passande text.
+          pNameElement.innerText = "Väderprognoser för " + titleElem[i].name;   
+      }
+    })
+    .catch(error => {
+      console.error("Det finns problem med kommunikationen", error);
+    });
+
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -170,7 +219,7 @@ function showWeather() {
 
     })
     .catch(error => {
-      console.error("Det finns probleme med kommunikationen", error);
+      console.error("Det finns problem med kommunikationen", error);
     });
 
 
@@ -232,9 +281,32 @@ function findIn(stack, key, value) {
 }
 
 function showRestaurant () {
-
   let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + lat +"&lng=" +lng + "&radius=15";
+  let url2 = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&ids=" + id;
   resultElem.innerHTML = ""; 
+
+  fetch(url2)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Den begärda resursen finns inte.");
+      }
+    })
+    .then(data => {
+      console.log("works")
+      let titleElem = data.payload;
+      console.log(titleElem);
+
+      for (let i = 0; i < titleElem.length; i++) {
+          let pNameElement = document.getElementsByClassName("body-info-tab")[0];   // Utskriving av namnet för campingen tillsammans med passande text.
+          pNameElement.innerText = "Restauranger vid " + titleElem[i].name;   
+      }
+    })
+    .catch(error => {
+      console.error("Det finns problem med kommunikationen", error);
+    });
+
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -274,7 +346,7 @@ function showRestaurant () {
 
     })
     .catch(error => {
-      console.error("Det finns probleme med kommunikationen", error);
+      console.error("Det finns problem med kommunikationen", error);
     });
   
 }

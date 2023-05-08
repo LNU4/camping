@@ -338,7 +338,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     justify-content: center;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .body-box-4 {
@@ -450,6 +450,7 @@ footer {
     grid-area: innerGuide;
     background-color: white;
     border-radius: 10px;
+    padding-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: max-content max-content max-content max-content max-content max-content auto;
@@ -461,21 +462,26 @@ footer {
                          ". body-info-tab body-info-tab ."
                          ". body-result-box body-result-box ."
                          ". body-result-box body-result-box .";
-
 }
 
 .body-images-box {
     grid-area: body-images-box;
-    border: 1px solid black;
+    border: none;
     background-color: white;
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    padding: 20px;
+}
+
+.body-images-box img {
+    border-radius: 5px;
+    max-width: 690px;
 }
 
 .body-descr-box {
     grid-area: body-descr-box;
-    border: 1px solid black;
+    border: none;
 }
 
 .body-info-bar {
@@ -492,7 +498,8 @@ footer {
 
 .body-info-tab {
     grid-area: body-info-tab;
-    border: 1px solid black
+    border: none;
+    padding-left: 10px;
 }
 
 .body-result-box {
@@ -569,9 +576,16 @@ footer {
     flex-direction: row;
     justify-content: center;
 }
+
 .activity-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
 }
 
+.activity-Element {
+    padding: 5px;
+}
