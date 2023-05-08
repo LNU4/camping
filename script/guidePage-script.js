@@ -1,10 +1,11 @@
 var myMap;				
 var gApikey = "AIzaSyB19g_qYmTuOUhxZZ3LrdbTYU8qtCFf36s";  
 var myApiKey = "dUZXES2j";
-let resultElem;
-let id; 
-let lng;
-let lat;
+var resultElem;
+var id; 
+var placeLng;
+var placeLat;
+
 function init() {
 
     let activityButton = document.getElementsByClassName("button aktiviteter")[0]; 
@@ -17,7 +18,9 @@ function init() {
     restaurantButton.addEventListener("click", showRestaurant);  
   
     resultElem = document.getElementsByClassName("body-result-box")[0];
+
     showinfo();
+    initMap ();
 }
 
 window.addEventListener("load", init);
@@ -54,9 +57,9 @@ function info (JSONtext) {
     let detailElem = JSON.parse(JSONtext).payload[0];
     console.log(detailElem);
 
-    lat = detailElem.lat; 
-    lng = detailElem.lng; 
-    console.log(lat,lng)
+    placeLat = detailElem.lat; 
+    placeLng = detailElem.lng; 
+    console.log(placeLat,placeLng)
     let container = document.createElement("div");
     container.classList.add("guidePageCampingRes");
 
@@ -84,10 +87,12 @@ function info (JSONtext) {
 
     imgUrlCall();
 
+   
 }
 
 function showActivity() {
-    let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=activity&method=getfromlatlng&lat=" + lat +"&lng=" +lng;
+  console.log(placeLat,placeLng)
+    let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=activity&method=getfromlatlng&lat=" + placeLat +"&lng=" + placeLng;
     resultElem.innerHTML = ""; 
     fetch(url)
       .then(response => {
@@ -134,8 +139,8 @@ function showActivity() {
 }
 
 function showWeather() {
-
-  let url = "https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude=" +lng+"&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,rain_sum,showers_sum,snowfall_sum,windspeed_10m_max&forecast_days=16&timezone=Europe%2FBerlin";
+ 
+  let url = "https://api.open-meteo.com/v1/forecast?latitude="+placeLat+"&longitude=" +placeLng+"&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,rain_sum,showers_sum,snowfall_sum,windspeed_10m_max&forecast_days=16&timezone=Europe%2FBerlin";
   resultElem.innerHTML = ""; 
   fetch(url)
     .then(response => {
@@ -233,7 +238,7 @@ function findIn(stack, key, value) {
 
 function showRestaurant () {
 
-  let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + lat +"&lng=" +lng + "&radius=15";
+  let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + placeLat +"&lng=" +placeLng + "&radius=15";
   resultElem.innerHTML = ""; 
   fetch(url)
     .then(response => {
@@ -277,4 +282,20 @@ function showRestaurant () {
       console.error("Det finns probleme med kommunikationen", error);
     });
   
+}
+
+function initMap () {
+  console.log(placeLat, placeLng)
+  let mapHolder = document.getElementsByClassName("body-info-tab")[0]; 
+  let map = new google.maps.Map(mapHolder, {
+    center: {lat: placeLat, lng: placeLng},
+    zoom: 8
+  });
+
+  let marker = new google.maps.Marker({
+    Position: {lat: placeLat, lng: placeLng},
+    map: map,
+  title: "Test one"
+
+  })
 }

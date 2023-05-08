@@ -492,7 +492,9 @@ footer {
 
 .body-info-tab {
     grid-area: body-info-tab;
-    border: 1px solid black
+    border: 1px solid black; 
+    height: 400px;
+    width: 100%;
 }
 
 .body-result-box {

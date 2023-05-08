@@ -1,8 +1,9 @@
 var myApiKey = "dUZXES2j";
 var resultatElem;
 var detailElem;
-let campingTypes;
-let url;
+var campingTypes;
+var url;
+
 function init() {
   resultatElem = document.getElementsByClassName("filterElemnt")[0];
   campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
