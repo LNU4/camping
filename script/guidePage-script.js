@@ -12,10 +12,12 @@ function init() {
 
     let weatherButton = document.getElementsByClassName("button vaderprognoser")[0]; 
     weatherButton.addEventListener("click", showWeather); 
+
+    let restaurantButton = document.getElementsByClassName("button restauranger")[0];
+    restaurantButton.addEventListener("click", showRestaurant);  
   
     resultElem = document.getElementsByClassName("body-result-box")[0];
     showinfo();
-    imgUrlCall();
 }
 
 window.addEventListener("load", init);
@@ -58,7 +60,7 @@ function info (JSONtext) {
     let container = document.createElement("div");
     container.classList.add("guidePageCampingRes");
 
-    let bodyImages = document.getElementsByClassName("body-images-box")[0];
+    let bodyImages = document.getElementsByClassName("largeImg")[0];
     bodyImages.setAttribute("cid", id);
     let pElement = document.createElement("h3");
     pElement.innerText = detailElem.name;
@@ -79,6 +81,9 @@ function info (JSONtext) {
   
     container.append(pElement, pElement2, pElement3, pElement4);
     descBox.append(container);
+
+    imgUrlCall();
+
 }
 
 function showActivity() {
@@ -205,6 +210,7 @@ function imgUrlCall() {
       
         let elem = res;
         let cid = elem.getAttribute("cid");
+        console.log(cid);
         elem.getElementsByTagName("img")[0].src = findIn(imgData.camping, "id", cid).logo;
           
       
@@ -223,4 +229,52 @@ function findIn(stack, key, value) {
   }
 
   return null;
+}
+
+function showRestaurant () {
+
+  let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + lat +"&lng=" +lng + "&radius=15";
+  resultElem.innerHTML = ""; 
+  fetch(url)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Den begärda resursen finns inte.");
+      }
+    })
+    .then(data => {
+      console.log("works")
+      let activityElem = data.payload;
+      console.log(activityElem);
+      for (let i = 0; i < activityElem.length; i++) {
+          let activityContainer = document.createElement("div");
+          activityContainer.classList.add("activity-container"); 
+          
+          let pElement = document.createElement("p");
+          pElement.innerText = activityElem[i].name;
+          pElement.classList.add("activity-Element");
+
+          let pElement1 = document.createElement("p");
+          pElement1.innerText = activityElem[i].description;
+          pElement1.classList.add("activity-Element");
+  
+          let pElement2 = document.createElement("p");
+          pElement2.innerText = "Avstånd "+activityElem[i].distance_in_km;
+          pElement2.classList.add("activity-Element");
+  
+          let pElement3 = document.createElement("p");
+          pElement3.innerText = "Pris: " + activityElem[i].avg_dinner_pricing;
+          pElement3.classList.add("activity-Element");
+  
+          activityContainer.append(pElement, pElement1, pElement2, pElement3);
+          resultElem.append(activityContainer);
+
+      }
+
+    })
+    .catch(error => {
+      console.error("Det finns probleme med kommunikationen", error);
+    });
+  
 }
