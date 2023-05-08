@@ -45,7 +45,7 @@ h4{
         ". desc-banner desc-banner ."
         ". body-box-1 body-box-1 ."
         ". body-box-2 body-box-2 ."
-        "body-box-3 body-box-3 body-box-3 body-box-3"
+        ". body-box-3 body-box-3 ."
         "body-box-4 body-box-4 body-box-5 body-box-5"
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
         "footer footer footer footer";
@@ -55,7 +55,6 @@ h4{
     grid-area: logo;
     display: flex;
     flex-direction: column;
-
     justify-content: left;
 }
 
@@ -326,14 +325,18 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 .body-box-3 {
     grid-area: body-box-3;
-    background-color: white;
-    display: block;
-    max-width: 700px;
+    display: flex;
     justify-content: center;
-    border: none;
-    visibility: visible;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: -10px;
+}
+.title-box{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .body-box-4 {

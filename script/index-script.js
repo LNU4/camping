@@ -1,14 +1,14 @@
 var myApiKey = "dUZXES2j";
 var resultatElem;
-var detailElem
-let campingTypes
-let url
+var detailElem;
+let campingTypes;
+let url;
 function init() {
   resultatElem = document.getElementsByClassName("filterElemnt")[0];
   campingTypes = document.querySelectorAll(" .oland, .smoland, .all-landscape");
   addClickEventListeners();
   wedigtsHoverEffect();
-
+  
 }
 
 window.addEventListener("load", init);
@@ -100,12 +100,12 @@ function showFilterElem(selectedFliterOption, btnSelector) {
       console.error("Det finns probleme med kommunikationen", error);
     });
 
-
+    
 }
 
 function info(JSONtext) {
   let detailElem = JSON.parse(JSONtext).payload;
-
+  
   for (let i = 0; i < detailElem.length; i++) {
     let container = document.createElement("div");
     container.classList.add("campingRes");
@@ -144,10 +144,10 @@ function info(JSONtext) {
     /* let childDiv = document.createElement("div");*/
     container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
     resultatElem.append(container);
-
+    imgUrlCall();
     // container.classList.add("filterElemenDiv");
   }
-  imgUrlCall()
+  
 }
 
 function imgUrlCall() {
