@@ -35,7 +35,7 @@ function wedigtsHoverEffect() {
   for (let i = 0; i < wedigts.length; i++) {
 
     wedigtsdiv[i].addEventListener("mouseover", function () {
-      wedigts[i].style.border = "1px solid black";
+      wedigts[i].style.border = "2px solid #7FB77E";
     }, false);
 
     wedigtsdiv[i].addEventListener("mouseleave", function () {
@@ -113,20 +113,21 @@ function info(JSONtext) {
     container.setAttribute("cid", detailElem[i].id);
 
     let pElement0 = document.createElement("p");
+    console.log("id: " + detailElem[i].id  + " namn: " + detailElem[i].name);
+    /*
     pElement0.innerText = detailElem[i].id;
     pElement0.classList.add("idElement");
-
-
-    let pElement = document.createElement("p");
+    */
+    let pElement = document.createElement("h3");
     pElement.innerText = detailElem[i].name;
     pElement.classList.add("nameElement");
 
     let pElement2 = document.createElement("p");
-    pElement2.innerText = detailElem[i].rating;
+    pElement2.innerText = "Betyg: " + detailElem[i].rating;
     pElement2.classList.add("ratingElement");
 
     let pElement3 = document.createElement("p");
-    pElement3.innerText = detailElem[i].price_range;
+    pElement3.innerText = "Prisnivå: " + detailElem[i].price_range;
     pElement3.classList.add("priceRangeElement");
 
     let pElement4 = document.createElement("p");
@@ -135,8 +136,8 @@ function info(JSONtext) {
 
     let logo = document.createElement("img");
 
-    let linkElement = document.createElement("p");
-    linkElement.innerText = " Mer info "
+    let linkElement = document.createElement("h4");
+    linkElement.innerText = " Se mer "
     linkElement.classList.add("linkButton");
     linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));
 

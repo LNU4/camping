@@ -18,13 +18,22 @@ body {
 
 
 h1{
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif; 
     font-weight: 400;
+}
+
+h2{
+    font-weight: 500;
+}
+
+h3{
+    font-weight: 500;
 }
 
 h4{
     font-weight: 600;
 }
+
 
 #mainPage {
     display: grid;
@@ -60,13 +69,13 @@ h4{
     background-color: #F7F6DC;
     padding: 10%;
     border-radius: 60%;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
-.logoImg:hover {
-    border: 1px solid #7FB77E;
-    cursor: pointer;
+.logoImg:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+
 
 .body-global-nav {
     grid-area: body-global-nav;
@@ -109,7 +118,6 @@ h4{
     padding: 10px;
     padding-left: 100px;
     padding-right: 100px;
-
 }
 
 .body-box-1 {
@@ -121,6 +129,20 @@ h4{
     background-color: white;
     border-radius: 15px;
 
+}
+
+.oland{
+margin-right: 10px;
+}
+
+.all-landscape{
+margin-left: 10px;
+margin-bottom: 22px;
+}
+
+.landscape h4{
+    text-align: center;
+    
 }
 
 .body-box-1 div {
@@ -156,7 +178,8 @@ h4{
 }
 
 .campingRes {
-    border: 1px solid black;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -164,15 +187,57 @@ h4{
     margin: 5px;
     grid-template-areas:
         "imgElement nameElement nameElement nameElement"
-        "imgElement  ratingElement priceRangeElement linkButton"
+        "imgElement ratingElement priceRangeElement linkButton"
         "imgElement textElement textElement textElement"
         "imgElement pElementFour pElementFour pElementFour";
-
-
 }
+
+/*
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+*/
+
+.campingRes img {
+    grid-area: imgElement;
+    width: 400px;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.linkButton{
+    grid-area: linkButton;
+    display: flex; 
+    border: 2px solid black;
+    color: black;
+    padding: 10px 30px;
+    margin: 10px; 
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #F7F6DC;
+    border-radius: 50px;
+    transition-duration: 100ms;
+    font-family: Montserrat, sans-serif;
+    max-width: 120px;
+    max-height: 20px;
+}
+
+.linkButton:hover {
+    border: 2px solid #7FB77E;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
 
 .nameElement {
     grid-area: nameElement;
+    
 }
 
 .ratingElement {
@@ -185,25 +250,9 @@ h4{
 
 .textElement {
     grid-area: textElement;
-}
-
-.linkButton{
-    grid-area: linkButton;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex; 
-    justify-content: center;
-}
-.linkButton:hover {
-    background-color: #7FB77E;
-    cursor: pointer;
-}
-.campingRes img {
-    grid-area: imgElement;
-    width: 400px;
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
+    max-width: 800px;
+    text-overflow: clip;
+    text-align: center;
 }
 
 .body-box-2 {
@@ -239,11 +288,13 @@ h4{
 
 .filterspecs {
     grid-area: filterspecs;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
 }
 #filterDropMenu {
     width: fit-content;
@@ -275,8 +326,14 @@ h4{
 
 .body-box-3 {
     grid-area: body-box-3;
-    border: 1px solid black;
+    background-color: white;
+    display: block;
+    max-width: 700px;
+    justify-content: center;
+    border: none;
     visibility: visible;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .body-box-4 {
@@ -290,6 +347,12 @@ h4{
     flex-direction: column;
 }
 
+.body-box-4 p{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
 .body-box-5 {
     grid-area: body-box-5;
     background-color: white;
@@ -299,6 +362,12 @@ h4{
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.body-box-5 p{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
 }
 
 .body-supp-nav {
@@ -451,6 +520,7 @@ footer {
 
 .button:hover{
     border: 2px solid #7FB77E;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 
@@ -499,3 +569,4 @@ footer {
     flex-direction: column;
     border: 1px solid black;
 }
+

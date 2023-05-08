@@ -60,16 +60,16 @@ function info (JSONtext) {
 
     let bodyImages = document.getElementsByClassName("body-images-box")[0];
     bodyImages.setAttribute("cid", id);
-    let pElement = document.createElement("p");
+    let pElement = document.createElement("h3");
     pElement.innerText = detailElem.name;
     pElement.classList.add("guideNameElement");
 
     let pElement2 = document.createElement("p");
-    pElement2.innerText = detailElem.rating;
+    pElement2.innerText = "Betyg: " + detailElem.rating;
     pElement2.classList.add("guideRatingElement");
     
     let pElement3 = document.createElement("p");
-    pElement3.innerText = detailElem.price_range;
+    pElement3.innerText = "Prisnivå: " + detailElem.price_range;
     pElement3.classList.add("guidePriceRangeElement");
 
     let pElement4 = document.createElement("p");
