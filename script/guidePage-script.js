@@ -27,7 +27,6 @@ window.addEventListener("load", init);
 
 function showinfo() {
 
-
   let searchParameter = new URLSearchParams(window.location.search);
   id = searchParameter.get("id");
 
@@ -91,7 +90,6 @@ function info(JSONtext) {
 }
 
 function showActivity() {
-
   console.log(placeLat, placeLng)
   let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=activity&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng;
   resultElem.innerHTML = "";
@@ -105,7 +103,6 @@ function showActivity() {
     })
     .then(data => {
       console.log("works")
-
       let activityElem = data.payload;
       console.log(activityElem);
       for (let i = 0; i < activityElem.length; i++) {
@@ -177,7 +174,7 @@ function showWeather() {
 
     })
     .catch(error => {
-      console.error("Det finns problem med kommunikationen", error);
+      console.error("Det finns probleme med kommunikationen", error);
     });
 
 
@@ -238,12 +235,10 @@ function findIn(stack, key, value) {
   return null;
 }
 
-
 function showRestaurant() {
 
   let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng + "&radius=15";
   resultElem.innerHTML = "";
-
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -283,7 +278,7 @@ function showRestaurant() {
 
     })
     .catch(error => {
-      console.error("Det finns problem med kommunikationen", error);
+      console.error("Det finns probleme med kommunikationen", error);
     });
 
 }

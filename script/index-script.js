@@ -63,7 +63,6 @@ function showFilterElem(selectedFliterOption, btnSelector) {
   for (let i = 0; i < hiddenElems.length; i++) {
     hiddenElems[i].style.display = "grid";
   }
-  console.log(btnSelector)
   
   if (btnSelector.contains("smoland")){
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping&min_rating=2";
@@ -95,17 +94,60 @@ function showFilterElem(selectedFliterOption, btnSelector) {
       }
     })
     .then(data => {
-      info(JSON.stringify(data));
+      let detailElem = data.payload;
+  
+      for (let i = 0; i < detailElem.length; i++) {
+        let container = document.createElement("div");
+        container.classList.add("campingRes");
+    
+        container.setAttribute("cid", detailElem[i].id);
+    
+        let pElement0 = document.createElement("p");
+        /*
+        pElement0.innerText = detailElem[i].id;
+        pElement0.classList.add("idElement");
+        */
+        let pElement = document.createElement("h3");
+        pElement.innerText = detailElem[i].name;
+        pElement.classList.add("nameElement");
+    
+        let pElement2 = document.createElement("p");
+        pElement2.innerText = "Betyg: " + detailElem[i].rating;
+        pElement2.classList.add("ratingElement");
+    
+        let pElement3 = document.createElement("p");
+        pElement3.innerText = "Prisnivå: " + detailElem[i].price_range;
+        pElement3.classList.add("priceRangeElement");
+    
+        let pElement4 = document.createElement("p");
+        pElement4.innerText = detailElem[i].text;
+        pElement4.classList.add("textElement");
+    
+        let logo = document.createElement("img");
+    
+        let linkElement = document.createElement("h4");
+        linkElement.innerText = " Se mer "
+        linkElement.classList.add("linkButton");
+        linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));
+    
+        /* let childDiv = document.createElement("div");*/
+        container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
+        resultatElem.append(container);
+        imgUrlCall();
+        // container.classList.add("filterElemenDiv");
+      }
+
     })
     .catch(error => {
       console.error("Det finns probleme med kommunikationen", error);
     });
 
     
+
 }
 
-function info(JSONtext) {
-  let detailElem = JSON.parse(JSONtext).payload;
+/*function info(JSONtext) {
+    let detailElem = JSONtext.payload;
   
   for (let i = 0; i < detailElem.length; i++) {
     let container = document.createElement("div");
@@ -114,11 +156,11 @@ function info(JSONtext) {
     container.setAttribute("cid", detailElem[i].id);
 
     let pElement0 = document.createElement("p");
-    console.log("id: " + detailElem[i].id  + " namn: " + detailElem[i].name);
     /*
     pElement0.innerText = detailElem[i].id;
     pElement0.classList.add("idElement");
     */
+   /*
     let pElement = document.createElement("h3");
     pElement.innerText = detailElem[i].name;
     pElement.classList.add("nameElement");
@@ -143,13 +185,14 @@ function info(JSONtext) {
     linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));
 
     /* let childDiv = document.createElement("div");*/
+    /*
     container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
     resultatElem.append(container);
     
     // container.classList.add("filterElemenDiv");
   }
   imgUrlCall();
-}
+} */
 
 function imgUrlCall() {
   let imgUrl = "data/imageforplaces.json";
@@ -163,24 +206,7 @@ function imgUrlCall() {
       }
     })
     .then(imgData => {
-      /*let imgDataElement = imgData.camping;
-      let nameElements = document.querySelectorAll(".filterElemenDiv p:nth-of-type(1)");
-
-      for (let i = 0; i < nameElements.length; i++) {
-        let elemName = nameElements[i].textContent;
-        for (let j = 0; j < imgDataElement.length; j++) {
-          let imgDataName = imgDataElement[j].id;
-          if (elemName == imgDataName) {
-            let divHost = document.getElementsByClassName("filterElemenDiv")[i];
-
-            let imgElem = document.createElement("img"); // Issues with the current code as images are not showing on certain elements meanwhile 2-3 on others 
-            imgElem.src = imgDataElement[j].logo;
-            divHost.appendChild(imgElem);
-            resultatElem.append(divHost);
-            break;
-          }
-        }
-      }*/
+    
       let res = document.getElementsByClassName("campingRes");
       for (let i = 0; i < res.length; i++) {
         let elem = res[i];
