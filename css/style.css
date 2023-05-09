@@ -498,8 +498,10 @@ footer {
 
 .body-info-tab {
     grid-area: body-info-tab;
+
     border: none;
     padding-left: 10px;
+
 }
 
 .body-result-box {
