@@ -23,7 +23,7 @@ function init() {
 
 }
 
-window.addEventListener("load", init);
+//window.addEventListener("load", init);
 
 function showinfo() {
 
@@ -86,7 +86,7 @@ function info(JSONtext) {
   descBox.append(container);
 
   imgUrlCall();
-  initMap(detailElem.name);
+  initMap(detailElem);
 }
 
 function showActivity() {
@@ -283,10 +283,10 @@ function showRestaurant() {
 
 }
 
-function initMap(campingName) {
-  console.log(campingName)
-  let lat = parseFloat(placeLat);
-  let lng = parseFloat(placeLng);
+function initMap(camping) {
+  console.log(camping);
+  let lat = parseFloat(camping.lat);
+  let lng = parseFloat(camping.lng);
   let mapHolder = document.getElementById("map");
   let map = new google.maps.Map(mapHolder, {
     center: { lat: lat, lng: lng },
@@ -296,6 +296,6 @@ function initMap(campingName) {
   let marker = new google.maps.Marker({
     position: { lat: lat, lng: lng },
     map: map,
-    title: campingName,
+    title: camping.name,
   });
 }
