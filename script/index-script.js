@@ -36,7 +36,7 @@ function wedigtsHoverEffect() {
   for (let i = 0; i < wedigts.length; i++) {
 
     wedigtsdiv[i].addEventListener("mouseover", function () {
-      wedigts[i].style.border = "2px solid #7FB77E";
+      wedigts[i].style.border = "3px solid #7FB77E";
     }, false);
 
     wedigtsdiv[i].addEventListener("mouseleave", function () {

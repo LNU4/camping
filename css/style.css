@@ -13,7 +13,8 @@ body {
     margin: 0px;
     padding: 0px;
     background-image: url(../backgrounds/Wave.svg);
-    background-position: center;
+    background-repeat: round;
+    background-attachment: fixed;
 }
 
 
@@ -27,11 +28,11 @@ h2{
 }
 
 h3{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h4{
-    font-weight: 600;
+    font-weight: 400;
 }
 
 
@@ -46,7 +47,7 @@ h4{
         ". body-box-1 body-box-1 ."
         ". body-box-2 body-box-2 ."
         ". body-box-3 body-box-3 ."
-        "body-box-4 body-box-4 body-box-5 body-box-5"
+        ". body-box-4 body-box-5 ."
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
         "footer footer footer footer";
 }
@@ -64,17 +65,21 @@ h4{
 }
 
 .logoImg {
-    width: 50px;
-    background-color: #F7F6DC;
-    padding: 10%;
-    border-radius: 60%;
-    border: 2px solid black;
-}
-
-.logoImg:hover{
+    width: 300px;
+    height: 292px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: 150ms;
 }
 
+
+
+.logoImg:focus{
+    border: 3px solid #7FB77E;
+}
 
 .body-global-nav {
     grid-area: body-global-nav;
@@ -95,7 +100,17 @@ h4{
 
 .body-global-nav li a {
     text-decoration: none;
+    padding: 10px;
+    color: black;
+}
 
+.body-global-nav li a:hover{
+font-weight: 500;
+}
+
+.body-global-nav li a:visited{
+text-decoration: none;
+color: black;
 }
 
 .desc-banner {
@@ -111,7 +126,7 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ADCACB;
+    background-color: white;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 10px;
@@ -119,17 +134,26 @@ h4{
     padding-right: 100px;
 }
 
+/*
+background-color: #ADCACB;
+*/
+
 .body-box-1 {
     grid-area: body-box-1;
     display: flex;
     gap: 0px;
     margin: 0px;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
     border-radius: 15px;
-
 }
 
+.inner-box2{
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*
 .oland{
 margin-right: 10px;
 }
@@ -138,6 +162,7 @@ margin-right: 10px;
 margin-left: 10px;
 margin-bottom: 22px;
 }
+*/
 
 .landscape h4{
     text-align: center;
@@ -269,7 +294,6 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         "filterElemnt filterElemnt filterElemnt"
         "filterElemnt filterElemnt filterElemnt"
         "filterElemnt filterElemnt filterElemnt"
-
     ;
 }
 
@@ -311,7 +335,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 #filterDropMenu .select{
-    background:url('arrow.png') no-repeat;
+    background:url('SVGassets/Down-arrow.png') no-repeat;
 }
 
 .filterElemenDiv {
@@ -325,16 +349,21 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 .body-box-3 {
     grid-area: body-box-3;
-
     display: flex;
-
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     border-radius: 10px;
     margin-bottom: -10px;
 }
+
+.down-arrow-indexPage{
+    max-width: 30px;
+    padding: 20px;
+}
+
 .title-box{
-    display: flex;
+    display: block;
     justify-content: center;
     background-color: white;
     border-radius: 10px;
@@ -343,7 +372,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 .body-box-4 {
     grid-area: body-box-4;
-    background: white;
+    background-color: white;
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
@@ -538,8 +567,10 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+.button:focus{
+    border: 2px solid #7FB77E;
+}
 
-  
 #omOss {
     display: grid;
     background-color: white;
