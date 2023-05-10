@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 html {
     font-family: Montserrat, sans-serif;
     font-size: 19px;
@@ -49,7 +51,7 @@ h4{
         ". body-box-3 body-box-3 ."
         ". body-box-4 body-box-5 ."
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
-        "footer footer footer footer";
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav";
 }
 
 .logo {
@@ -105,7 +107,7 @@ h4{
 }
 
 .body-global-nav li a:hover{
-font-weight: 500;
+font-weight: 600;
 }
 
 .body-global-nav li a:visited{
@@ -153,6 +155,8 @@ background-color: #ADCACB;
     border-radius: 10px;
 }
 
+
+
 /*
 .oland{
 margin-right: 10px;
@@ -163,6 +167,7 @@ margin-left: 10px;
 margin-bottom: 22px;
 }
 */
+
 
 .landscape h4{
     text-align: center;
@@ -407,17 +412,40 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 .body-supp-nav {
     grid-area: body-supp-nav;
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
+    flex-direction: column;
+    justify-content: end;
+    border: none;
     gap: 20px;
-    justify-content: left;
-    justify-content: center;
+    background-image: url(../SVGassets/wavefooter2.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 300px;
 }
 
 .body-supp-nav div {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-left: 50px;
+}
+
+.body-supp-nav ul{
+    list-style-type: none;
+
+}
+
+.body-supp-nav li a{
+   text-decoration: none;
+
+}
+
+.body-supp-nav li a:hover{
+    font-weight: 600;
+}
+    
+.body-supp-nav li a:visited{
+    text-decoration: none;
+    color: black;
 }
 
 footer {
@@ -457,7 +485,6 @@ footer {
 }
 
 #guidePage {
-
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr; 
     grid-template-rows: max-content max-content max-content max-content max-content max-content max-content auto 70px;
@@ -470,8 +497,8 @@ footer {
         ". innerGuide innerGuide ."
         ". innerGuide innerGuide ."
         ". innerGuide innerGuide ."
-        ". body-supp-nav body-supp-nav ."
-        "footer footer footer footer";
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav";
 
 }
 
@@ -569,6 +596,7 @@ footer {
 
 .button:focus{
     border: 2px solid #7FB77E;
+    border: 2px solid #7FB77E;
 }
 
 #omOss {
@@ -583,7 +611,9 @@ footer {
         ". body-mainContent-box body-mainContent-box ."
         ". body-mainContent-box body-mainContent-box ."
         "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
-        "footer footer footer footer";
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav";
     }
 
 .body-mainContent-box{
@@ -622,4 +652,9 @@ footer {
 
 .activity-Element {
     padding: 5px;
+}
+
+
+*{
+    scroll-behavior: smooth;
 }

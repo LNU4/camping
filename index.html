@@ -16,7 +16,7 @@
 
     <nav class="body-global-nav">
         <ul>
-            <li><a href="Index.html">Home</a></li>
+            <li><a href="Index.html">Hem</a></li>
             <li><a href="Index.html">Destinationer</a></li>
             <li><a href="Index.html">Aktiviteter</a></li>
             <li><a href="omOss.html">Om oss</a></li>
@@ -35,15 +35,15 @@
             <div class="landscape">
                 <div class="oland">
                     <h4>Öland</h4>
-                    <img src="SVGassets/olandLandskap.svg" alt="Öland" class="logoImg">
+                    <a href="#filterSpecsId"> <img src="SVGassets/olandLandskap.svg" alt="Öland" class="logoImg"> </a>
                 </div>
                 <div class="smoland">
                     <h4>Småland</h4>
-                    <img src="SVGassets/smolandLanskap.svg" alt="Småland" class="logoImg">
+                    <a href="#filterSpecsId"> <img src="SVGassets/smolandLanskap.svg" alt="Småland" class="logoImg"> </a>
                 </div>
                 <div class="all-landscape">
                     <h4>Alla Landskap</h4>
-                    <img src="SVGassets/allLandskap.svg" alt="Alla Landskap" class="logoImg">
+                    <a href="#filterSpecsId"> <img src="SVGassets/allLandskap.svg" alt="Alla Landskap" class="logoImg"> </a> 
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
 
     <div class="body-box-2">
 
-        <div class="filterspecs">
+        <div class="filterspecs" id="filterSpecsId">
             <form>
                 <select id="filterDropMenu">
                     <option>Sortera efter ...</option>
@@ -69,13 +69,13 @@
 
     <div class="body-box-3">
         <div class="title-box">
-        <h3> Om landskapen Öland & Småland</h3>
-        <img src="/SVGassets/Down-arrow.svg" alt="down-arrow" class="down-arrow-indexPage">
+            <h3> Om landskapen Öland & Småland</h3>
+            <a href="#olandSmolandInfo"> <img src="/SVGassets/Down-arrow.svg" alt="down-arrow" class="down-arrow-indexPage"> </a>
         </div>
     </div>
 
     <div class="body-box-4">
-        <h2>Öland</h2>
+        <h2 id="olandSmolandInfo">Öland</h2>
         <img src="images/oland.svg" alt="öland-iamge" class="svg-design-småland">
         <p>Öland är en ö belägen på den östra kusten av Sverige och är känd för sina vackra stränder, klippor,
             naturreservat och historiska sevärdheter. Ön är också populär för camping på grund av dess vackra landskap
@@ -105,15 +105,16 @@
 
         </div>
         <div class="supp-nav-info">
-            <p>Om oss</p>
-            <p>Frågor svar</p>
-            <p>Kontakt</p>
+            <ul>
+                <li><a href="omOss.html">Om oss</a></li>
+                <p>Frågor &amp; svar</p>
+                <p>Kontakt</p>
+            </ul>
+     <!--   <img src="logo/campliva.svg" alt="logo-supp-nav" class="logo-supp-nav" id="logo-supp-nav"> -->  
         </div>
         <div class="supp-nav-help">
         </div>
         <div class="supp-nav-socialmedia">
         </div>
-    
     </div>
-    <footer> Group 3 project</footer>
 </body>
