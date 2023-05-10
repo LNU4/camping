@@ -6,6 +6,7 @@
             "logo": "https://usercontent.one/wp/www.skeppevik.com/wp-content/uploads/2017/06/20170719_200521.jpg",
             "credits": "skeppevik.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare"],
 			"images": [
 				{
 					"url": "https://usercontent.one/wp/www.skeppevik.com/wp-content/uploads/2017/06/20170719_200521.jpg",
@@ -27,6 +28,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=7261170&width=1116&height=490&crop=1&scale=downscaleonly",
             "credits": "camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga", "Café"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=7261170&width=1116&height=490&crop=1&scale=downscaleonly",
@@ -48,6 +50,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.18169-9/429160_185405954907233_809950732_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=DtIRyNQb6UsAX9qQLQ5&_nc_ht=scontent-cph2-1.xx&oh=00_AfA4vzlq50wWaq-kt79gDUY1898Ga_IgZBDSQwavPmooNA&oe=64777748",
             "credits": "facebook hemsida: Kolbodabaden Turist & Konferens",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Ved tillgänglig"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.18169-9/429160_185405954907233_809950732_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=DtIRyNQb6UsAX9qQLQ5&_nc_ht=scontent-cph2-1.xx&oh=00_AfA4vzlq50wWaq-kt79gDUY1898Ga_IgZBDSQwavPmooNA&oe=64777748",
@@ -69,6 +72,7 @@
             "logo": "https://static.wixstatic.com/media/f5c0b8_9c09b00c46fb4454bcd3dd615a3215dd~mv2.png/v1/fill/w_980,h_420,al_c,q_90,enc_auto/f5c0b8_9c09b00c46fb4454bcd3dd615a3215dd~mv2.png",
             "credits": "https://www.vitasandscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://static.wixstatic.com/media/f5c0b8_9c09b00c46fb4454bcd3dd615a3215dd~mv2.png/v1/fill/w_980,h_420,al_c,q_90,enc_auto/f5c0b8_9c09b00c46fb4454bcd3dd615a3215dd~mv2.png",
@@ -90,6 +94,7 @@
             "logo": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/308726945.jpg?k=8604b7df43856eeec3006b4281a9ebdef9835734c6b57e4afe218e95cd82c72c&o=&hp=1",
             "credits": "booking.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Bord och bänkar", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/308726945.jpg?k=8604b7df43856eeec3006b4281a9ebdef9835734c6b57e4afe218e95cd82c72c&o=&hp=1",
@@ -111,6 +116,7 @@
             "logo": "https://cdn.prod.v2.camping.info/media/campsites/joelskogens-camping/ResTCrsME9y-.jpg.webp",
             "credits": "camping.info",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://cdn.prod.v2.camping.info/media/campsites/joelskogens-camping/ResTCrsME9y-.jpg.webp",
@@ -132,6 +138,7 @@
             "logo": "https://caravanclub.se/content/uploads/Timmernabben_2-1050x580.jpg",
             "credits": "caravanclub.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Bord och bänkar", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://caravanclub.se/content/uploads/Timmernabben_2-1050x580.jpg",
@@ -153,6 +160,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/306045470_517859677010150_904106415129082107_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=yTS4leF9mfUAX8driBa&_nc_ht=scontent-cph2-1.xx&oh=00_AfBT3pYGThz9XwL2NwLelmTg4tgenkvgH1OTQbqkW7raHQ&oe=6454A4B7",
             "credits": "facebook hemsida: Kaffetorpets camping",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/306045470_517859677010150_904106415129082107_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=yTS4leF9mfUAX8driBa&_nc_ht=scontent-cph2-1.xx&oh=00_AfBT3pYGThz9XwL2NwLelmTg4tgenkvgH1OTQbqkW7raHQ&oe=6454A4B7",
@@ -174,6 +182,7 @@
             "logo": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2022%2F12%2Fgunnarso_husbil.jpg&w=750&q=75",
             "credits": "firstcamp.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://firstcamp.se/_next/image?url=https%3A%2F%2Ffirstcamp.fra1.digitaloceanspaces.com%2Fcms-public%2F2022%2F12%2Fgunnarso_husbil.jpg&w=750&q=75",
@@ -195,6 +204,7 @@
             "logo": "http://www.havslatt.se/Get/Image.aspx?id=0&save_filename=36947_0_440.jpg&action=save&category=width&width=440&file_name=36947.jpg",
             "credits": "havslatt.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Tvättmaskiner", "Torktumlare", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "http://www.havslatt.se/Get/Image.aspx?id=0&save_filename=36947_0_440.jpg&action=save&category=width&width=440&file_name=36947.jpg",
@@ -216,6 +226,7 @@
             "logo": "https://husbilskompisar.se/images/sobipro/entries/2219/img_gosjocampingbadhopptorn.jpg",
             "credits": "husbilskompisar.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://husbilskompisar.se/images/sobipro/entries/2219/img_gosjocampingbadhopptorn.jpg",
@@ -237,6 +248,7 @@
             "logo": "https://langsjon.se/wp-content/uploads/D75_8560-1303x630.png",
             "credits": "langsjon.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://langsjon.se/wp-content/uploads/D75_8560-1303x630.png",
@@ -258,6 +270,7 @@
             "logo": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/198553946.jpg?k=9bfc215a8287151faf7e4905404ae7e0cadc004e85708838f60fff54698c9e51&o=&hp=1",
             "credits": "www.booking.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/198553946.jpg?k=9bfc215a8287151faf7e4905404ae7e0cadc004e85708838f60fff54698c9e51&o=&hp=1",
@@ -279,6 +292,7 @@
             "logo": "https://astridlindgrensvarld.se/wp-content/uploads/2022/01/mattisborgen-wide3.jpg",
             "credits": "astridlindgrensvarld.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://astridlindgrensvarld.se/wp-content/uploads/2022/01/mattisborgen-wide3.jpg",
@@ -300,6 +314,7 @@
             "logo": "https://en.spilhammarscamping.com/resources/images/omgeving/category/standard/nils_holgersson_varld_800x600.jpg",
             "credits": "spilhammarscamping.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://en.spilhammarscamping.com/resources/images/omgeving/category/standard/nils_holgersson_varld_800x600.jpg",
@@ -316,11 +331,12 @@
 			]
 		},
         {
-            "id": "273",
+            "id": "275",
 			"name": "Camping Hultsfred",
             "logo": "https://hultsfredstrandcamping.se/wp-content/uploads/2020/11/camping_talt_husvagn_husbil_smaland.jpg",
             "credits": "hultsfredstrandcamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://hultsfredstrandcamping.se/wp-content/uploads/2020/11/camping_talt_husvagn_husbil_smaland.jpg",
@@ -342,6 +358,7 @@
             "logo": "https://blankaholmscamping.se/____impro/1/onewebmedia/Stuga%201-5%20lekplats.jpg?etag=%22778ddc-612e0838%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=660,440&extract=14,0,632,440",
             "credits": "blankaholmscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://blankaholmscamping.se/____impro/1/onewebmedia/Stuga%201-5%20lekplats.jpg?etag=%22778ddc-612e0838%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=660,440&extract=14,0,632,440",
@@ -363,6 +380,7 @@
             "logo": "https://www.movantacamping.se/wp-content/uploads/2020/03/Movanta_badplats.jpg",
             "credits": "movantacamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Tvättmaskiner", "Torktumlare", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.movantacamping.se/wp-content/uploads/2020/03/Movanta_badplats.jpg",
@@ -384,6 +402,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=7263523",
             "credits": "camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=7263523",
@@ -405,6 +424,7 @@
             "logo": "https://campingvattersmalen.se/____impro/1/onewebmedia/IMG_1717.jpg?etag=%2218ba50-60f5a93b%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=267%2B200&extract=0%2B0%2B267%2B200&quality=85",
             "credits": "campingvattersmalen.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://campingvattersmalen.se/____impro/1/onewebmedia/IMG_1717.jpg?etag=%2218ba50-60f5a93b%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=267%2B200&extract=0%2B0%2B267%2B200&quality=85",
@@ -426,6 +446,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/235540224_215339713932455_4672607837184149619_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=YpgNL_dg92UAX-WRBaj&_nc_ht=scontent-cph2-1.xx&oh=00_AfCGij5PU1N9HF2v9t37Y4y3wWPCTr__ZtPI16xlXVhDyQ&oe=6455C379",
             "credits": "facebook hemsida: Habo Camping & Stugby",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Bord och bänkar", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/235540224_215339713932455_4672607837184149619_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=YpgNL_dg92UAX-WRBaj&_nc_ht=scontent-cph2-1.xx&oh=00_AfCGij5PU1N9HF2v9t37Y4y3wWPCTr__ZtPI16xlXVhDyQ&oe=6455C379",
@@ -447,6 +468,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=7243503&width=1116&height=490&crop=1&scale=downscaleonly",
             "credits": "camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=7243503&width=1116&height=490&crop=1&scale=downscaleonly",
@@ -468,6 +490,7 @@
             "logo": "https://campingsmaland.se/smaland-content/uploads/varnamo-camping.jpg",
             "credits": "campingsmaland.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://campingsmaland.se/smaland-content/uploads/varnamo-camping.jpg",
@@ -489,6 +512,7 @@
             "logo": "http://media2.e4anscamping.com/2020/12/valkommen-bild.jpg",
             "credits": "e4anscamping.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "http://media2.e4anscamping.com/2020/12/valkommen-bild.jpg",
@@ -510,6 +534,7 @@
             "logo": "https://uploads.naturkartan-cdn.se/efcc53460f1cabed9f4394b250c63a75.jpg?w=960&h=640&fit=crop&dpr=1&q=75",
             "credits": "naturkartan.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://uploads.naturkartan-cdn.se/efcc53460f1cabed9f4394b250c63a75.jpg?w=960&h=640&fit=crop&dpr=1&q=75",
@@ -531,6 +556,7 @@
             "logo": "https://www.ostanacamping.se/files/top-img.png",
             "credits": "ostanacamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.ostanacamping.se/files/top-img.png",
@@ -552,6 +578,7 @@
             "logo": "https://usercontent.one/wp/www.lovsjocamping.se/wp-content/uploads/2022/11/solnedgang-camping-smaland-1280x1250.jpg",
             "credits": "lovsjocamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://usercontent.one/wp/www.lovsjocamping.se/wp-content/uploads/2022/11/solnedgang-camping-smaland-1280x1250.jpg",
@@ -573,6 +600,7 @@
             "logo": "http://www.axamostrand.se/photos/calle2.jpg",
             "credits": "axamostrand.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "http://www.axamostrand.se/photos/calle2.jpg",
@@ -594,6 +622,7 @@
             "logo": "https://osterskog.se/wp-content/uploads/2019/06/Bada_fiska_naturcamping_fyrkantigt-1024x900.jpg",
             "credits": "osterskog.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://osterskog.se/wp-content/uploads/2019/06/Bada_fiska_naturcamping_fyrkantigt-1024x900.jpg",
@@ -615,6 +644,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=7418435",
             "credits": "camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418435",
@@ -636,6 +666,7 @@
             "logo": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/242556596.jpg?k=e65027f8564f6d07f33f90b1cbac075c414f15d04373c10790a015690d77606c&o=&hp=1",
             "credits": "booking.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/242556596.jpg?k=e65027f8564f6d07f33f90b1cbac075c414f15d04373c10790a015690d77606c&o=&hp=1",
@@ -657,6 +688,7 @@
             "logo": "https://www.smalandreisen.de/wp-content/uploads/kanufahren-schweden-smaland-see-04-700-525.jpg",
             "credits": "smalandreisen.de",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.smalandreisen.de/wp-content/uploads/kanufahren-schweden-smaland-see-04-700-525.jpg",
@@ -678,6 +710,7 @@
             "logo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/82/28/24/camping-direkt-am-see.jpg?w=1100&h=-1&s=1",
             "credits": "tripadvisor.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/82/28/24/camping-direkt-am-see.jpg?w=1100&h=-1&s=1",
@@ -699,6 +732,7 @@
             "logo": "https://savsjo.se/images/200.72d26722169b9581a4d7358/1555415051093/(2)%202.jpg",
             "credits": "savsjo.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://savsjo.se/images/200.72d26722169b9581a4d7358/1555415051093/(2)%202.jpg",
@@ -720,6 +754,7 @@
             "logo": "http://media2.e4anscamping.com/2021/01/valkommen-bild.jpg",
             "credits": "e4anscamping.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "http://media2.e4anscamping.com/2021/01/valkommen-bild.jpg",
@@ -741,6 +776,7 @@
             "logo": "http://www.tornecamping.com/uploads/6/5/0/3/65039763/_7423672.jpg",
             "credits": "tornecamping.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Ved tillgänglig"],
 			"images": [
 				{
 					"url": "http://www.tornecamping.com/uploads/6/5/0/3/65039763/_7423672.jpg",
@@ -762,6 +798,7 @@
             "logo": "https://res.cloudinary.com/hollistay-ab/image/upload/q_auto/Prod/rlosxoj9zm4v0hjxll4z.jpg",
             "credits": "hollistay.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://res.cloudinary.com/hollistay-ab/image/upload/q_auto/Prod/rlosxoj9zm4v0hjxll4z.jpg",
@@ -783,6 +820,7 @@
             "logo": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/248785293.jpg?k=4b826c0211b0830530a61299e6dfd1736739dbc2aa8ee6fe84c6a723a41a03a8&o=&hp=1",
             "credits": "booking.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/248785293.jpg?k=4b826c0211b0830530a61299e6dfd1736739dbc2aa8ee6fe84c6a723a41a03a8&o=&hp=1",
@@ -804,6 +842,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=7418082",
             "credits": "camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=7418082",
@@ -825,6 +864,7 @@
             "logo": "https://kaerrasandscamping.com/wp-content/uploads/2022/07/Wohnwagen_Pause-e1658421295445.png",
             "credits": "kaerrasandscamping.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://kaerrasandscamping.com/wp-content/uploads/2022/07/Wohnwagen_Pause-e1658421295445.png",
@@ -846,6 +886,7 @@
             "logo": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/255153790.jpg?k=a81fa22b24e7144d1e8853d34eda1e2adac738bc6d6480bcda36e80e7acc06d0&o=&hp=1",
             "credits": "booking.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/255153790.jpg?k=a81fa22b24e7144d1e8853d34eda1e2adac738bc6d6480bcda36e80e7acc06d0&o=&hp=1",
@@ -867,6 +908,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/298798845_479915900805500_7350622247878402705_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=TIZxZSKWZcMAX_A6fnZ&_nc_ht=scontent-cph2-1.xx&oh=00_AfClQnSv3KmS2C_tjeSuNcOIMSNyGV3bSK-Zo4knAUNqUQ&oe=6455F96C",
             "credits": "facebook hemsida: Ekna Naturcamping",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/298798845_479915900805500_7350622247878402705_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=TIZxZSKWZcMAX_A6fnZ&_nc_ht=scontent-cph2-1.xx&oh=00_AfClQnSv3KmS2C_tjeSuNcOIMSNyGV3bSK-Zo4knAUNqUQ&oe=6455F96C",
@@ -888,6 +930,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=7577810",
             "credits": "camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=7577810",
@@ -909,6 +952,7 @@
             "logo": "https://www.norrarydscamping.se/_data/VFS_1ab7fdc2d1d5fdc95d4fd9dfefd00921.jpg",
             "credits": "norrarydscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.norrarydscamping.se/_data/VFS_1ab7fdc2d1d5fdc95d4fd9dfefd00921.jpg",
@@ -930,6 +974,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/196732148_4136766789696062_100920277593236158_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_ohc=LyHHncjGH98AX9YnWmp&_nc_oc=AQnqz-7T2RsW3nmEfqSQcKtz02k1DVP81UJs2oRx98WmxkhcXSAx79Sd8sehLZk-_vNSFRDoiuJIp8K9n2qYMytg&_nc_ht=scontent-cph2-1.xx&oh=00_AfCSWa5BhQzPbMYZwrRbaS88xZkW5AOJ2kS-FjAzbsWrEA&oe=64778E93",
             "credits": "facebook hemsida: Linneryds Camping",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/196732148_4136766789696062_100920277593236158_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_ohc=LyHHncjGH98AX9YnWmp&_nc_oc=AQnqz-7T2RsW3nmEfqSQcKtz02k1DVP81UJs2oRx98WmxkhcXSAx79Sd8sehLZk-_vNSFRDoiuJIp8K9n2qYMytg&_nc_ht=scontent-cph2-1.xx&oh=00_AfCSWa5BhQzPbMYZwrRbaS88xZkW5AOJ2kS-FjAzbsWrEA&oe=64778E93",
@@ -951,6 +996,7 @@
             "logo": "https://www.orrefors-camping.se/uploads/3/1/2/0/31206881/img-0065_3.jpg",
             "credits": "orrefors-camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.orrefors-camping.se/uploads/3/1/2/0/31206881/img-0065_3.jpg",
@@ -972,6 +1018,7 @@
             "logo": "https://glasriket.se/wp-content/uploads/2021/05/torestorp-camping5-1100x600.jpg",
             "credits": "glasriket.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://glasriket.se/wp-content/uploads/2021/05/torestorp-camping5-1100x600.jpg",
@@ -993,6 +1040,7 @@
             "logo": "https://dst15js82dk7j.cloudfront.net/163547/73036534-SwVoo.jpg",
             "credits": "gvildmarkscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar"],
 			"images": [
 				{
 					"url": "https://dst15js82dk7j.cloudfront.net/163547/73036534-SwVoo.jpg",
@@ -1014,6 +1062,7 @@
             "logo": "https://static.wixstatic.com/media/505776_9408c4d537e4442b8c458dcac2658d00~mv2.jpg/v1/fill/w_822,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/505776_9408c4d537e4442b8c458dcac2658d00~mv2.jpg",
             "credits": "abrahamscamp.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Ved tillgänglig"],
 			"images": [
 				{
 					"url": "https://static.wixstatic.com/media/505776_9408c4d537e4442b8c458dcac2658d00~mv2.jpg/v1/fill/w_822,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/505776_9408c4d537e4442b8c458dcac2658d00~mv2.jpg",
@@ -1036,6 +1085,7 @@
             "logo": "https://www.bodasand.se/media/2556/img_9196.jpg?anchor=center&mode=crop&width=692&height=446&rnd=132146673450000000",
             "credits": "bodasand.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.bodasand.se/media/2556/img_9196.jpg?anchor=center&mode=crop&width=692&height=446&rnd=132146673450000000",
@@ -1057,6 +1107,7 @@
             "logo": "https://www.sandvikscamping.se/wordpress/wp-content/uploads/2018/03/galleri-01.jpg",
             "credits": "sandvikscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.sandvikscamping.se/wordpress/wp-content/uploads/2018/03/galleri-01.jpg",
@@ -1078,6 +1129,7 @@
             "logo": "https://stfturist-lajka.imgix.net/v1/image/citybreak/7609148?w=800&auto=format",
             "credits": "svenskaturistforeningen.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Tvättmaskiner", "Torktumlare", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://stfturist-lajka.imgix.net/v1/image/citybreak/7609148?w=800&auto=format",
@@ -1099,6 +1151,7 @@
             "logo": "https://static.wixstatic.com/media/abd920_80076f7f08fe416199dbe945a557ea44~mv2_d_4608_3456_s_4_2.jpg/v1/fill/w_649,h_408,q_85,usm_0.66_1.00_0.01/abd920_80076f7f08fe416199dbe945a557ea44~mv2_d_4608_3456_s_4_2.jpg",
             "credits": "drottningoda.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare"],
 			"images": [
 				{
 					"url": "https://static.wixstatic.com/media/abd920_80076f7f08fe416199dbe945a557ea44~mv2_d_4608_3456_s_4_2.jpg/v1/fill/w_649,h_408,q_85,usm_0.66_1.00_0.01/abd920_80076f7f08fe416199dbe945a557ea44~mv2_d_4608_3456_s_4_2.jpg",
@@ -1120,6 +1173,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/167210149_1350040342061930_6053044778789065281_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=nprKGbH0uTQAX_oZnen&_nc_ht=scontent-cph2-1.xx&oh=00_AfBx0z9lxDhx3q-5Q7hzbtMWq4-fli1gSUSvZstpcWnVww&oe=64777AC9",
             "credits": "facebook hemsida: Ventlinge Ställplats",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/167210149_1350040342061930_6053044778789065281_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=nprKGbH0uTQAX_oZnen&_nc_ht=scontent-cph2-1.xx&oh=00_AfBx0z9lxDhx3q-5Q7hzbtMWq4-fli1gSUSvZstpcWnVww&oe=64777AC9",
@@ -1141,6 +1195,7 @@
             "logo": "https://visitoland.com/wp-content/uploads/2012/12/stenasa-camping-husbil.jpg",
             "credits": "visitoland.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://visitoland.com/wp-content/uploads/2012/12/stenasa-camping-husbil.jpg",
@@ -1162,6 +1217,7 @@
             "logo": "https://olandscampingresort.se/wp-content/uploads/2022/03/Oland-Camping-Resort-Homepic_3.jpg",
             "credits": "olandscampingresort.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://olandscampingresort.se/wp-content/uploads/2022/03/Oland-Camping-Resort-Homepic_3.jpg",
@@ -1183,6 +1239,7 @@
             "logo": "https://www.hagapark.se/wp-content/uploads/2021/12/haga-park-camping-galleri-bild-3.jpg",
             "credits": "hagapark.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.hagapark.se/wp-content/uploads/2021/12/haga-park-camping-galleri-bild-3.jpg",
@@ -1204,6 +1261,7 @@
             "logo": "https://www.eriksorecamping.se/wp-content/uploads/2016/03/angen2-768x576.jpg",
             "credits": "eriksorecamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.eriksorecamping.se/wp-content/uploads/2016/03/angen2-768x576.jpg",
@@ -1225,6 +1283,7 @@
             "logo": "https://www.kcsaxnas.se/media/bilder/barnen/saxnas_camping_1_l.jpg?width=750&height=500&mode=crop",
             "credits": "kcsaxnas.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.kcsaxnas.se/media/bilder/barnen/saxnas_camping_1_l.jpg?width=750&height=500&mode=crop",
@@ -1246,6 +1305,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=6969282",
             "credits": "oland.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=6969282",
@@ -1267,6 +1327,7 @@
             "logo": "https://borgholmscampingar.se/wp-content/uploads/2022/03/stugby-kapelludden-600x400-1.png",
             "credits": "borgholmscampingar.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://borgholmscampingar.se/wp-content/uploads/2022/03/stugby-kapelludden-600x400-1.png",
@@ -1288,6 +1349,7 @@
             "logo": "https://borgholmscampingar.se/wp-content/uploads/2022/03/kopingbaden-aktiviteter-1.jpg",
             "credits": "borgholmscampingar.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://borgholmscampingar.se/wp-content/uploads/2022/03/kopingbaden-aktiviteter-1.jpg",
@@ -1309,6 +1371,7 @@
             "logo": "https://borgholmscampingar.se/wp-content/uploads/2022/03/gronhag_camping_vag_mot_havet-1.jpg",
             "credits": "borgholmscampingar.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://borgholmscampingar.se/wp-content/uploads/2022/03/gronhag_camping_vag_mot_havet-1.jpg",
@@ -1330,6 +1393,7 @@
             "logo": "https://grondalscamping.se/wp-content/uploads/2021/10/Utsikten-ute1-1024x682.jpeg",
             "credits": "grondalscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://grondalscamping.se/wp-content/uploads/2021/10/Utsikten-ute1-1024x682.jpeg",
@@ -1351,6 +1415,7 @@
             "logo": "https://borgholmscampingar.se/wp-content/uploads/2022/10/klinta-campingvy-1024x768.jpg",
             "credits": "borgholmscampingar.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://borgholmscampingar.se/wp-content/uploads/2022/10/klinta-campingvy-1024x768.jpg",
@@ -1372,6 +1437,7 @@
             "logo": "https://images.citybreakcdn.com/image.aspx?ImageId=7262704",
             "credits": "camping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://images.citybreakcdn.com/image.aspx?ImageId=7262704",
@@ -1393,6 +1459,7 @@
             "logo": "https://lundegard.se/wp-content/uploads/2021/03/camping-bild1.jpg",
             "credits": "lundegard.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://lundegard.se/wp-content/uploads/2021/03/camping-bild1.jpg",
@@ -1414,6 +1481,7 @@
             "logo": "https://sandbybadetscamping.se/wp-content/uploads/2020/11/cid_95e7866e-5a05-47fb-ada9-600e769fe1e6@namprd03_prod_outlook-1280x960.jpg",
             "credits": "sandbybadetscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://sandbybadetscamping.se/wp-content/uploads/2020/11/cid_95e7866e-5a05-47fb-ada9-600e769fe1e6@namprd03_prod_outlook-1280x960.jpg",
@@ -1435,6 +1503,7 @@
             "logo": "https://sonjascamping.se/wp-content/uploads/2022/11/IMG04319_redigerad-1.jpg",
             "credits": "sonjascamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://sonjascamping.se/wp-content/uploads/2022/11/IMG04319_redigerad-1.jpg",
@@ -1456,6 +1525,7 @@
             "logo": "https://neptunicamping.se/wp-content/uploads/2020/03/Oland-Cykla-AlexanderHall2017-24-1024x683.jpg",
             "credits": "neptunicamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://neptunicamping.se/wp-content/uploads/2020/03/Oland-Cykla-AlexanderHall2017-24-1024x683.jpg",
@@ -1477,6 +1547,7 @@
             "logo": "https://www.bodagarden.nu/wp-content/uploads/2021/05/30072020-DSC052882-1180x1180.jpg",
             "credits": "bodagarden.nu",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.bodagarden.nu/wp-content/uploads/2021/05/30072020-DSC052882-1180x1180.jpg",
@@ -1498,6 +1569,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/33869018_1946798688684702_445755732025933824_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IDpRZTLV0HEAX9LfECQ&_nc_ht=scontent-cph2-1.xx&oh=00_AfACyvGHdpmFUZ_LB2JL4Fx_p0zUQolkjRnjtfFoTLzhOg&oe=647797DB",
             "credits": "facebook hemsida: Bödabaden",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/33869018_1946798688684702_445755732025933824_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IDpRZTLV0HEAX9LfECQ&_nc_ht=scontent-cph2-1.xx&oh=00_AfACyvGHdpmFUZ_LB2JL4Fx_p0zUQolkjRnjtfFoTLzhOg&oe=647797DB",
@@ -1519,6 +1591,7 @@
             "logo": "https://www.bodagarden.nu/wp-content/uploads/2021/05/30072020-DSC052882-1180x1180.jpg",
             "credits": "bodagarden.nu",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.bodagarden.nu/wp-content/uploads/2021/05/30072020-DSC052882-1180x1180.jpg",
@@ -1540,6 +1613,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/42477084_530044020776468_7766506219379884032_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rIizjFoet6YAX9uyvwJ&_nc_ht=scontent-cph2-1.xx&oh=00_AfCcSWkTm4M8B3I8epwI-HhJ05GVC-FrSNjP03OFegTJWA&oe=6477AA5D",
             "credits": "facebook hemsida: Böda Station",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/42477084_530044020776468_7766506219379884032_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rIizjFoet6YAX9uyvwJ&_nc_ht=scontent-cph2-1.xx&oh=00_AfCcSWkTm4M8B3I8epwI-HhJ05GVC-FrSNjP03OFegTJWA&oe=6477AA5D",
@@ -1561,6 +1635,7 @@
             "logo": "https://visitoland.com/wp-content/uploads/2012/11/boda-sand-karleksnastet.jpg",
             "credits": "visitoland.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://visitoland.com/wp-content/uploads/2012/11/boda-sand-karleksnastet.jpg",
@@ -1582,6 +1657,7 @@
             "logo": "https://visitoland.com/wp-content/uploads/2012/12/tokenas-camping-camping.jpg",
             "credits": "visitoland.com",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://visitoland.com/wp-content/uploads/2012/12/tokenas-camping-camping.jpg",
@@ -1603,6 +1679,7 @@
             "logo": "https://bodariviera.se/bodariviera/wp-content/uploads/2017/06/boda_riviera_camping_havet-300x225.jpg",
             "credits": "bodariviera.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://bodariviera.se/bodariviera/wp-content/uploads/2017/06/boda_riviera_camping_havet-300x225.jpg",
@@ -1624,6 +1701,7 @@
             "logo": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/123403022_1490666477790052_8755051248768906622_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=YSRElgpLHoMAX-7u99L&_nc_ht=scontent-cph2-1.xx&oh=00_AfDyJCrhOhU9DO3NN9Wwnb160t0F-aTGdkKq_IbqOeJQBw&oe=6477B4E0",
             "credits": "facebook hemsida: Böda Hamns Camping",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/123403022_1490666477790052_8755051248768906622_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=YSRElgpLHoMAX-7u99L&_nc_ht=scontent-cph2-1.xx&oh=00_AfDyJCrhOhU9DO3NN9Wwnb160t0F-aTGdkKq_IbqOeJQBw&oe=6477B4E0",
@@ -1645,6 +1723,7 @@
             "logo": "https://djupvikscamping.se/____impro/1/onewebmedia/016.JPG?etag=%22W%2F%22%20%22289546-539843fd%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=328%2B246&extract=46%2B30%2B282%2B185&quality=85",
             "credits": "djupvikscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Ved tillgänglig"],
 			"images": [
 				{
 					"url": "https://djupvikscamping.se/____impro/1/onewebmedia/016.JPG?etag=%22W%2F%22%20%22289546-539843fd%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=328%2B246&extract=46%2B30%2B282%2B185&quality=85",
@@ -1666,6 +1745,7 @@
             "logo": "https://www.wikegards.se/media/ObjectType/8_dsc_0195.jpg",
             "credits": "wikegards.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.wikegards.se/media/ObjectType/8_dsc_0195.jpg",
@@ -1687,6 +1767,7 @@
             "logo": "https://www.mollstorpscamping.se/media/ObjectType/1_074.jpg?width=600&height=400&mode=crop",
             "credits": "mollstorpscamping.se",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
+			"utrust": ["Wi-fi", "Bord och bänkar", "Tvättmaskiner", "Torktumlare", "Ved tillgänglig", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
 			"images": [
 				{
 					"url": "https://www.mollstorpscamping.se/media/ObjectType/1_074.jpg?width=600&height=400&mode=crop",
