@@ -112,11 +112,11 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         pElement.classList.add("nameElement");
     
         let pElement2 = document.createElement("p");
-        pElement2.innerText = "Betyg: " + detailElem[i].rating;
+        pElement2.innerText = "Betyg: " + detailElem[i].rating+ " av 5";
         pElement2.classList.add("ratingElement");
     
         let pElement3 = document.createElement("p");
-        pElement3.innerText = "Prisnivå: " + detailElem[i].price_range;
+        pElement3.innerText = "Prisnivå: " + detailElem[i].price_range+ " SEK";
         pElement3.classList.add("priceRangeElement");
     
         let pElement4 = document.createElement("p");

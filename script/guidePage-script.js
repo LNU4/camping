@@ -17,6 +17,9 @@ function init() {
   let restaurantButton = document.getElementsByClassName("button restauranger")[0];
   restaurantButton.addEventListener("click", showRestaurant);
 
+  let EquipmentButton = document.getElementsByClassName("button utrustningFaciliteter")[0]; 
+  EquipmentButton.addEventListener("click", showEquipments); 
+
   resultElem = document.getElementsByClassName("body-result-box")[0];
 
   showinfo();
@@ -70,11 +73,11 @@ function info(JSONtext) {
   pElement.classList.add("guideNameElement");
 
   let pElement2 = document.createElement("p");
-  pElement2.innerText = "Betyg: " + detailElem.rating;
+  pElement2.innerText = "Betyg: " + detailElem.rating + " av 5";
   pElement2.classList.add("guideRatingElement");
 
   let pElement3 = document.createElement("p");
-  pElement3.innerText = "Prisnivå: " + detailElem.price_range;
+  pElement3.innerText = "Prisnivå: " + detailElem.price_range + " SEK";
   pElement3.classList.add("guidePriceRangeElement");
 
   let pElement4 = document.createElement("p");
@@ -125,7 +128,11 @@ function showActivity() {
         pElement3.innerText = "min age: " + activityElem[i].min_age;
         pElement3.classList.add("activity-Element");
 
-        activityContainer.append(pElement, pElement1, pElement2, pElement3);
+        let pElement4 = document.createElement("p");
+        pElement4.innerText = "Betyg: " + activityElem[i].rating;
+        pElement4.classList.add("activity-Element");
+
+        activityContainer.append(pElement, pElement1, pElement2, pElement3, pElement4);
         resultElem.append(activityContainer);
 
       }
@@ -192,24 +199,7 @@ function imgUrlCall() {
       }
     })
     .then(imgData => {
-      /*let imgDataElement = imgData.camping;
-      let nameElements = document.querySelectorAll(".filterElemenDiv p:nth-of-type(1)");
-
-      for (let i = 0; i < nameElements.length; i++) {
-        let elemName = nameElements[i].textContent;
-        for (let j = 0; j < imgDataElement.length; j++) {
-          let imgDataName = imgDataElement[j].id;
-          if (elemName == imgDataName) {
-            let divHost = document.getElementsByClassName("filterElemenDiv")[i];
-
-            let imgElem = document.createElement("img"); // Issues with the current code as images are not showing on certain elements meanwhile 2-3 on others 
-            imgElem.src = imgDataElement[j].logo;
-            divHost.appendChild(imgElem);
-            resultatElem.append(divHost);
-            break;
-          }
-        }
-      }*/
+    
       let res = document.getElementsByClassName("largeImg")[0];
 
       let elem = res;
@@ -298,4 +288,46 @@ function initMap(camping) {
     map: map,
     title: camping.name,
   });
+}
+
+function showEquipments() {
+  let url = "data/imageforplaces.json";
+  resultElem.innerHTML = "";
+  fetch(url)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Den begärda resursen finns inte.");
+      }
+    })
+    .then(data => {
+      
+    
+      let equipmentData = data.camping;
+
+      for (let i = 0; i < equipmentData.length; i++) {
+        if (equipmentData[i].id === id) {
+          let activityContainer = document.createElement("div");
+          activityContainer.classList.add("activity-container");
+
+          let pElement = document.createElement("p");
+          pElement.innerText = equipmentData[i].facili;
+          pElement.classList.add("activity-Element");
+
+          let pElement1 = document.createElement("p");
+          pElement1.innerText = equipmentData[i].utrust;
+          pElement1.classList.add("activity-Element");
+
+          activityContainer.append(pElement, pElement1);
+          resultElem.append(activityContainer);
+        }
+      }
+
+  
+    })
+
+    .catch(error => {
+      console.error("Det finns problem med kommunikationen", error);
+    });
 }
