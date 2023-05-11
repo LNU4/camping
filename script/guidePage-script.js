@@ -146,7 +146,7 @@ function showActivity() {
 
 function showWeather() {
 
-  let url = "https://api.open-meteo.com/v1/forecast?latitude=" + placeLat + "&longitude=" + placeLng + "&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,rain_sum,showers_sum,snowfall_sum,windspeed_10m_max&forecast_days=16&timezone=Europe%2FBerlin";
+  let url = "https://api.open-meteo.com/v1/forecast?latitude=" + placeLat + "&longitude=" + placeLng + "&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,rain_sum,showers_sum,snowfall_sum,windspeed_10m_max&forecast_days=7&timezone=Europe%2FBerlin";
   resultElem.innerHTML = "";
   fetch(url)
     .then(response => {
@@ -170,8 +170,8 @@ function showWeather() {
         let pElement = document.createElement("p");
         pElement.innerText = timeResult[i] + " ";
         pElement.innerText += weatherResult[i] + " ";
-        pElement.innerText += "Temp max: " + maxTempResult[i] + " ";
-        pElement.innerText += "Temp min: " + minTempResult[i];
+        pElement.innerText += "Högsta temperatur  : " + maxTempResult[i] + " ";
+        pElement.innerText += "Lägsta temperatur: " + minTempResult[i];
         pElement.classList.add("activity-Element");
 
         activityContainer.append(pElement);
