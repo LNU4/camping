@@ -112,7 +112,8 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         pElement.classList.add("nameElement");
     
         let pElement2 = document.createElement("p");
-        pElement2.innerText = "Betyg: " + detailElem[i].rating+ " av 5";
+        let rating = parseFloat(detailElem[i].rating); 
+        pElement2.innerText = "Betyg: " + convertRating(rating);
         pElement2.classList.add("ratingElement");
     
         let pElement3 = document.createElement("p");
@@ -144,6 +145,23 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
     
 
+}
+
+function convertRating(rating) {
+  let ratingSymbols = ["\u2606", "\u00BD", "\u2605"]; // tom, halfstar, star
+  let ratingValue = "";
+
+  for (let i = 1; i <= 5; i++) {
+    if (rating >= i) {
+      ratingValue += ratingSymbols[2]; // 
+    } else if (rating >= i - 0.5) {
+      ratingValue += ratingSymbols[1]; // 
+    } else {
+      ratingValue += ratingSymbols[0]; // 
+    }
+  }
+
+  return ratingValue;
 }
 
 /*function info(JSONtext) {
