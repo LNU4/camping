@@ -113,7 +113,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
     
         let pElement2 = document.createElement("p");
         let rating = parseFloat(detailElem[i].rating); 
-        pElement2.innerText = "Betyg: " + convertRating(rating);
+        pElement2.innerHTML = convertRating(rating);
         pElement2.classList.add("ratingElement");
     
         let pElement3 = document.createElement("p");
@@ -125,7 +125,8 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         pElement4.classList.add("textElement");
     
         let logo = document.createElement("img");
-    
+        logo.classList.add("logoElement");
+
         let linkElement = document.createElement("h4");
         linkElement.innerText = " Se mer "
         linkElement.classList.add("linkButton");
@@ -144,24 +145,31 @@ function showFilterElem(selectedFliterOption, btnSelector) {
     });
 
     
-
+    
 }
 
 function convertRating(rating) {
-  let ratingSymbols = ["\u2606", "\u00BD", "\u2605"]; // tom, halfstar, star
-  let ratingValue = "";
+  let starImg = "../SVGassets/fullStar.svg"; 
+  let halfStarImg = "../SVGassets/halfStar.svg"; 
+  let emptyStarImg = "../SVGassets/noStar.svg"; 
+  let ratingImgs = [];
 
   for (let i = 1; i <= 5; i++) {
     if (rating >= i) {
-      ratingValue += ratingSymbols[2]; // 
+      ratingImgs.push(starImg); 
     } else if (rating >= i - 0.5) {
-      ratingValue += ratingSymbols[1]; // 
+      ratingImgs.push(halfStarImg); 
     } else {
-      ratingValue += ratingSymbols[0]; // 
+      ratingImgs.push(emptyStarImg); 
     }
   }
 
-  return ratingValue;
+  let ratingHtml = "";
+  for (let i = 0; i < ratingImgs.length; i++) {
+    ratingHtml += '<img src="' + ratingImgs[i] + '" class="ratingStar" alt "starRating">';
+  }
+
+  return ratingHtml;
 }
 
 /*function info(JSONtext) {
@@ -229,7 +237,7 @@ function imgUrlCall() {
       for (let i = 0; i < res.length; i++) {
         let elem = res[i];
         let cid = elem.getAttribute("cid");
-        elem.getElementsByTagName("img")[0].src = findIn(imgData.camping, "id", cid).logo;
+        elem.getElementsByClassName("logoElement")[0].src = findIn(imgData.camping, "id", cid).logo;
       }
     })
     .catch(error => {

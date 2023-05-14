@@ -227,7 +227,7 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 */
 
-.campingRes img {
+.logoElement {
     grid-area: imgElement;
     width: 400px;
     height: 300px;
@@ -271,8 +271,18 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 .ratingElement {
     grid-area: ratingElement;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
-
+.ratingStar {
+    max-height: 16px;
+    max-width: 16px;
+    margin: 0px;
+    padding: 0px;
+}
 .priceRangeElement {
     grid-area: priceRangeElement;
 }
