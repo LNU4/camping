@@ -72,20 +72,27 @@ function info(JSONtext) {
   pElement.innerText = detailElem.name;
   pElement.classList.add("guideNameElement");
 
-  let pElement2 = document.createElement("p");
-  pElement2.innerText = "Betyg: " + detailElem.rating + " av 5";
+  let pElement2 = document.createElement("div");
+  let rating = parseFloat(detailElem.rating); 
+  pElement2.innerHTML = convertRating(rating);
   pElement2.classList.add("guideRatingElement");
 
   let pElement3 = document.createElement("p");
   pElement3.innerText = "Prisnivå: " + detailElem.price_range + " SEK";
   pElement3.classList.add("guidePriceRangeElement");
 
+  let contactElement = document.createElement("div"); 
+  contactElement.classList.add("contactElement")
+  let phoneNumberelement = document.createElement("p"); 
+  phoneNumberelement.innerText = detailElem.phone_number; 
+  contactElement.append(phoneNumberelement); 
+
   let pElement4 = document.createElement("p");
   pElement4.innerText = detailElem.text;
   pElement4.classList.add("guideTextElement");
 
 
-  container.append(pElement, pElement2, pElement3, pElement4);
+  container.append(pElement, pElement2, pElement3, contactElement, pElement4);
   descBox.append(container);
 
   imgUrlCall();
@@ -120,19 +127,16 @@ function showActivity() {
         pElement1.innerText = activityElem[i].description;
         pElement1.classList.add("activity-Element");
 
-        let pElement2 = document.createElement("p");
-        pElement2.innerText = activityElem[i].child_support;
-        pElement2.classList.add("activity-Element");
-
         let pElement3 = document.createElement("p");
         pElement3.innerText = "min age: " + activityElem[i].min_age;
         pElement3.classList.add("activity-Element");
 
-        let pElement4 = document.createElement("p");
-        pElement4.innerText = "Betyg: " + activityElem[i].rating;
-        pElement4.classList.add("activity-Element");
+        let pElement4 = document.createElement("div");
+        let rating = parseFloat(activityElem[i].rating); 
+        pElement4.innerHTML = convertRating(rating);
+        pElement4.classList.add("ratingElement");
 
-        activityContainer.append(pElement, pElement1, pElement2, pElement3, pElement4);
+        activityContainer.append(pElement1, pElement, pElement3, pElement4);
         resultElem.append(activityContainer);
 
       }
@@ -308,26 +312,128 @@ function showEquipments() {
 
       for (let i = 0; i < equipmentData.length; i++) {
         if (equipmentData[i].id === id) {
-          let activityContainer = document.createElement("div");
-          activityContainer.classList.add("activity-container");
+          let facilityContainer = document.createElement("div");
+          facilityContainer.classList.add("equipments-container");
 
-          let pElement = document.createElement("p");
-          pElement.innerText = equipmentData[i].facili;
-          pElement.classList.add("activity-Element");
+          let equipmentsContainer = document.createElement("div");
+          equipmentsContainer.classList.add("equipments-container");
 
-          let pElement1 = document.createElement("p");
-          pElement1.innerText = equipmentData[i].utrust;
-          pElement1.classList.add("activity-Element");
+          let facilities = equipmentData[i].facili;
+          let equipmentList = equipmentData[i].utrust;
 
-          activityContainer.append(pElement, pElement1);
-          resultElem.append(activityContainer);
+         
+          for (let j = 0; j < facilities.length; j++) {
+            let facility = facilities[j];
+            let facilityImage = getImageForFacility(facility);
+
+            let facilityElement = document.createElement("img");
+            facilityElement.src = facilityImage;
+            facilityElement.alt = facility;
+            facilityElement.classList.add("equipments-Element");
+
+            facilityContainer.appendChild(facilityElement);
+          }
+
+      
+          for (let k = 0; k < equipmentList.length; k++) {
+            let equipment = equipmentList[k];
+            let equipmentImage = getImageForEquipment(equipment);
+
+            let equipmentElement = document.createElement("img");
+            equipmentElement.src = equipmentImage;
+            equipmentElement.alt = equipment;
+            equipmentElement.classList.add("equipments-Element");
+
+            equipmentsContainer.appendChild(equipmentElement);
+          }
+
+          resultElem.appendChild(facilityContainer);
+          resultElem.appendChild(equipmentsContainer);
         }
       }
-
-  
     })
 
     .catch(error => {
       console.error("Det finns problem med kommunikationen", error);
     });
 }
+function getImageForFacility(facility) {
+
+  if (facility === "Servicehus") {
+    return "../utrus_FaciAssets/shower-icon.svg";
+  } else if (facility === "Servicebutik") {
+    return "../utrus_FaciAssets/groceries-icon.svg";
+  } else if (facility === "Kök & Tvättplats") {
+    return "../utrus_FaciAssets/kitchen-stove-icon.svg";
+  } else if (facility === "Toaletter") {
+    return "../utrus_FaciAssets/toilet-icon.svg";
+  } else if (facility === "Vattentappar") {
+    return "../utrus_FaciAssets/hand-wash-icon.svg";
+  }
+  else if (facility === "Sophus") {
+    return "../utrus_FaciAssets/recycle-bin-icon.svg";
+  }
+  else if (facility === "Duschar") {
+    return "../utrus_FaciAssets/shower-icon.svg";
+  }
+  else if (facility === "Tvättstuga") {
+    return "../utrus_FaciAssets/dishwasher-icon.svg";
+  }
+  
+
+  
+}
+
+function getImageForEquipment(equipment) {
+
+  if (equipment === "Wi-fi") {
+    return "../utrus_FaciAssets/wifi-icon.svg";
+  } else if (equipment === "Bord och bänkar") {
+    return "../utrus_FaciAssets/tea-hot-icon.svg";
+  } else if (equipment === "Tvättmaskiner") {
+    return "../utrus_FaciAssets/clothes-washing-icon.svg";
+  } else if (equipment === "Tvättmaskiner") {
+    return "../utrus_FaciAssets/clothes-washing-icon.svg";
+  }
+  else if (equipment === "Elektricitet till husvagn och husbil") {
+    return "../utrus_FaciAssets/electric-vehicle-charging-station-icon.svg";
+  }
+  else if (equipment === "Tvättmaskiner") {
+    return "../utrus_FaciAssets/clothes-washing-icon.svg";
+  }
+  else if (equipment === "Förvaringsskåp") {
+    return "../utrus_FaciAssets/closet-wardrobe-icon.svg";
+  }
+  else if (equipment === "Torktumlare") {
+    return "../utrus_FaciAssets/air-drying-icon.svg";
+  }
+  else if (equipment === "Ved tillgänglig") {
+    return "../utrus_FaciAssets/bonefire-icon.svg";
+  }
+
+   
+}
+function convertRating(rating) {
+  let starImg = "../SVGassets/fullStar.svg"; 
+  let halfStarImg = "../SVGassets/halfStar.svg"; 
+  let emptyStarImg = "../SVGassets/noStar.svg"; 
+  let ratingImgs = [];
+
+  for (let i = 1; i <= 5; i++) {
+    if (rating >= i) {
+      ratingImgs.push(starImg); 
+    } else if (rating >= i - 0.5) {
+      ratingImgs.push(halfStarImg); 
+    } else {
+      ratingImgs.push(emptyStarImg); 
+    }
+  }
+
+  let ratingHtml = "";
+  for (let i = 0; i < ratingImgs.length; i++) {
+    ratingHtml += '<img src="' + ratingImgs[i] + '" class="ratingStar" alt "starRating">';
+  }
+
+  return ratingHtml;
+}
+

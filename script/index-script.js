@@ -103,15 +103,12 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         container.setAttribute("cid", detailElem[i].id);
     
         let pElement0 = document.createElement("p");
-        /*
-        pElement0.innerText = detailElem[i].id;
-        pElement0.classList.add("idElement");
-        */
+ 
         let pElement = document.createElement("h3");
         pElement.innerText = detailElem[i].name;
         pElement.classList.add("nameElement");
     
-        let pElement2 = document.createElement("p");
+        let pElement2 = document.createElement("div");
         let rating = parseFloat(detailElem[i].rating); 
         pElement2.innerHTML = convertRating(rating);
         pElement2.classList.add("ratingElement");
@@ -132,11 +129,11 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         linkElement.classList.add("linkButton");
         linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));
     
-        /* let childDiv = document.createElement("div");*/
+        
         container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
         resultatElem.append(container);
         imgUrlCall();
-        // container.classList.add("filterElemenDiv");
+        
       }
 
     })
@@ -171,54 +168,6 @@ function convertRating(rating) {
 
   return ratingHtml;
 }
-
-/*function info(JSONtext) {
-    let detailElem = JSONtext.payload;
-  
-  for (let i = 0; i < detailElem.length; i++) {
-    let container = document.createElement("div");
-    container.classList.add("campingRes");
-
-    container.setAttribute("cid", detailElem[i].id);
-
-    let pElement0 = document.createElement("p");
-    /*
-    pElement0.innerText = detailElem[i].id;
-    pElement0.classList.add("idElement");
-    */
-   /*
-    let pElement = document.createElement("h3");
-    pElement.innerText = detailElem[i].name;
-    pElement.classList.add("nameElement");
-
-    let pElement2 = document.createElement("p");
-    pElement2.innerText = "Betyg: " + detailElem[i].rating;
-    pElement2.classList.add("ratingElement");
-
-    let pElement3 = document.createElement("p");
-    pElement3.innerText = "Prisnivå: " + detailElem[i].price_range;
-    pElement3.classList.add("priceRangeElement");
-
-    let pElement4 = document.createElement("p");
-    pElement4.innerText = detailElem[i].text;
-    pElement4.classList.add("textElement");
-
-    let logo = document.createElement("img");
-
-    let linkElement = document.createElement("h4");
-    linkElement.innerText = " Se mer "
-    linkElement.classList.add("linkButton");
-    linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));
-
-    /* let childDiv = document.createElement("div");*/
-    /*
-    container.append(pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
-    resultatElem.append(container);
-    
-    // container.classList.add("filterElemenDiv");
-  }
-  imgUrlCall();
-} */
 
 function imgUrlCall() {
   let imgUrl = "data/imageforplaces.json";

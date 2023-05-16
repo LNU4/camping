@@ -608,6 +608,23 @@ footer {
     border: 2px solid #7FB77E;
     border: 2px solid #7FB77E;
 }
+.equipments-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+    flex: 1 1 0px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 5px;
+}
+.equipments-container img {
+    width: 40px;
+    height: auto;
+ 
+}
 
 #omOss {
     display: grid;
