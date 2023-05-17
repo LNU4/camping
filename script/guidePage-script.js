@@ -58,11 +58,11 @@ function info(JSONtext) {
   let descBox = document.getElementsByClassName("body-descr-box")[0];
 
   let detailElem = JSON.parse(JSONtext).payload[0];
-  console.log(detailElem);
+ 
 
   placeLat = detailElem.lat;
   placeLng = detailElem.lng;
-  console.log(placeLat, placeLng)
+ 
   let container = document.createElement("div");
   container.classList.add("guidePageCampingRes");
 
@@ -112,9 +112,9 @@ function showActivity() {
       }
     })
     .then(data => {
-      console.log("works")
+     
       let activityElem = data.payload;
-      console.log(activityElem);
+     
       for (let i = 0; i < activityElem.length; i++) {
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
@@ -208,7 +208,7 @@ function imgUrlCall() {
 
       let elem = res;
       let cid = elem.getAttribute("cid");
-      console.log(cid);
+    
       elem.getElementsByTagName("img")[0].src = findIn(imgData.camping, "id", cid).logo;
 
 
@@ -318,12 +318,13 @@ function showEquipments() {
           let equipmentsContainer = document.createElement("div");
           equipmentsContainer.classList.add("equipments-container");
 
-          let facilities = equipmentData[i].facili;
+          let facilityList = equipmentData[i].facili;
           let equipmentList = equipmentData[i].utrust;
+          console.log(facilityList);
+          console.log(equipmentList);
 
-         
-          for (let j = 0; j < facilities.length; j++) {
-            let facility = facilities[j];
+          for (let j = 0; j < facilityList.length; j++) {
+            let facility = facilityList[j];
             let facilityImage = getImageForFacility(facility);
 
             let facilityElement = document.createElement("img");
@@ -392,10 +393,7 @@ function getImageForEquipment(equipment) {
     return "../utrus_FaciAssets/tea-hot-icon.svg";
   } else if (equipment === "Tvättmaskiner") {
     return "../utrus_FaciAssets/clothes-washing-icon.svg";
-  } else if (equipment === "Tvättmaskiner") {
-    return "../utrus_FaciAssets/clothes-washing-icon.svg";
-  }
-  else if (equipment === "Elektricitet till husvagn och husbil") {
+  } else if (equipment === "Elektricitet till husvagn och husbil") {
     return "../utrus_FaciAssets/electric-vehicle-charging-station-icon.svg";
   }
   else if (equipment === "Tvättmaskiner") {
