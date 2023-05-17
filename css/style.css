@@ -777,9 +777,9 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         padding-right: 100px;
     }
 
-    .campingRes {
+  /*  .campingRes {
         padding: 2px;
-    }
+    } */
 
     .campingRes p {
         line-height: 1.4;
@@ -797,20 +797,38 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
     #mainPage {
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns:1fr 1fr;
         grid-template-rows: max-content 200px max-content max-content max-content auto max-content auto 70px;
         gap: 20px;
         grid-template-areas:
-        "logo"
-        "body-global-nav" 
-        "desc-banner"
-        "body-box-1"
-        "body-box-2"
-        "body-box-3"
-        "body-box-4" 
-        "body-box-5"
-        "footer"
-        "footer";    
+        "logo logo"
+        "body-global-nav body-global-nav" 
+        "desc-banner desc-banner"
+        "body-box-1 body-box-1"
+        "body-box-2 body-box-2"
+        "body-box-3 body-box-3"
+        "body-box-4 body-box-4" 
+        "body-box-5 body-box-5"
+        "footer footer"
+        "footer footer";    
+    }
+
+    .campingRes {
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto max-content max-content max-content max-content;
+        margin: 5px;
+        padding: 2px;
+        grid-template-areas:
+            "imgElement imgElement" 
+            "nameElement nameElement"
+            "linkButton linkButton"
+            "ratingElement ratingElement"
+            "textElement textElement"
+            "pElementFour pElementFour";
     }
 
     .desc-background {
@@ -875,6 +893,12 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         padding: 10px;
         color: black;
     }
+
+    .nameElement{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
@@ -885,44 +909,52 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         border-radius: 10px;
         display: grid;
-        justify-content: center;
-        grid-template-columns:27%;
-        grid-template-rows: auto auto max-content max-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto max-content max-content max-content max-content;
         margin: 5px;
         padding: 2px;
         grid-template-areas:
-            "imgElement"
-            "nameElement"
-            "linkButton"
-            "ratingElement"
-            "textElement"
-            "pElementFour";
+            "imgElement imgElement" 
+            "nameElement nameElement"
+            "linkButton linkButton"
+            "ratingElement ratingElement"
+            "textElement textElement"
+            "pElementFour pElementFour";
     }
 
     .campingRes .logoElement {
         grid-area: imgElement;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 300px;
         height: 200px;
         border: none;
         border-radius: 5px;
         padding: 0px;
         margin: 10px;
-        align-items: center;
-        justify-content: center;
+        width: 300px;
+        height: 200px;
+        margin: 20px;
     }
 
     .campingRes p {
         line-height: 1.4;
     }
  
-    .campingRes img {
+  /*  .campingRes img {
         width: 300px;
         height: 200px;
         margin: 20px;
-    }
+    } */
 
     h2{
          visibility: hidden;
+    }
+
+    h3{
+        font-weight: 200;
+        font-size: small;
     }
 
     .inner-box2 h3{
@@ -992,8 +1024,9 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     }
 
     .filterspecs{
-
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     #filterDropMenu {
@@ -1005,11 +1038,8 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         background: transparent;
         border: 1px solid #ccc;
         border-radius: 6px;
-        position: relative;
         min-width: 20%;
-        z-index: 10;
-        flex-wrap: wrap;
-        margin-left: 90px;
+
     }
 
     .form{
