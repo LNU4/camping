@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 html {
     font-family: Montserrat, sans-serif;
     font-size: 19px;
@@ -50,8 +48,8 @@ h4{
         ". body-box-2 body-box-2 ."
         ". body-box-3 body-box-3 ."
         ". body-box-4 body-box-5 ."
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav";
+        "footer footer footer footer"
+        "footer footer footer footer";
 }
 
 .logo {
@@ -90,7 +88,6 @@ h4{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-
 }
 
 .body-global-nav ul {
@@ -128,7 +125,7 @@ color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #ADCACB;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 10px;
@@ -148,6 +145,7 @@ background-color: #ADCACB;
     justify-content: center;
     background-color: transparent;
     border-radius: 15px;
+    margin-top: -50px;
 }
 
 .inner-box2{
@@ -219,6 +217,17 @@ margin-bottom: 22px;
         "imgElement ratingElement priceRangeElement linkButton"
         "imgElement textElement textElement textElement"
         "imgElement pElementFour pElementFour pElementFour";
+}
+
+.campingRes .logoElement {
+    grid-area: imgElement;
+    width: 460px;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 50px;
+    align-items: center;
 }
 
 /*
@@ -400,7 +409,13 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     text-align: center;
     padding: 10px;
     letter-spacing: 1px;
+    line-height: 1.3;
 }
+
+.body-box-4 p::first-letter {
+    font-size: 200%;
+    color: black;
+  }
 
 .body-box-5 {
     grid-area: body-box-5;
@@ -417,55 +432,48 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     text-align: center;
     padding: 10px;
     letter-spacing: 1px;
+    line-height: 1.3;
 }
 
-.body-supp-nav {
-    grid-area: body-supp-nav;
+.body-box-5 p::first-letter {
+    font-size: 200%;
+    color: black;
+  }
+
+.svg-design-landskap {
+    border-radius: 20px;
+}
+
+#supp-nav-info{
+    grid-area:footer;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    border: none;
-    gap: 20px;
     background-image: url(../SVGassets/wavefooter2.svg);
     background-repeat: no-repeat;
     background-size: cover; 
-    min-height: 300px;
-}
-
-.body-supp-nav div {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    min-height: 300px; 
     padding-left: 50px;
+    justify-content: end;
 }
 
-.body-supp-nav ul{
+
+#supp-nav-info ul {
     list-style-type: none;
+    padding-bottom: 50px;
 
 }
 
-.body-supp-nav li a{
+#supp-nav-info a {
    text-decoration: none;
-
 }
 
-.body-supp-nav li a:hover{
+#supp-nav-info a:hover {
     font-weight: 600;
 }
     
-.body-supp-nav li a:visited{
+#supp-nav-info li a:visited{
     text-decoration: none;
     color: black;
-}
-
-footer {
-    grid-area: footer;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #F7F6DC;
-    padding: 0;
-
 }
 
 #filterPage {
@@ -479,7 +487,7 @@ footer {
         "filter filter-results filter-results filter-results"
         "filter filter-results filter-results filter-results"
         "filter filter-results filter-results filter-results"
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
+        "footer footer footer footer"
         "footer footer footer footer";
 
 }
@@ -507,8 +515,8 @@ footer {
         ". innerGuide innerGuide ."
         ". innerGuide innerGuide ."
         ". innerGuide innerGuide ."
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav";
+        "footer footer footer footer"
+        "footer footer footer footer";
 
 }
 
@@ -637,10 +645,10 @@ footer {
         ". om-oss-img om-oss-img ."
         ". body-mainContent-box body-mainContent-box ."
         ". body-mainContent-box body-mainContent-box ."
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav"
-        "body-supp-nav body-supp-nav body-supp-nav body-supp-nav";
+        "footer footer footer footer"
+        "footer footer footer footer"
+        "footer footer footer footer"
+        "footer footer footer footer";
     }
 
 .body-mainContent-box{
@@ -673,6 +681,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .activity-container {
@@ -725,3 +734,377 @@ footer {
       transform: rotate(1turn);
     }
   }
+
+
+@media (max-width: 800px) {
+
+#mainPage {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: max-content auto max-content max-content max-content auto max-content 70px;
+    gap: 20px;
+    grid-template-areas:
+        ". logo body-global-nav ."
+        ". desc-banner desc-banner ."
+        ". body-box-1 body-box-1 ."
+        ". body-box-2 body-box-2 ."
+        ". body-box-3 body-box-3 ."
+        ". body-box-4 body-box-4 ."
+        ". body-box-5 body-box-5 ."
+        "footer footer footer footer";
+    }
+
+    h2{
+        font-size: large;
+        font-weight: 500;
+    }
+
+    h3{
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .desc-background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ADCACB;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .campingRes {
+        padding: 2px;
+    }
+
+    .campingRes p {
+        line-height: 1.4;
+    }
+ 
+    .campingRes img {
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    #mainPage {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: max-content 200px max-content max-content max-content auto max-content auto 70px;
+        gap: 20px;
+        grid-template-areas:
+        "logo"
+        "body-global-nav" 
+        "desc-banner"
+        "body-box-1"
+        "body-box-2"
+        "body-box-3"
+        "body-box-4" 
+        "body-box-5"
+        "footer"
+        "footer";    
+    }
+
+    .desc-background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ADCACB;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .inner-box2 {
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .landscape {
+        display: flex;
+        
+    }
+
+    .landscape .oland{
+        justify-content: center;
+
+    }
+
+
+    .desc-banner {
+        grid-area: desc-banner;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+
+    .body-global-nav {
+        grid-area: body-global-nav;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+ 
+    .body-global-nav ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0px;
+        flex-wrap: wrap;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .body-global-nav li a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+}
+
+
+@media (max-width: 452px) {
+
+    .campingRes {
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns:27%;
+        grid-template-rows: auto auto max-content max-content;
+        margin: 5px;
+        padding: 2px;
+        grid-template-areas:
+            "imgElement"
+            "nameElement"
+            "linkButton"
+            "ratingElement"
+            "textElement"
+            "pElementFour";
+    }
+
+    .campingRes .logoElement {
+        grid-area: imgElement;
+        width: 300px;
+        height: 200px;
+        border: none;
+        border-radius: 5px;
+        padding: 0px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .campingRes p {
+        line-height: 1.4;
+    }
+ 
+    .campingRes img {
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    h2{
+         visibility: hidden;
+    }
+
+    .inner-box2 h3{
+        margin: 5px;
+    }
+
+    .inner-box2 h4 {
+        padding-top: 30px;
+    }
+
+    .desc-banner {
+        grid-area: desc-banner;
+        visibility: hidden;
+    }
+
+    .body-global-nav {
+        grid-area: body-global-nav;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+ 
+    .body-global-nav ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0px;
+        flex-wrap: wrap;
+        margin-right: 40px;
+        margin-top: 60px;
+    }
+    
+    .body-global-nav li a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+
+    .inner-box2{
+        margin-top: -80px;
+    }
+
+    .landscape {
+        display: flex;
+        max-width: 200px;
+        justify-content: center;
+    }
+
+    .landscape .logoImg{
+        display: flex;
+        justify-content: center;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .landscape {
+        display: flex;
+        max-width: 200px;
+        justify-content: center;
+    }
+
+    .landscape .logoImg{
+        display: flex;
+        justify-content: center;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .filterspecs{
+
+        justify-content: center;
+    }
+
+    #filterDropMenu {
+        width: fit-content;
+        border-radius: 5px;
+        background-color: #F7F6DC;
+        font-size: 20px;
+        padding: 10px 8px 10px 14px;
+        background: transparent;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        position: relative;
+        min-width: 20%;
+        z-index: 10;
+        flex-wrap: wrap;
+        margin-left: 90px;
+    }
+
+    .form{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 390px) {
+
+
+    .campingRes {
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns:37%;
+        grid-template-rows: auto auto max-content max-content;
+        margin: 5px;
+        grid-template-areas:
+            "imgElement"
+            "nameElement"
+            "linkButton"
+            "ratingElement"
+            "textElement"
+            "pElementFour";
+    }
+
+/*
+
+    .landscape {
+        display: flex;
+        max-width: 200px;
+        justify-content: center;
+    }
+
+    .landscape .logoImg{
+        display: flex;
+        justify-content: center;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .filterspecs{
+
+        justify-content: center;
+    }
+
+    #filterDropMenu {
+        width: fit-content;
+        border-radius: 5px;
+        background-color: #F7F6DC;
+        font-size: 20px;
+        padding: 10px 8px 10px 14px;
+        background: transparent;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        position: relative;
+        min-width: 20%;
+        z-index: 10;
+        flex-wrap: wrap;
+        margin-left: 90px;
+    }
+
+    .form{
+        justify-content: center;
+    }
+
+    .campingRes .logoElement {
+        grid-area: imgElement;
+        width: 300px;
+        height: 200px;
+        border: none;
+        border-radius: 5px;
+        padding: 0px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .campingRes {
+        padding: 2px;
+    }
+
+    .campingRes p {
+        line-height: 1.4;
+    }
+ 
+    .campingRes img {
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+    }*/
+
+
+
+}
