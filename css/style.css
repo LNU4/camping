@@ -39,7 +39,7 @@ h4{
 #mainPage {
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content 200px max-content max-content max-content auto max-content 70px;
+    grid-template-rows: max-content 200px max-content max-content max-content max-content 70px;
     gap: 20px;
     grid-template-areas:
         "logo logo body-global-nav body-global-nav"
@@ -48,7 +48,6 @@ h4{
         ". body-box-2 body-box-2 ."
         ". body-box-3 body-box-3 ."
         ". body-box-4 body-box-5 ."
-        "footer footer footer footer"
         "footer footer footer footer";
 }
 
@@ -210,36 +209,22 @@ margin-bottom: 22px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto max-content max-content;
+    grid-template-rows: auto auto max-content max-content max-content;
     margin: 5px;
     grid-template-areas:
         "imgElement nameElement nameElement nameElement"
-        "imgElement ratingElement priceRangeElement linkButton"
+        "imgElement ratingElement priceRangeElement priceRangeElement"
         "imgElement textElement textElement textElement"
-        "imgElement pElementFour pElementFour pElementFour";
+        "imgElement textElement textElement textElement"
+        ". . linkButton linkButton";
 }
 
-.campingRes .logoElement {
-    grid-area: imgElement;
-    width: 460px;
-    height: 300px;
-    border: none;
-    border-radius: 5px;
-    padding: 0px;
-    margin: 50px;
-    align-items: center;
-}
-
-/*
-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-*/
 
 .logoElement {
     grid-area: imgElement;
-    width: 400px;
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
     border: none;
     border-radius: 5px;
     padding: 50px;
@@ -402,6 +387,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     padding: 5px;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -425,6 +411,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     padding: 5px;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -442,6 +429,9 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 .svg-design-landskap {
     border-radius: 20px;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #supp-nav-info{
@@ -734,17 +724,25 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
       transform: rotate(1turn);
     }
   }
+@media (max-width: 1400px) {
+    
+.logoImg {
+    max-width: 250px;
+    max-height: auto;
+}
+
+}
 
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 
 #mainPage {
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-    grid-template-rows: max-content auto max-content max-content max-content auto max-content 70px;
+    grid-template-rows: max-content 200px max-content max-content max-content max-content max-content 70px;
     gap: 20px;
     grid-template-areas:
-        ". logo body-global-nav ."
+        "logo logo body-global-nav body-global-nav"
         ". desc-banner desc-banner ."
         ". body-box-1 body-box-1 ."
         ". body-box-2 body-box-2 ."
@@ -752,251 +750,113 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         ". body-box-4 body-box-4 ."
         ". body-box-5 body-box-5 ."
         "footer footer footer footer";
-    }
+}
+    
 
-    h2{
-        font-size: large;
-        font-weight: 500;
-    }
-
-    h3{
-        font-size: large;
-        font-weight: 400;
-    }
-
-    .desc-background {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #ADCACB;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        padding: 10px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-  
-    .campingRes p {
-        line-height: 1.4;
-    }
- 
-    .campingRes img {
-        width: 300px;
-        height: 200px;
-        margin: 20px;
-    }
+    
+.campingRes {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr; 
+    grid-template-rows: auto auto auto max-content max-content max-content;
+    margin: 5px;
+    grid-template-areas:
+        "nameElement nameElement nameElement nameElement"
+        "ratingElement ratingElement priceRangeElement priceRangeElement"
+        ". imgElement imgElement ."
+        "textElement textElement textElement textElement"
+        "textElement textElement textElement textElement"
+        ".  linkButton linkButton .";
+}
+.nameElement {
+    display: flex;
+    justify-content: center;
+}
+.ratingElement {
+    display: flex;
+    justify-content: center;
+}
+.priceRangeElement {
+    display: flex;
+    justify-content: center;
+}
+.logoElement img{
+    grid-area: imgElement;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: auto;
+    height: auto;
+    border: none;
+    border-radius: 10px;
 }
 
+.linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw; 
+}
+.logoImg {
+    max-width: 200px;
+    max-height: auto;
+}
+
+}
+    
+
+
+@media (max-width: 850px) {
+
+.logoImg {
+    display: flex;
+    max-width: 100px;
+}    
+
+
+.desc-banner {
+    grid-area: desc-banner;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADCACB;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+   
+}
+
+
+}
 
 @media (max-width: 640px) {
-
-    #mainPage {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: max-content max-content max-content max-content max-content auto max-content auto 70px;
-        gap: 10px;
-        grid-template-areas:
-        "logo logo"
-        "body-global-nav body-global-nav" 
-        "desc-banner desc-banner"
-        "body-box-1 body-box-1"
-        "body-box-2 body-box-2"
-        "body-box-3 body-box-3"
-        "body-box-4 body-box-4" 
-        "body-box-5 body-box-5"
-        "footer footer";    
+    .body {
+        font-size: 80%
     }
+    .body-box-2 {
+        font-size: 80%;
 
-    .campingRes {
-        border: none;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        border-radius: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto max-content max-content max-content max-content;
-        margin: 5px;
-        padding: 2px;
-        grid-template-areas:
-            "imgElement imgElement" 
-            "nameElement nameElement"
-            "linkButton linkButton"
-            "ratingElement ratingElement"
-            "textElement textElement"
-            "pElementFour pElementFour";
     }
-
-    .desc-background {
+    .logoImg {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #ADCACB;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        padding: 10px;
-        padding-left: 100px;
-        padding-right: 100px;
+        max-width: 70px;
+        max-height: 70px;
     }
-
-    .inner-box2 {
-        display: flex;
-        background-color: white;
-        border-radius: 10px;
-        justify-content: center;
-    }
-
-    .landscape {
-        display: flex;
-        
-    }
-
-    .landscape .oland{
-        justify-content: center;
-
-    }
-
-
-    .desc-banner {
-        grid-area: desc-banner;
+    #filterSpecsId {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 0px;
-    }
-
-
-    .body-global-nav {
-        grid-area: body-global-nav;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    
-}
-
-
-@media (max-width: 452px) {
-
-    .campingRes {
-        border: none;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        border-radius: 10px;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto auto max-content max-content max-content max-content max-content;
-        margin: 5px;
-        padding: 2px;
-        grid-template-areas:
-            "imgElement imgElement imgElement" 
-            "nameElement nameElement nameElement"
-            "priceRangeElement priceRangeElement priceRangeElement"
-            "ratingElement ratingElement ratingElement"
-            "textElement textElement textElement"
-            "pElementFour pElementFour pElementFour"
-            ". linkButton ."
-            ;
-    }
-   .logoImg {
-        max-width: 40px;
-    }
-
-    .campingRes .logoElement {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        height: 200px;
-        border-radius: 5px;
-        padding: 0px;
-    }
-
-    .campingRes p {
-        line-height: 1.4;
-    }
-
-    .desc-banner {
-        grid-area: desc-banner;
-        display: none;
-    }
-
-    .body-global-nav {
-        grid-area: body-global-nav;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
- 
-    .body-global-nav ul {
-        list-style-type: none;
-        display: flex;
-        margin: 0px;
-        flex-wrap: wrap;
-        margin-right: 40px;
-        margin-top: 60px;
-    }
-    
-    .body-global-nav li a {
-        text-decoration: none;
-        padding: 10px;
-        color: black;
-    }
-
-    .inner-box2{
-        margin-top: -80px;
-    }
-
-    .landscape {
-        display: flex;
-        max-width: 200px;
-        justify-content: center;
-    }
-
-    .landscape .logoImg{
-        display: flex;
-        justify-content: center;
-        max-width: 200px;
-        max-height: 200px;
-    }
-
-    .landscape {
-        display: flex;
-        max-width: 200px;
-        justify-content: center;
-    }
-
-    .landscape .logoImg{
-        display: flex;
-        justify-content: center;
-        max-width: 200px;
-        max-height: 200px;
-    }
-
-    .filterspecs{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #filterDropMenu {
-        width: fit-content;
-        border-radius: 5px;
-        background-color: #F7F6DC;
-        font-size: 20px;
-        padding: 10px 8px 10px 14px;
-        background: transparent;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        min-width: 20%;
-
-    }
-
-    .form{
-        justify-content: center;
-    }
+    }    
+   
 }
 
 
