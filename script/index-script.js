@@ -65,15 +65,15 @@ function showFilterElem(selectedFliterOption, btnSelector) {
   }
   
   if (btnSelector.contains("smoland")){
-    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping&min_rating=2";
+    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping";
   
   } 
   else if (btnSelector.contains("oland")) {
-    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=öland&descriptions=camping&min_rating=2";
+    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=öland&descriptions=camping";
 
   }
    else if (btnSelector.contains ("all-landscape")) {
-    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&descriptions=camping&min_rating=2";
+    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&descriptions=camping";
   }
 
   if (selectedFliterOption === "Pris") {
@@ -106,6 +106,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
  
         let pElement = document.createElement("h3");
         pElement.innerText = detailElem[i].name;
+        pElement.innerText += " - " + detailElem[i].province; 
         pElement.classList.add("nameElement");
     
         let pElement2 = document.createElement("div");
@@ -120,11 +121,15 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         let pElement4 = document.createElement("p");
         pElement4.innerText = detailElem[i].text;
         pElement4.classList.add("textElement");
-    
+        
+        if (pElement4.innerText === "") {
+          pElement4.innerText = "Det finns inga information om platsen"
+        }
+
         let logo = document.createElement("img");
         logo.classList.add("logoElement");
 
-        let linkElement = document.createElement("h4");
+        let linkElement = document.createElement("p");
         linkElement.innerText = " Se mer "
         linkElement.classList.add("linkButton");
         linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));

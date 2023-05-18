@@ -44,7 +44,53 @@ function showinfo() {
       }
     })
     .then(data => {
-      info(JSON.stringify(data));
+     
+     let descBox = document.getElementsByClassName("body-descr-box")[0];
+
+     let detailElem = data.payload[0];
+    
+   
+     placeLat = detailElem.lat;
+     placeLng = detailElem.lng;
+    
+     let container = document.createElement("div");
+     container.classList.add("guidePageCampingRes");
+   
+     let bodyImages = document.getElementsByClassName("largeImg")[0];
+     bodyImages.setAttribute("cid", id);
+     let pElement = document.createElement("h3");
+     pElement.innerText = detailElem.name;
+     pElement.classList.add("guideNameElement");
+   
+     let pElement2 = document.createElement("div");
+     let rating = parseFloat(detailElem.rating); 
+     pElement2.innerHTML = convertRating(rating);
+     pElement2.classList.add("guideRatingElement");
+   
+     let pElement3 = document.createElement("p");
+     pElement3.innerText = "Prisnivå: " + detailElem.price_range + " SEK";
+     pElement3.classList.add("guidePriceRangeElement");
+   
+     let contactElement = document.createElement("div"); 
+     contactElement.classList.add("contactElement")
+     let phoneNumberelement = document.createElement("p"); 
+     phoneNumberelement.innerText = detailElem.phone_number; 
+     contactElement.append(phoneNumberelement); 
+   
+     let pElement4 = document.createElement("p");
+     pElement4.innerText = detailElem.text;
+     pElement4.classList.add("guideTextElement");
+      
+     if (pElement4.innerText === "") {
+      pElement4.innerText = "Det finns inga information om platsen"
+    }
+   
+     container.append(pElement, pElement2, pElement3, contactElement, pElement4);
+     descBox.append(container);
+   
+     imgUrlCall();
+     initMap(detailElem);
+
     })
     .catch(error => {
       console.error("Det finns probleme med kommunikationen", error);
@@ -53,51 +99,7 @@ function showinfo() {
 
 }
 
-function info(JSONtext) {
 
-  let descBox = document.getElementsByClassName("body-descr-box")[0];
-
-  let detailElem = JSON.parse(JSONtext).payload[0];
- 
-
-  placeLat = detailElem.lat;
-  placeLng = detailElem.lng;
- 
-  let container = document.createElement("div");
-  container.classList.add("guidePageCampingRes");
-
-  let bodyImages = document.getElementsByClassName("largeImg")[0];
-  bodyImages.setAttribute("cid", id);
-  let pElement = document.createElement("h3");
-  pElement.innerText = detailElem.name;
-  pElement.classList.add("guideNameElement");
-
-  let pElement2 = document.createElement("div");
-  let rating = parseFloat(detailElem.rating); 
-  pElement2.innerHTML = convertRating(rating);
-  pElement2.classList.add("guideRatingElement");
-
-  let pElement3 = document.createElement("p");
-  pElement3.innerText = "Prisnivå: " + detailElem.price_range + " SEK";
-  pElement3.classList.add("guidePriceRangeElement");
-
-  let contactElement = document.createElement("div"); 
-  contactElement.classList.add("contactElement")
-  let phoneNumberelement = document.createElement("p"); 
-  phoneNumberelement.innerText = detailElem.phone_number; 
-  contactElement.append(phoneNumberelement); 
-
-  let pElement4 = document.createElement("p");
-  pElement4.innerText = detailElem.text;
-  pElement4.classList.add("guideTextElement");
-
-
-  container.append(pElement, pElement2, pElement3, contactElement, pElement4);
-  descBox.append(container);
-
-  imgUrlCall();
-  initMap(detailElem);
-}
 
 function showActivity() {
   console.log(placeLat, placeLng)
