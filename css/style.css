@@ -713,6 +713,10 @@ margin-bottom: 22px;
     transform: rotate(0.16turn);
     animation: loading 1s ease infinite;
   }
+  .showMoreButton {
+    color: darkgray;
+    cursor: pointer;
+  }
   
   @keyframes loading {
     /* Safari */

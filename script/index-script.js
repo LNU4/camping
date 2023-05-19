@@ -126,6 +126,50 @@ function showFilterElem(selectedFliterOption, btnSelector) {
           pElement4.innerText = "Det finns inga information om platsen"
         }
 
+        let targetElements = document.getElementsByClassName("textElement"); 
+
+for (let j = 0; j < targetElements.length; j++) {
+  let targetElement = targetElements[j];
+  let text = targetElement.innerText.trim();
+  let wordLimit = 200;
+
+  if (text.length > wordLimit) {
+    let reducedText = text.slice(0, wordLimit);
+    let remainingText = text.slice(wordLimit);
+
+    let showMoreButton = document.createElement("span");
+    showMoreButton.classList.add("showMoreButton");
+
+    targetElement.innerHTML = reducedText;
+    showMoreButton.innerText = " ...läs mer";
+
+    let parentContainer = document.createElement("div");
+    parentContainer.appendChild(showMoreButton);
+    targetElement.appendChild(parentContainer);
+
+    showMoreButton.addEventListener("click", function () {
+      targetElement.innerHTML = reducedText + remainingText;
+
+      let showLessButton = document.createElement("span");
+      showLessButton.classList.add("showLessButton");
+      showLessButton.innerText = "läs mindre";
+      showLessButton.addEventListener("click", function () {
+        targetElement.innerHTML = reducedText;
+        targetElement.appendChild(showMoreButton);
+        parentContainer.removeChild(showLessButton);
+      });
+
+      targetElement.appendChild(showLessButton);
+      parentContainer.removeChild(showMoreButton);
+    });
+  }
+  
+}
+        
+        
+        }
+        
+
         let logo = document.createElement("img");
         logo.classList.add("logoElement");
 
