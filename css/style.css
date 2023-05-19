@@ -227,7 +227,7 @@ margin-bottom: 22px;
     max-width: 80%;
     border: none;
     border-radius: 5px;
-    padding: 50px;
+    padding: 30px;
 }
 
 .linkButton{
@@ -773,6 +773,7 @@ margin-bottom: 22px;
 .nameElement {
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 .ratingElement {
     display: flex;
@@ -810,11 +811,34 @@ margin-bottom: 22px;
 
 @media (max-width: 850px) {
 
+
+#mainPage h2{
+    font-weight: 400;
+    font-size: larger;
+}
+
+#mainPage h3{
+    font-size: large;
+}
+
+#mainPage h4{
+    font-size: medium;
+}
+
+.body-box-4 p{
+    font-weight: 400;
+    font-size: medium;
+}
+
+.body-box-5 p {
+    font-weight: 400;
+    font-size: medium;
+}
+
 .logoImg {
     display: flex;
-    max-width: 100px;
+    max-width: 120px;
 }    
-
 
 .desc-banner {
     grid-area: desc-banner;
@@ -836,9 +860,36 @@ margin-bottom: 22px;
 }
 
 
+
+
+
 }
 
 @media (max-width: 640px) {
+
+
+    #mainPage h3{
+        padding-bottom: 10px;
+    }
+
+    #mainPage h4{
+        font-stretch: expanded;
+        font-size: medium;
+    }
+
+    #omOss h1 {
+        font-size: x-large;
+    }
+
+    #omOss h2 {
+        font-size: large;
+    }
+
+    #omOss .body-mainContent-box-text{
+        font-size: small;
+    }
+
+
     .body {
         font-size: 80%
     }
@@ -848,8 +899,8 @@ margin-bottom: 22px;
     }
     .logoImg {
         display: flex;
-        max-width: 70px;
-        max-height: 70px;
+        max-width: 100px;
+        max-height: 100px;
     }
     #filterSpecsId {
         display: flex;
@@ -860,7 +911,7 @@ margin-bottom: 22px;
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 460px) {
 
 
     .campingRes {
@@ -880,6 +931,29 @@ margin-bottom: 22px;
             "priceRangeElement priceRangeElement priceRangeElement"
             ". linkButton .";
     }
+
+
+    #mainPage h2{
+        font-size: large;
+    }
+
+    #mainPage .inner-box2 h3{
+        font-size: small;
+    }
+
+    #mainPage h4{
+        font-size: small;
+    }
+
+    .body-box-4 p{
+        font-weight: 400;
+        font-size: small;
+    }
+    
+    .body-box-5 p {
+        font-weight: 400;
+        font-size: small;
+    }
     
     .priceRangeElement {
         display: flex;
@@ -889,5 +963,21 @@ margin-bottom: 22px;
         display: flex;
         justify-content: center;
     }
+
+    .body-box-4 img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
    
+}
+
+
+@media (max-width: 460px) {
+
+    #mainPage h2{
+        font-size: medium;
+    }
+
+
 }
