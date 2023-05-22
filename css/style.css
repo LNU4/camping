@@ -546,6 +546,23 @@ margin-bottom: 22px;
 }
 .equipments {
     display: flex;
+    flex-direction: column;
+}
+.equipmentImg {
+    width: 40px;
+  
+}
+.facilityDiv-First {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.EquipmentsDiv-First {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
 }
 .body-descr-box {
     grid-area: body-descr-box;
@@ -579,11 +596,12 @@ margin-bottom: 22px;
 .body-result-box {
     grid-area: body-result-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     border: 1px ;
     border: 0px solid black;
     border-radius: 5px;
+    flex: 1 1 0px;
 }
 
 .button  {
@@ -684,17 +702,27 @@ margin-bottom: 22px;
 .activity-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    padding: 20px;
+    gap: 30px; 
+    padding: 5px;
     margin: 10px;
     border-radius: 5px;
+    flex: 1 1 0px;
 }
 
 .activity-Element {
     padding: 5px;
 }
-
-
+.activity-image {
+    width: 100px;
+    height: auto;
+}
+.restaurant-img {
+    width: 100px;
+    height: auto;
+}
 *{
     scroll-behavior: smooth;
 }

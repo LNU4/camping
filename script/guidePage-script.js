@@ -23,7 +23,7 @@ function init() {
   resultElem = document.getElementsByClassName("body-result-box")[0];
 
   showinfo();
-
+  showEquipments();
 }
 
 //window.addEventListener("load", init);
@@ -131,9 +131,10 @@ function showActivity() {
         pElement1.innerText = activityElem[i].description;
         pElement1.classList.add("activity-Element");
 
-        let pElement3 = document.createElement("p");
-        pElement3.innerText = "min age: " + activityElem[i].min_age;
-        pElement3.classList.add("activity-Element");
+        let pElement3 = document.createElement("img");
+        pElement3.src = "../activityAssets/" + activityElem[i].description + ".svg";
+        pElement3.alt = activityElem[i].description;
+        pElement3.classList.add("activity-image");
 
         let pElement4 = document.createElement("div");
         let rating = parseFloat(activityElem[i].rating); 
@@ -182,6 +183,8 @@ function showWeather() {
         pElement.innerText += "Lägsta temperatur: " + minTempResult[i];
         pElement.classList.add("activity-Element");
 
+        let WeatherDsiplay = document.createElement("img"); 
+        WeatherDsiplay.src = "../" //stopped here to be fixed later, need a logic to write it effectivly
         activityContainer.append(pElement);
         resultElem.append(activityContainer);
       }
@@ -261,15 +264,20 @@ function showRestaurant() {
         pElement1.innerText = activityElem[i].description;
         pElement1.classList.add("activity-Element");
 
+        let imgElement = document.createElement("img"); 
+        imgElement.src = "../SVGassets/restaurant.svg";
+        imgElement.alt = activityElem[i].description;
+        imgElement.classList.add("restaurant-img");
+        
         let pElement2 = document.createElement("p");
-        pElement2.innerText = "Avstånd " + activityElem[i].distance_in_km;
+        pElement2.innerText = "Avstånd " + Math.trunc(activityElem[i].distance_in_km) + " KM";
         pElement2.classList.add("activity-Element");
 
         let pElement3 = document.createElement("p");
         pElement3.innerText = "Pris: " + activityElem[i].avg_dinner_pricing;
         pElement3.classList.add("activity-Element");
 
-        activityContainer.append(pElement, pElement1, pElement2, pElement3);
+        activityContainer.append(pElement, pElement1,imgElement, pElement2, pElement3);
         resultElem.append(activityContainer);
 
       }
@@ -311,24 +319,26 @@ function showEquipments() {
     })
     .then(data => {
       let equipmentData = data.camping;
+
       for (let i = 0; i < equipmentData.length; i++) {
         let facilityObj = equipmentData[i].facili;
         let facilityDiv = document.createElement("div");
-        facilityDiv.innerHTML = facilityObj.join(", ");
+        facilityDiv.classList.add("facilityDiv-First"); 
+        facilityDiv.innerHTML = "<p> Faciliteter: </p>"
       
         let equipmentsObj = equipmentData[i].utrust;
         let equipmentsDiv = document.createElement("div");
-        equipmentsDiv.innerHTML = equipmentsObj.join(", ");
-      
-        let facilityNames = facilityDiv.innerHTML.split(", "); 
-      
+        equipmentsDiv.classList.add("EquipmentsDiv-First")
+        equipmentsDiv.innerHTML = "<p> Utrustningar: </p>"
+
         if (equipmentData[i].id === id) {
           let equipmentHolder = document.getElementsByClassName("equipments")[0];
       
-          for (let j = 0; j < facilityNames.length; j++) {
+          for (let j = 0; j < facilityObj.length; j++) {
             let facilityImg = document.createElement("img");
-            facilityImg.src = "../utrus_FaciAssets/" + facilityNames[j] + ".svg";
-            facilityImg.alt = facilityNames[j]; 
+            facilityImg.src = "../utrus_FaciAssets/" + facilityObj[j] + ".svg";
+            facilityImg.alt = facilityObj[j];
+            facilityImg.classList.add("equipmentImg");
             facilityDiv.appendChild(facilityImg);
           }
       
@@ -336,6 +346,7 @@ function showEquipments() {
             let equipmentsImg = document.createElement("img");
             equipmentsImg.src = "../utrus_FaciAssets/" + equipmentsObj[j] + ".svg";
             equipmentsImg.alt = equipmentsObj[j]; 
+            equipmentsImg.classList.add("equipmentImg");
             equipmentsDiv.appendChild(equipmentsImg);
           }
           equipmentHolder.append(equipmentsDiv, facilityDiv)
