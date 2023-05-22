@@ -349,8 +349,7 @@ function showEquipments() {
             equipmentsImg.classList.add("equipmentImg");
             equipmentsDiv.appendChild(equipmentsImg);
           }
-          equipmentHolder.append(equipmentsDiv, facilityDiv)
-          //fix the names
+          equipmentHolder.append(equipmentsDiv, facilityDiv);
         }
       }
     })
