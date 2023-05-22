@@ -517,13 +517,14 @@ margin-bottom: 22px;
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: max-content max-content max-content max-content max-content max-content auto;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content auto;
     gap: 20px;
     grid-template-areas: "body-images-box body-images-box body-descr-box body-descr-box"
                          "body-images-box body-images-box body-descr-box body-descr-box"
                          "body-images-box body-images-box body-descr-box body-descr-box"
                          "body-info-bar body-info-bar body-info-bar body-info-bar"
                          ". body-info-tab body-info-tab ."
+                         ". body-result-desc body-result-desc ."
                          ". body-result-box body-result-box ."
                          ". body-result-box body-result-box .";
 }
@@ -534,6 +535,7 @@ margin-bottom: 22px;
     background-color: white;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 20px;
 }
@@ -542,7 +544,9 @@ margin-bottom: 22px;
     max-width: 100%;
     border-radius: 5px;
 }
-
+.equipments {
+    display: flex;
+}
 .body-descr-box {
     grid-area: body-descr-box;
     border: none;
@@ -568,7 +572,10 @@ margin-bottom: 22px;
     padding-left: 10px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-
+.body-result-desc {
+    grid-area: body-result-desc;
+    display: flex;
+}
 .body-result-box {
     grid-area: body-result-box;
     display: flex;

@@ -49,6 +49,8 @@ function showinfo() {
 
      let detailElem = data.payload[0];
     
+     let websiteLink = document.querySelector(".button.recensioner").parentNode;; 
+      websiteLink.href = detailElem.website; 
    
      placeLat = detailElem.lat;
      placeLng = detailElem.lng;
@@ -244,7 +246,7 @@ function showRestaurant() {
       }
     })
     .then(data => {
-      console.log("works")
+      
       let activityElem = data.payload;
       console.log(activityElem);
       for (let i = 0; i < activityElem.length; i++) {
@@ -308,50 +310,36 @@ function showEquipments() {
       }
     })
     .then(data => {
-      
-    
       let equipmentData = data.camping;
-
       for (let i = 0; i < equipmentData.length; i++) {
-        if (equipmentData[i].id === id) {
-          let facilityContainer = document.createElement("div");
-          facilityContainer.classList.add("equipments-container");
-
-          let equipmentsContainer = document.createElement("div");
-          equipmentsContainer.classList.add("equipments-container");
-
-          let facilityList = equipmentData[i].facili;
-          let equipmentList = equipmentData[i].utrust;
-          console.log(facilityList);
-          console.log(equipmentList);
-
-          for (let j = 0; j < facilityList.length; j++) {
-            let facility = facilityList[j];
-            let facilityImage = getImageForFacility(facility);
-
-            let facilityElement = document.createElement("img");
-            facilityElement.src = facilityImage;
-            facilityElement.alt = facility;
-            facilityElement.classList.add("equipments-Element");
-
-            facilityContainer.appendChild(facilityElement);
-          }
-
+        let facilityObj = equipmentData[i].facili;
+        let facilityDiv = document.createElement("div");
+        facilityDiv.innerHTML = facilityObj.join(", ");
       
-          for (let k = 0; k < equipmentList.length; k++) {
-            let equipment = equipmentList[k];
-            let equipmentImage = getImageForEquipment(equipment);
-
-            let equipmentElement = document.createElement("img");
-            equipmentElement.src = equipmentImage;
-            equipmentElement.alt = equipment;
-            equipmentElement.classList.add("equipments-Element");
-
-            equipmentsContainer.appendChild(equipmentElement);
+        let equipmentsObj = equipmentData[i].utrust;
+        let equipmentsDiv = document.createElement("div");
+        equipmentsDiv.innerHTML = equipmentsObj.join(", ");
+      
+        let facilityNames = facilityDiv.innerHTML.split(", "); 
+      
+        if (equipmentData[i].id === id) {
+          let equipmentHolder = document.getElementsByClassName("equipments")[0];
+      
+          for (let j = 0; j < facilityNames.length; j++) {
+            let facilityImg = document.createElement("img");
+            facilityImg.src = "../utrus_FaciAssets/" + facilityNames[j] + ".svg";
+            facilityImg.alt = facilityNames[j]; 
+            facilityDiv.appendChild(facilityImg);
           }
-
-          resultElem.appendChild(facilityContainer);
-          resultElem.appendChild(equipmentsContainer);
+      
+          for (let j = 0; j < equipmentsObj.length; j++) {
+            let equipmentsImg = document.createElement("img");
+            equipmentsImg.src = "../utrus_FaciAssets/" + equipmentsObj[j] + ".svg";
+            equipmentsImg.alt = equipmentsObj[j]; 
+            equipmentsDiv.appendChild(equipmentsImg);
+          }
+          equipmentHolder.append(equipmentsDiv, facilityDiv)
+          //fix the names
         }
       }
     })
@@ -359,60 +347,8 @@ function showEquipments() {
     .catch(error => {
       console.error("Det finns problem med kommunikationen", error);
     });
-}
-function getImageForFacility(facility) {
+} 
 
-  if (facility === "Servicehus") {
-    return "../utrus_FaciAssets/shower-icon.svg";
-  } else if (facility === "Servicebutik") {
-    return "../utrus_FaciAssets/groceries-icon.svg";
-  } else if (facility === "Kök & Tvättplats") {
-    return "../utrus_FaciAssets/kitchen-stove-icon.svg";
-  } else if (facility === "Toaletter") {
-    return "../utrus_FaciAssets/toilet-icon.svg";
-  } else if (facility === "Vattentappar") {
-    return "../utrus_FaciAssets/hand-wash-icon.svg";
-  }
-  else if (facility === "Sophus") {
-    return "../utrus_FaciAssets/recycle-bin-icon.svg";
-  }
-  else if (facility === "Duschar") {
-    return "../utrus_FaciAssets/shower-icon.svg";
-  }
-  else if (facility === "Tvättstuga") {
-    return "../utrus_FaciAssets/dishwasher-icon.svg";
-  }
-  
-
-  
-}
-
-function getImageForEquipment(equipment) {
-
-  if (equipment === "Wi-fi") {
-    return "../utrus_FaciAssets/wifi-icon.svg";
-  } else if (equipment === "Bord och bänkar") {
-    return "../utrus_FaciAssets/tea-hot-icon.svg";
-  } else if (equipment === "Tvättmaskiner") {
-    return "../utrus_FaciAssets/clothes-washing-icon.svg";
-  } else if (equipment === "Elektricitet till husvagn och husbil") {
-    return "../utrus_FaciAssets/electric-vehicle-charging-station-icon.svg";
-  }
-  else if (equipment === "Tvättmaskiner") {
-    return "../utrus_FaciAssets/clothes-washing-icon.svg";
-  }
-  else if (equipment === "Förvaringsskåp") {
-    return "../utrus_FaciAssets/closet-wardrobe-icon.svg";
-  }
-  else if (equipment === "Torktumlare") {
-    return "../utrus_FaciAssets/air-drying-icon.svg";
-  }
-  else if (equipment === "Ved tillgänglig") {
-    return "../utrus_FaciAssets/bonefire-icon.svg";
-  }
-
-   
-}
 function convertRating(rating) {
   let starImg = "../SVGassets/fullStar.svg"; 
   let halfStarImg = "../SVGassets/halfStar.svg"; 
@@ -436,4 +372,3 @@ function convertRating(rating) {
 
   return ratingHtml;
 }
-
