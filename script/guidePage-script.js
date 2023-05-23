@@ -183,9 +183,43 @@ function showWeather() {
         pElement.innerText += "Lägsta temperatur: " + minTempResult[i];
         pElement.classList.add("activity-Element");
 
-        let WeatherDsiplay = document.createElement("img"); 
-        WeatherDsiplay.src = "../" //stopped here to be fixed later, need a logic to write it effectivly
-        activityContainer.append(pElement);
+        let weatherDisplay = document.createElement("img");
+        let weatherCode = weatherResult[i];
+        switch (weatherCode) {
+          case 0:
+          case 1:
+            weatherDisplay.src = "../weather/sun.svg";
+            break;
+          case 2: 
+            weatherDisplay.src = "../weather/cloudy.svg"
+            break;
+          case 3: 
+            weatherDisplay.src = "../weather/clouds.svg"
+            break; 
+          case 61:
+            weatherDisplay.src = "../weather/rain.svg"
+          case 62:
+          case 63:
+          case 63:
+            weatherDisplay.src = "../weather/rainnosun.svg";
+            break;
+          case 71:
+          case 73: 
+          case 75:
+          case 77: 
+          weatherDisplay.src = "../weather/snowflake.svg";
+          case 95:
+          case 96: 
+          case 99:  
+          weatherDisplay.src = "../weather/thunder.svg"
+          break;
+          default:
+          weatherDisplay.src = "path/to/default-image.jpg";
+          break;
+        }
+        
+        
+        activityContainer.append(pElement, weatherDisplay);
         resultElem.append(activityContainer);
       }
 
