@@ -288,6 +288,52 @@ margin-bottom: 22px;
     text-align: center;
 }
 
+#readMoreButton{
+    border: 1px solid black;
+    color: black;
+    padding: 5px 5px;
+    margin: 2px; 
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #F7F6DC;
+    border-radius: 50px;
+    justify-content: center;
+    transition-duration: 100ms;
+    font-family: Montserrat, sans-serif;
+}
+
+#readMoreButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid #7FB77E;
+}
+
+#readLessButton{
+    border: 1px solid black;
+    color: black;
+    padding: 5px 5px;
+    margin: 2px; 
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #F7F6DC;
+    border-radius: 50px;
+    justify-content: center;
+    transition-duration: 100ms;
+    font-family: Montserrat, sans-serif;
+}
+
+#readLessButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid #7FB77E;
+}
+
 .body-box-2 {
     grid-area: body-box-2;
     background-color: white;
@@ -711,6 +757,16 @@ margin-bottom: 22px;
     border-radius: 5px;
     flex: 1 1 0px;
 }
+
+#weatherTile p{
+    font-style: italic;
+
+}
+
+#nameElement{
+    font-size: medium;
+}
+
 
 .activity-Element {
     padding: 5px;
