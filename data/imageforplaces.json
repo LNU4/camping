@@ -5,7 +5,8 @@
 			"name": "Skeppeviks Camping",
             "logo": "../campingLogos/skeppevik.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Tält"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "sängkläder"]
 		},
 		
         {
@@ -13,336 +14,385 @@
 			"name": "Dalskärs Camping",
             "logo": "../campingLogos/dalskar.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga", "Café"],
-			"utrust": ["Wi-fi", "Tält"]
+			"utrust": ["Wi-fi","Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "kanot"]
 		},
         {
             "id": "236",
 			"name": "Kolbodabaden",
             "logo": "../campingLogos/kolbodabaden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "möteplats"]
 		},
         {
             "id": "237",
 			"name": "Vita sand",
             "logo": "../campingLogos/vitasand.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "238",
 			"name": "Stensö Camping",
             "logo": "../campingLogos/stensjo.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "239",
 			"name": "Joelskogens camping",
             "logo": "../campingLogos/joelskogen.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "240",
 			"name": "Caravan club Camping Timmernabben",
             "logo": "../campingLogos/caravanclub.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "241",
 			"name": "Kaffeetorpets Camping",
             "logo": "../campingLogos/kaffeetorpet.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "242",
 			"name": "First Camp Gunnarsö",
             "logo": "../campingLogos/gunnarso.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "trampbåtar"]
 		},
         {
             "id": "243",
 			"name": "Havslätts Camping",
             "logo": "../campingLogos/havslatt.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "244",
 			"name": "Gösjön Camping",
             "logo": "../campingLogos/gosjon.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "245",
 			"name": "Långsjön Stugor & Camping i Ankarsrum AB",
             "logo": "../campingLogos/langsjon.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga","bungalows", "cykel", "barn-släpvagn", "båtar", "grillplatser"]
+	
 		},
         {
             "id": "246",
 			"name": "Vimmerby Camping Nossenbaden",
             "logo": "../campingLogos/vimmerby.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "247",
 			"name": "Astrid Lindgrens Värld Camping & Stugby",
             "logo": "../campingLogos/astrid.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "273",
 			"name": "Spilhammars Camping",
             "logo": "../campingLogos/spilhammar.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "bungalows"]
 		},
         {
             "id": "275",
 			"name": "Camping Hultsfred",
             "logo": "../campingLogos/hultsfred.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "bungalows"]
 		},
         {
             "id": "277",
 			"name": "Blankaholm Allservice & Camping AB",
             "logo": "../campingLogos/blankaholm.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "kayak"]
 		},
         {
             "id": "280",
 			"name": "Movänta Camping",
             "logo": "../campingLogos/movanta.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "281",
 			"name": "Eksjö Camping & Konferens",
             "logo": "../campingLogos/eksjo.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "trampbilar", "sängkläder", "handduk"]
 		},
         {
             "id": "285",
 			"name": "Camping Vättersmålen",
             "logo": "../campingLogos/vattersmalen.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["båtar"]
 		},
         {
             "id": "286",
 			"name": "Habo Camping & Stugby",
             "logo": "../campingLogos/habo.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "301",
 			"name": "Sävsjö Camping",
             "logo": "../campingLogos/savsjo.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar"]
 		},
         {
             "id": "303",
 			"name": "Värnamo Camping",
             "logo": "../campingLogos/varnamo.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Bord och bänkar", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "kanot"]
 		},
         {
             "id": "304",
 			"name": "E4ans Camping",
             "logo": "../campingLogos/e4ans.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar"]
 		},
         {
             "id": "305",
 			"name": "Braås Camping",
             "logo": "../campingLogos/braas.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "villavagn"]
 		},
         {
             "id": "307",
 			"name": "Östanå camping",
             "logo": "../campingLogos/ostana.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "sängkläder", "båtar"]
 		},
         {
             "id": "600",
 			"name": "Lovsjöbadens Camping",
             "logo": "../campingLogos/lovsjobaden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "sängkläder", "bungalows"]
 		},
         {
             "id": "601",
 			"name": "Axamo Strand & Camping",
             "logo": "../campingLogos/axamo.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "kanot"]
 		},
         {
             "id": "602",
 			"name": "Hoks Naturcamping",
             "logo": "../campingLogos/hoks.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "bungalows"]
 		},
         {
             "id": "603",
 			"name": "Hjortsjöns camping",
             "logo": "../campingLogos/hjortsjon.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "604",
 			"name": "Resort Hok Yxenhaga",
             "logo": "../campingLogos/resort hok.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "kanot"]
 		},
         {
             "id": "605",
 			"name": "Adventure of Småland",
             "logo": "../campingLogos/adventure.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar", "cykel"]
 		},
         {
             "id": "606",
 			"name": "Flatenbadet i Småland. Camping",
             "logo": "../campingLogos/flatenbadet.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "607",
 			"name": "Hagens Camping",
             "logo": "../campingLogos/hagen.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "608",
 			"name": "E4ans Camping",
             "logo": "../campingLogos/e4ans.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar"]
 		},
         {
             "id": "609",
 			"name": "Torne camping",
             "logo": "../campingLogos/torne.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "610",
 			"name": "Sandsjöbadens Camping",
             "logo": "../campingLogos/sandsjobaden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "611",
 			"name": "Sjöstugans Camping & Vandrarhem",
             "logo": "../campingLogos/sjostugan.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "trampbåtar"]
 		},
         {
             "id": "612",
 			"name": "Mjölknabbens Camping",
             "logo": "../campingLogos/mjolknabben.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar"]
 		},
         {
             "id": "613",
 			"name": "Kärrasands Camping & Nöje",
             "logo": "../campingLogos/karrasand.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "kanot"]
 		},
         {
             "id": "614",
 			"name": "Evedals camping",
             "logo": "../campingLogos/evedal.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "kanot", "cykel"]
 		},
         {
             "id": "615",
 			"name": "Ekna Naturcamping",
             "logo": "../campingLogos/ekna.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "616",
 			"name": "Gökaskratts camping & Restaurang",
             "logo": "../campingLogos/gokaskratt.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "cykel", "båtar"]
 		},
         {
             "id": "654",
 			"name": "Norraryds Camping",
             "logo": "../campingLogos/norraryd.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar", "cykel", "fiskeutrustning"]
 		},
         {
             "id": "655",
 			"name": "Linneryds Camping",
             "logo": "../campingLogos/linneryds1.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar"]
 		},
         {
             "id": "656",
 			"name": "Linneryds Camping",
             "logo": "../campingLogos/linneryds2.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar"]
 		},
         {
             "id": "657",
 			"name": "Törestorps Camping",
             "logo": "../campingLogos/torestorp.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "658",
 			"name": "Hätteboda Vildmarkscamping",
             "logo": "../campingLogos/hatteboda.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar"]
 		},
         {
             "id": "659",
 			"name": "Abrahams Camp",
             "logo": "../campingLogos/abraham.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar", "sängkläder"]
 		},
 
         {
@@ -350,217 +400,249 @@
 			"name": "Böda Sand Camping",
             "logo": "../campingLogos/bodasand.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "172",
 			"name": "Sandviks Camping",
             "logo": "../campingLogos/sandvik.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "båtar", "cykel"]
 		},
         {
             "id": "173",
 			"name": "Ottenby Vandrarhem och Camping",
             "logo": "../campingLogos/ottenby.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "cykel"]
 		},
         {
             "id": "181",
 			"name": "Ställplats Drottning Öda",
             "logo": "../campingLogos/stallplats.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "182",
 			"name": "Ventlinge ställplats",
             "logo": "../campingLogos/ventlinge.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "183",
 			"name": "Stenåsabadets Camping & Cottages",
             "logo": "../campingLogos/stenasabadet1.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "cykel"]
 		},
         {
             "id": "184",
 			"name": "Ölands Camping & Resort",
             "logo": "../campingLogos/olandscamping.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "villvagn", "husvagn", "cykel", "trampbilar"]
 		},
         {
             "id": "185",
 			"name": "Haga Park Camping och Stugor",
             "logo": "../campingLogos/haga park.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "möteplats"]
 		},
         {
             "id": "186",
 			"name": "Eriksöre Camping",
             "logo": "../campingLogos/eriksore.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "bungalows", "husbil"]
 		},
         {
             "id": "187",
 			"name": "KronoCamping Saxnäs",
             "logo": "../campingLogos/kronocamping.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "188",
 			"name": "Ekerum Camping",
             "logo": "../campingLogos/ekerum.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "189",
 			"name": "Kapelludden",
             "logo": "../campingLogos/kapelludden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga","handduk","cykel","båtar"]
 		},
         {
             "id": "190",
 			"name": "Köpingbadens Camping",
             "logo": "../campingLogos/kopingbaden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "villvagn", "cykel", "vattenskoter"]
 		},
         {
             "id": "191",
 			"name": "Grönhags Camping",
             "logo": "../campingLogos/gronhag.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "192",
 			"name": "Gröndals Camping & Stugor",
             "logo": "../campingLogos/grondal.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "197",
 			"name": "Klinta Camping",
             "logo": "../campingLogos/klinta.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "sängkläder", "barnstol", "barnsäng"]
 		},
         {
             "id": "198",
 			"name": "Klintagården",
             "logo": "../campingLogos/klintagarden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga", "sängkländer", "cykel", "motorbåt"]
 		},
         {
             "id": "200",
 			"name": "Lundegård Camping & Stugby",
             "logo": "../campingLogos/lundegard.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga","barnstol", "barnsäng"]
 		},
         {
             "id": "201",
 			"name": "Sandbybadets Camping & Stugor",
             "logo": "../campingLogos/sandbybadet.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "202",
 			"name": "Sonjas Camping",
             "logo": "../campingLogos/sonjas.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga","cykel"]
 		},
         {
             "id": "205",
 			"name": "Neptuni Camping AB",
             "logo": "../campingLogos/neptuni.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga","tält", "husvagn"]
 		},
         {
             "id": "206",
 			"name": "Bödabaden Camping",
             "logo": "../campingLogos/bodabaden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "207",
 			"name": "Bödagårdens Camping",
             "logo": "../campingLogos/bodagarden.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga","trampbilar", "husvagn"]
 		},
         {
             "id": "208",
 			"name": "Böda Station - Stugor, lägenheter, camping",
             "logo": "../campingLogos/bodastation.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "209",
 			"name": "KronoCamping Böda Sand",
             "logo": "../campingLogos/kronocamping.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
+
 		},
         {
             "id": "210",
 			"name": "Tokenäs Camping",
             "logo": "../campingLogos/tokenas.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga","cykel"]
 		},
         {
             "id": "211",
 			"name": "Böda Riviera",
             "logo": "../campingLogos/boda riviera.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Tält", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "215",
 			"name": "Böda Hamns Camping",
             "logo": "../campingLogos/boda hamns.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel","Husvagn", "Tält", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "216",
 			"name": "Djupvik camping",
             "logo": "../campingLogos/djupvik.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "217",
 			"name": "Wikegårds Holiday Village",
             "logo": "../campingLogos/wikegard.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Förvaringsskåp", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Förvaringsskåp", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		},
         {
             "id": "218",
 			"name": "Möllstorps Camping",
             "logo": "../campingLogos/mollstorp.jpg",
 			"facili": ["Servicehus", "Servicebutik", "Kök & Tvättplats", "Toaletter", "Vattentappar", "Duschar", "Sophus", "Tvättstuga"],
-			"utrust": ["Wi-fi", "Cykel", "Elektricitet till husvagn och husbil"]
+			"utrust": ["Wi-fi", "Elektricitet till husvagn och husbil"],
+			"hyr": ["stuga"]
 		}
     ]
 }

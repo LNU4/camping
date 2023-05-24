@@ -17,8 +17,8 @@ function init() {
   let restaurantButton = document.getElementsByClassName("button restauranger")[0];
   restaurantButton.addEventListener("click", showRestaurant);
 
-  let EquipmentButton = document.getElementsByClassName("button utrustningFaciliteter")[0]; 
-  EquipmentButton.addEventListener("click", showEquipments); 
+  let EquipmentButton = document.getElementsByClassName("button uthyrning")[0]; 
+  EquipmentButton.addEventListener("click", showRentals); 
 
   resultElem = document.getElementsByClassName("body-result-box")[0];
 
@@ -227,6 +227,8 @@ function showWeather() {
             weatherDisplay.src = "lägg till no weather code";
             break;
         }
+
+        
         activityContainer.append(weatherDisplay, pElement);
         resultElem.append(activityContainer);
       }
@@ -423,4 +425,45 @@ function convertRating(rating) {
   }
 
   return ratingHtml;
+}
+
+function showRentals() {
+  let url = "data/imageforplaces.json";
+  resultElem.innerHTML = "";
+  fetch(url)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Den begärda resursen finns inte.");
+      }
+    })
+    .then(data => {
+      let equipmentData = data.camping;
+
+      for (let i = 0; i < equipmentData.length; i++) {
+        let rentObj = equipmentData[i].hyr;
+        let rentDiv = document.createElement("div");
+        rentDiv.classList.add("rentDiv"); 
+       
+     
+        if (equipmentData[i].id === id) {
+      
+          for (let j = 0; j < rentObj.length; j++) {
+            let rentImg = document.createElement("img");
+            rentImg.src = "../rentAssets/" + rentObj[j] + ".png";
+            rentImg.alt = rentObj[j];
+            rentImg.classList.add("equipmentImg");
+            rentDiv.appendChild(rentImg);
+          }
+    
+          resultElem.append(rentDiv);
+        }
+      }
+    })
+
+    .catch(error => {
+      console.error("Det finns problem med kommunikationen", error);
+    });
+
 }
