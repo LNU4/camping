@@ -198,24 +198,34 @@ function showWeather() {
             break; 
           case 61:
             weatherDisplay.src = "../weather/rain.svg"
+            break; 
+          case 51: 
+          case 52: 
+          case 53: 
+            weatherDisplay.src = "../weather/rain.svg" //drizzle
+            break; 
           case 62:
           case 63:
           case 63:
+          case 80:
+          case 81: 
+          case 82:  
             weatherDisplay.src = "../weather/rainnosun.svg";
             break;
           case 71:
           case 73: 
           case 75:
           case 77: 
-          weatherDisplay.src = "../weather/snowflake.svg";
+            weatherDisplay.src = "../weather/snowflake.svg";
+            break; 
           case 95:
           case 96: 
           case 99:  
-          weatherDisplay.src = "../weather/thunder.svg"
-          break;
+            weatherDisplay.src = "../weather/thunder.svg"
+            break;
           default:
-          weatherDisplay.src = "path/to/default-image.jpg";
-          break;
+            weatherDisplay.src = "lägg till no weather code";
+            break;
         }
         
         
