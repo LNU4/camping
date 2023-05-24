@@ -49,7 +49,7 @@ function showinfo() {
 
      let detailElem = data.payload[0];
     
-     let websiteLink = document.querySelector(".button.recensioner").parentNode;; 
+     let websiteLink = document.querySelector(".button.recensioner").parentNode; 
       websiteLink.href = detailElem.website; 
    
      placeLat = detailElem.lat;
@@ -61,7 +61,7 @@ function showinfo() {
      let bodyImages = document.getElementsByClassName("largeImg")[0];
      bodyImages.setAttribute("cid", id);
      let pElement = document.createElement("h3");
-     pElement.innerText = detailElem.name;
+     pElement.innerText = detailElem.name + " - " + detailElem.province;
      pElement.classList.add("guideNameElement");
    
      let pElement2 = document.createElement("div");
@@ -432,7 +432,6 @@ function convertRating(rating) {
 
 function showRentals() {
   let url = "data/imageforplaces.json";
-  resultElem.innerHTML = "";
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -448,15 +447,16 @@ function showRentals() {
         let rentObj = equipmentData[i].hyr;
         let rentDiv = document.createElement("div");
         rentDiv.classList.add("rentDiv"); 
-       
+        rentDiv.innerHTML = "Uthyrning på Campingen";
      
         if (equipmentData[i].id === id) {
       
           for (let j = 0; j < rentObj.length; j++) {
             let rentImg = document.createElement("img");
-            rentImg.src = "../rentAssets/" + rentObj[j] + ".png";
+            rentImg.src = "../rentAssets/" + rentObj[j] + ".png"; 
             rentImg.alt = rentObj[j];
             rentImg.classList.add("equipmentImg");
+            rentImg.setAttribute("id", "rentImg");
             rentDiv.appendChild(rentImg);
           }
     
