@@ -596,8 +596,8 @@ margin-bottom: 22px;
 }
 .equipmentImg {
     width: 40px;
-  
 }
+
 .facilityDiv-First {
     display: flex;
     flex-direction: row;
@@ -648,6 +648,21 @@ margin-bottom: 22px;
     border: 0px solid black;
     border-radius: 5px;
     flex: 1 1 0px;
+}
+
+#rentImg {
+    width: 70px;
+    margin-top: 5px;
+}
+
+.rentDiv{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .button  {
