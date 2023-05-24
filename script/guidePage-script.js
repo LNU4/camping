@@ -184,8 +184,8 @@ function showWeather() {
         let pTempLowElement = document.createElement("p");
         pElement.innerText = timeResult[i] + " ";
    //   pElement.innerText += weatherResult[i] + " ";
-        pTempHighElement.innerText += "H: " + Math.trunc(maxTempResult[i]);
-        pTempLowElement.innerText += "L: " + Math.trunc(minTempResult[i]);
+        pTempHighElement.innerText += "H: " + Math.trunc(maxTempResult[i]) + " \u00B0C";
+        pTempLowElement.innerText += "L: " + Math.trunc(minTempResult[i]) + " \u00B0C"; 
         pElement.classList.add("activity-Element");
 
         let weatherDisplay = document.createElement("img");
