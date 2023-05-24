@@ -124,10 +124,11 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         let moreDetailString = detailElem[i].text.slice(100);
 
         let readMorebutton = document.createElement("button");
-        readMorebutton.innerText = " Läs mer";
+        readMorebutton.innerText = " läs mer";
+        readMorebutton.setAttribute("id", "readMoreButton");
         createDetailButtons(pElement4, readMorebutton, lessDetailString, moreDetailString);
         
-        pElement4.innerText = lessDetailString + "...";
+        pElement4.innerText = lessDetailString + "... ";
         pElement4.append(readMorebutton);
         pElement4.classList.add("textElement");
 
@@ -165,7 +166,8 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
 function createDetailButtons(p4Element, readMorebutton, lessDetailString, moreDetailString) {
   let readLessButton = document.createElement("button");
-  readLessButton.innerText = " Läs mindre";
+  readLessButton.innerText = " läs mindre";
+  readLessButton.setAttribute("id", "readLessButton");
   readLessButton.addEventListener("click", () => {
     p4Element.innerText = lessDetailString + "..."
     p4Element.append(readMorebutton)

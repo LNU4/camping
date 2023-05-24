@@ -95,7 +95,7 @@ function showinfo() {
 
     })
     .catch(error => {
-      console.error("Det finns probleme med kommunikationen", error);
+      console.error("Det finns problem med kommunikationen", error);
     });
 
 
@@ -122,10 +122,12 @@ function showActivity() {
       for (let i = 0; i < activityElem.length; i++) {
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
+        activityContainer.setAttribute("id","activityTile");
 
         let pElement = document.createElement("p");
         pElement.innerText = activityElem[i].name;
         pElement.classList.add("activity-Element");
+        pElement.setAttribute("id","nameElement");
 
         let pElement1 = document.createElement("p");
         pElement1.innerText = activityElem[i].description;
@@ -175,12 +177,15 @@ function showWeather() {
       for (let i = 0; i < timeResult.length; i++) {
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
+        activityContainer.setAttribute("id","weatherTile");
 
         let pElement = document.createElement("p");
+        let pTempHighElement = document.createElement("p");
+        let pTempLowElement = document.createElement("p");
         pElement.innerText = timeResult[i] + " ";
-        pElement.innerText += weatherResult[i] + " ";
-        pElement.innerText += "Högsta temperatur  : " + Math.trunc(maxTempResult[i]) + " ";
-        pElement.innerText += "Lägsta temperatur: " + Math.trunc(minTempResult[i]);
+   //   pElement.innerText += weatherResult[i] + " ";
+        pTempHighElement.innerText += "H: " + Math.trunc(maxTempResult[i]);
+        pTempLowElement.innerText += "L: " + Math.trunc(minTempResult[i]);
         pElement.classList.add("activity-Element");
 
         let weatherDisplay = document.createElement("img");
@@ -227,16 +232,14 @@ function showWeather() {
             weatherDisplay.src = "lägg till no weather code";
             break;
         }
-
-        
-        activityContainer.append(weatherDisplay, pElement);
+        activityContainer.append(weatherDisplay, pElement, pTempHighElement, pTempLowElement);
         resultElem.append(activityContainer);
       }
 
 
     })
     .catch(error => {
-      console.error("Det finns probleme med kommunikationen", error);
+      console.error("Det finns problem med kommunikationen", error);
     });
 
 
@@ -328,7 +331,7 @@ function showRestaurant() {
 
     })
     .catch(error => {
-      console.error("Det finns probleme med kommunikationen", error);
+      console.error("Det finns problem med kommunikationen", error);
     });
 
 }
