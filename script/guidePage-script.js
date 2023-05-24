@@ -179,8 +179,8 @@ function showWeather() {
         let pElement = document.createElement("p");
         pElement.innerText = timeResult[i] + " ";
         pElement.innerText += weatherResult[i] + " ";
-        pElement.innerText += "Högsta temperatur  : " + maxTempResult[i] + " ";
-        pElement.innerText += "Lägsta temperatur: " + minTempResult[i];
+        pElement.innerText += "Högsta temperatur  : " + Math.trunc(maxTempResult[i]) + " ";
+        pElement.innerText += "Lägsta temperatur: " + Math.trunc(minTempResult[i]);
         pElement.classList.add("activity-Element");
 
         let weatherDisplay = document.createElement("img");
@@ -227,9 +227,7 @@ function showWeather() {
             weatherDisplay.src = "lägg till no weather code";
             break;
         }
-        
-        
-        activityContainer.append(pElement, weatherDisplay);
+        activityContainer.append(weatherDisplay, pElement);
         resultElem.append(activityContainer);
       }
 
