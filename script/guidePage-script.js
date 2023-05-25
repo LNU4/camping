@@ -75,9 +75,13 @@ function showinfo() {
    
      let contactElement = document.createElement("div"); 
      contactElement.classList.add("contactElement")
+     let phoneImg = document.createElement("img");
+     phoneImg.classList.add("symbol") 
+     phoneImg.src = "../SVGassets/telefon.svg";
+    
      let phoneNumberelement = document.createElement("p"); 
      phoneNumberelement.innerText = detailElem.phone_number; 
-     contactElement.append(phoneNumberelement); 
+     contactElement.append(phoneImg, phoneNumberelement); 
    
      let pElement4 = document.createElement("p");
      pElement4.innerText = detailElem.text;
@@ -432,6 +436,7 @@ function convertRating(rating) {
 
 function showRentals() {
   let url = "data/imageforplaces.json";
+  resultElem.innerHTML = "";
   fetch(url)
     .then(response => {
       if (response.ok) {

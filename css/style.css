@@ -593,6 +593,7 @@ margin-bottom: 22px;
 .equipments {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .equipmentImg {
     width: 40px;
@@ -601,20 +602,31 @@ margin-bottom: 22px;
 .facilityDiv-First {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
 }
 .EquipmentsDiv-First {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
 }
 .body-descr-box {
     grid-area: body-descr-box;
     border: none;
+    display: flex;
 }
-
+.contactElement {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    flex: 1 1 0px;
+}
+.symbol {
+    max-width: 20px;
+}
 .body-info-bar {
     grid-area: body-info-bar;
     background-color: white;
@@ -673,7 +685,8 @@ margin-bottom: 22px;
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-size: 14px;
     cursor: pointer;
     background-color: #F7F6DC;
