@@ -108,7 +108,7 @@ function showinfo() {
 
 
 function showActivity() {
-  console.log(placeLat, placeLng)
+ 
   let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=activity&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng;
   resultElem.innerHTML = "";
   fetch(url)
@@ -277,7 +277,7 @@ function imgUrlCall() {
 }
 
 function findIn(stack, key, value) {
-  console.log(value)
+ 
   for (let i = 0; i < stack.length; i++) {
     if (stack[i][key] == value) {
       return stack[i];
@@ -302,7 +302,7 @@ function showRestaurant() {
     .then(data => {
       
       let activityElem = data.payload;
-      console.log(activityElem);
+      
       for (let i = 0; i < activityElem.length; i++) {
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
@@ -328,7 +328,7 @@ function showRestaurant() {
         pElement3.innerText = "Pris: " + activityElem[i].avg_dinner_pricing;
         pElement3.classList.add("activity-Element");
 
-        activityContainer.append(pElement, pElement1,imgElement, pElement2, pElement3);
+        activityContainer.append(imgElement, pElement, pElement1, pElement2, pElement3);
         resultElem.append(activityContainer);
 
       }
@@ -341,7 +341,7 @@ function showRestaurant() {
 }
 
 function initMap(camping) {
-  console.log(camping);
+  
   let lat = parseFloat(camping.lat);
   let lng = parseFloat(camping.lng);
   let mapHolder = document.getElementById("map");

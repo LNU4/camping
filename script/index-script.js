@@ -78,7 +78,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
   if (selectedFliterOption === "Pris") {
     url += "&sort_in=ASC&order_by=price_range";
-    console.log(url)
+  
 
   }
   else if (selectedFliterOption === "Omdöme") {
@@ -122,7 +122,11 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         let pElement4 = document.createElement("p");
         let lessDetailString = detailElem[i].text.slice(0,100);
         let moreDetailString = detailElem[i].text.slice(100);
-
+        if (detailElem[i].text == "") {
+          pElement4.innerText = "Det finns inga information om platsen";
+          pElement4.classList.add("textElement");
+        }
+        if (detailElem[i].text.length > 0) {
         let readMorebutton = document.createElement("button");
         readMorebutton.innerText = " läs mer";
         readMorebutton.setAttribute("id", "readMoreButton");
@@ -131,10 +135,8 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         pElement4.innerText = lessDetailString + "... ";
         pElement4.append(readMorebutton);
         pElement4.classList.add("textElement");
+        }
 
-        
-
-        let targetElements = document.getElementsByClassName("textElement");
         let logo = document.createElement("img");
         logo.classList.add("logoElement");
 
@@ -145,13 +147,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
 
         container.append(
-          pElement0,
-          pElement,
-          pElement2,
-          pElement3,
-          pElement4,
-          logo,
-          linkElement);
+          pElement0,pElement,pElement2,pElement3,pElement4,logo,linkElement);
         resultatElem.append(container);
         imgUrlCall();
 
