@@ -33,6 +33,10 @@ function showinfo() {
   let searchParameter = new URLSearchParams(window.location.search);
   id = searchParameter.get("id");
 
+  if (!id) {
+    alert("Kunde inte hitta ID-nummer, välj ett giltigt val på första sidan");
+  }
+  
   let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&ids=" + id;
 
   fetch(url)
@@ -122,7 +126,12 @@ function showActivity() {
     .then(data => {
      
       let activityElem = data.payload;
-     
+      if (activityElem === "") {
+        let noInfoFound = document.createElement("p"); 
+        noInfoFound.classList.add("activity-Element"); 
+        noInfoFound.innerText = "Det finns inga aktiviteter i närheten";
+        resultElem.append(noInfoFound);
+      }
       for (let i = 0; i < activityElem.length; i++) {
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
@@ -187,7 +196,7 @@ function showWeather() {
         let pTempHighElement = document.createElement("p");
         let pTempLowElement = document.createElement("p");
         pElement.innerText = timeResult[i] + " ";
-   //   pElement.innerText += weatherResult[i] + " ";
+  
         pTempHighElement.innerText += "H: " + Math.trunc(maxTempResult[i]) + " \u00B0C";
         pTempLowElement.innerText += "L: " + Math.trunc(minTempResult[i]) + " \u00B0C"; 
         pElement.classList.add("activity-Element");
@@ -233,7 +242,7 @@ function showWeather() {
             weatherDisplay.src = "../weather/thunder.svg"
             break;
           default:
-            weatherDisplay.src = "lägg till no weather code";
+            weatherDisplay.src = "lägg till no weather code"; //fix a deafult, incase a missing weather code appears N.A
             break;
         }
         activityContainer.append(weatherDisplay, pElement, pTempHighElement, pTempLowElement);
