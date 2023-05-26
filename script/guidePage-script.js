@@ -5,6 +5,7 @@ var resultElem;
 var id;
 var placeLng;
 var placeLat;
+let titleBox; 
 
 function init() {
 
@@ -21,7 +22,7 @@ function init() {
   EquipmentButton.addEventListener("click", showRentals); 
 
   resultElem = document.getElementsByClassName("body-result-box")[0];
-
+  titleBox = document.getElementsByClassName("body-result-desc")[0]; 
   showinfo();
   showEquipments();
 }
@@ -112,9 +113,12 @@ function showinfo() {
 
 
 function showActivity() {
- 
-  let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=activity&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng;
   resultElem.innerHTML = "";
+  titleBox.innerHTML =""; 
+  
+  let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=activity&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng;
+
+  
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -124,7 +128,11 @@ function showActivity() {
       }
     })
     .then(data => {
-     
+      let titleElement = document.createElement("P"); 
+      titleElement.classList.add("descrElement"); 
+      titleElement.innerText = "Här visas"; 
+      titleBox.append(titleElement); 
+
       let activityElem = data.payload;
       if (activityElem === "") {
         let noInfoFound = document.createElement("p"); 
@@ -169,9 +177,13 @@ function showActivity() {
 }
 
 function showWeather() {
+  resultElem.innerHTML = "";
+  titleBox.innerHTML =""; 
+
+
 
   let url = "https://api.open-meteo.com/v1/forecast?latitude=" + placeLat + "&longitude=" + placeLng + "&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,rain_sum,showers_sum,snowfall_sum,windspeed_10m_max&forecast_days=7&timezone=Europe%2FBerlin";
-  resultElem.innerHTML = "";
+  
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -181,6 +193,11 @@ function showWeather() {
       }
     })
     .then(data => {
+      let titleElement = document.createElement("P"); 
+      titleElement.classList.add("descrElement"); 
+      titleElement.innerText = "Här visas"; 
+      titleBox.append(titleElement); 
+
       let weatherElem = data.daily;
       let timeResult = weatherElem.time;
       let weatherResult = weatherElem.weathercode;
@@ -188,9 +205,12 @@ function showWeather() {
       let minTempResult = weatherElem.temperature_2m_min;
 
       for (let i = 0; i < timeResult.length; i++) {
-        let activityContainer = document.createElement("div");
-        activityContainer.classList.add("activity-container");
-        activityContainer.setAttribute("id","weatherTile");
+        let weatherdivHolder = document.createElement("div"); 
+        weatherdivHolder.classList.add("weather-holder");
+
+        let weatherContainer = document.createElement("div");
+        weatherContainer.classList.add("weather-container");
+        weatherContainer.setAttribute("id","weatherTile");
 
         let pElement = document.createElement("p");
         let pTempHighElement = document.createElement("p");
@@ -199,7 +219,7 @@ function showWeather() {
   
         pTempHighElement.innerText += "H: " + Math.trunc(maxTempResult[i]) + " \u00B0C";
         pTempLowElement.innerText += "L: " + Math.trunc(minTempResult[i]) + " \u00B0C"; 
-        pElement.classList.add("activity-Element");
+        pElement.classList.add("weather-Element");
 
         let weatherDisplay = document.createElement("img");
         let weatherCode = weatherResult[i];
@@ -245,8 +265,9 @@ function showWeather() {
             weatherDisplay.src = "lägg till no weather code"; //fix a deafult, incase a missing weather code appears N.A
             break;
         }
-        activityContainer.append(weatherDisplay, pElement, pTempHighElement, pTempLowElement);
-        resultElem.append(activityContainer);
+        weatherContainer.append(weatherDisplay, pElement, pTempHighElement, pTempLowElement);
+        weatherdivHolder.append(weatherContainer); 
+        resultElem.append(weatherdivHolder);
       }
 
 
@@ -297,9 +318,10 @@ function findIn(stack, key, value) {
 }
 
 function showRestaurant() {
-
-  let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng + "&radius=15";
   resultElem.innerHTML = "";
+  titleBox.innerHTML =""; 
+  let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng + "&radius=15";
+  
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -309,6 +331,11 @@ function showRestaurant() {
       }
     })
     .then(data => {
+
+      let titleElement = document.createElement("P"); 
+      titleElement.classList.add("descrElement"); 
+      titleElement.innerText = "Här visas"; 
+      titleBox.append(titleElement); 
       
       let activityElem = data.payload;
       
@@ -367,8 +394,10 @@ function initMap(camping) {
 }
 
 function showEquipments() {
-  let url = "data/imageforplaces.json";
   resultElem.innerHTML = "";
+  
+  let url = "data/imageforplaces.json";
+ 
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -378,6 +407,8 @@ function showEquipments() {
       }
     })
     .then(data => {
+     
+
       let equipmentData = data.camping;
 
       for (let i = 0; i < equipmentData.length; i++) {
@@ -444,8 +475,10 @@ function convertRating(rating) {
 }
 
 function showRentals() {
-  let url = "data/imageforplaces.json";
   resultElem.innerHTML = "";
+  titleBox.innerHTML = ""; 
+  let url = "data/imageforplaces.json";
+  
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -455,6 +488,11 @@ function showRentals() {
       }
     })
     .then(data => {
+      let titleElement = document.createElement("P"); 
+      titleElement.classList.add("descrElement"); 
+      titleElement.innerText = "Här visas"; 
+      titleBox.append(titleElement); 
+
       let equipmentData = data.camping;
 
       for (let i = 0; i < equipmentData.length; i++) {
