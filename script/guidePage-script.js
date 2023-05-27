@@ -137,7 +137,7 @@ function showActivity() {
       titleBox.append(titleElement); 
 
       let activityElem = data.payload;
-      if (activityElem === "") {
+      if (activityElem == "") {
         let noInfoFound = document.createElement("p"); 
         noInfoFound.classList.add("activity-Element"); 
         noInfoFound.innerText = "Det finns inga aktiviteter i närheten";
@@ -360,17 +360,22 @@ function showRestaurant() {
       titleElement.innerText = "Här visas"; 
       titleBox.append(titleElement); 
       
-      let activityElem = data.payload;
-      
-      for (let i = 0; i < activityElem.length; i++) {
+      let restEelem = data.payload;
+      if (restEelem == "") {
+        let noInfoFound = document.createElement("p"); 
+        noInfoFound.classList.add("activity-Element"); 
+        noInfoFound.innerText = "Det finns inga restauranger i närheten";
+        resultElem.append(noInfoFound);
+      }
+      for (let i = 0; i < restEelem.length; i++) {
 
         let marker = new google.maps.Marker({
           position: {
-            lat: parseFloat(activityElem[i].lat),
-            lng: parseFloat(activityElem[i].lng)
+            lat: parseFloat(restEelem[i].lat),
+            lng: parseFloat(restEelem[i].lng)
           },
           map: map, 
-          title: activityElem[i].name,
+          title: restEelem[i].name,
           icon: {
             url: "../SVGassets/restaurant.svg", 
             size: new google.maps.Size(25, 25)
@@ -380,28 +385,29 @@ function showRestaurant() {
         googleMarkers.push(marker); 
         
 
+
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
 
         let pElement = document.createElement("p");
-        pElement.innerText = activityElem[i].name;
+        pElement.innerText = restEelem[i].name;
         pElement.classList.add("activity-Element");
 
         let pElement1 = document.createElement("p");
-        pElement1.innerText = activityElem[i].description;
+        pElement1.innerText = restEelem[i].description;
         pElement1.classList.add("activity-Element");
 
         let imgElement = document.createElement("img"); 
         imgElement.src = "../SVGassets/restaurant.svg";
-        imgElement.alt = activityElem[i].description;
+        imgElement.alt = restEelem[i].description;
         imgElement.classList.add("restaurant-img");
         
         let pElement2 = document.createElement("p");
-        pElement2.innerText = "Avstånd " + Math.trunc(activityElem[i].distance_in_km) + " KM";
+        pElement2.innerText = "Avstånd " + Math.trunc(restEelem[i].distance_in_km) + " KM";
         pElement2.classList.add("activity-Element");
 
         let pElement3 = document.createElement("p");
-        pElement3.innerText = "Pris: " + activityElem[i].avg_dinner_pricing;
+        pElement3.innerText = "Pris: " + restEelem[i].avg_dinner_pricing;
         pElement3.classList.add("activity-Element");
 
         activityContainer.append(imgElement, pElement, pElement1, pElement2, pElement3);
