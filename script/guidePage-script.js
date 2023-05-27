@@ -5,7 +5,9 @@ var resultElem;
 var id;
 var placeLng;
 var placeLat;
-let titleBox; 
+var titleBox;
+var map;  
+var googleMarkers = []; 
 
 function init() {
 
@@ -113,6 +115,7 @@ function showinfo() {
 
 
 function showActivity() {
+  removGoogleMarkers();
   resultElem.innerHTML = "";
   titleBox.innerHTML =""; 
   
@@ -140,7 +143,24 @@ function showActivity() {
         noInfoFound.innerText = "Det finns inga aktiviteter i närheten";
         resultElem.append(noInfoFound);
       }
+      googleMarkers = [];
       for (let i = 0; i < activityElem.length; i++) {
+        let marker = new google.maps.Marker({
+          position: {
+            lat: parseFloat(activityElem[i].lat),
+            lng: parseFloat(activityElem[i].lng)
+          },
+          map: map, 
+          title: activityElem[i].name,
+          icon: {
+            url: "../activityAssets/" + activityElem[i].description +".svg", 
+            size: new google.maps.Size(25, 25)
+          }
+        });
+        
+        googleMarkers.push(marker); 
+        
+        
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
         activityContainer.setAttribute("id","activityTile");
@@ -177,6 +197,7 @@ function showActivity() {
 }
 
 function showWeather() {
+  removGoogleMarkers();
   resultElem.innerHTML = "";
   titleBox.innerHTML =""; 
 
@@ -318,6 +339,8 @@ function findIn(stack, key, value) {
 }
 
 function showRestaurant() {
+  
+  removGoogleMarkers();
   resultElem.innerHTML = "";
   titleBox.innerHTML =""; 
   let url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=food&method=getfromlatlng&lat=" + placeLat + "&lng=" + placeLng + "&radius=15";
@@ -331,7 +354,7 @@ function showRestaurant() {
       }
     })
     .then(data => {
-
+     
       let titleElement = document.createElement("P"); 
       titleElement.classList.add("descrElement"); 
       titleElement.innerText = "Här visas"; 
@@ -340,6 +363,23 @@ function showRestaurant() {
       let activityElem = data.payload;
       
       for (let i = 0; i < activityElem.length; i++) {
+
+        let marker = new google.maps.Marker({
+          position: {
+            lat: parseFloat(activityElem[i].lat),
+            lng: parseFloat(activityElem[i].lng)
+          },
+          map: map, 
+          title: activityElem[i].name,
+          icon: {
+            url: "../SVGassets/restaurant.svg", 
+            size: new google.maps.Size(25, 25)
+          }
+        });
+        
+        googleMarkers.push(marker); 
+        
+
         let activityContainer = document.createElement("div");
         activityContainer.classList.add("activity-container");
 
@@ -377,11 +417,10 @@ function showRestaurant() {
 }
 
 function initMap(camping) {
-  
   let lat = parseFloat(camping.lat);
   let lng = parseFloat(camping.lng);
   let mapHolder = document.getElementById("map");
-  let map = new google.maps.Map(mapHolder, {
+  map = new google.maps.Map(mapHolder, {
     center: { lat: lat, lng: lng },
     zoom: 16,
   });
@@ -391,9 +430,16 @@ function initMap(camping) {
     map: map,
     title: camping.name,
   });
+
+  console.log(googleMarkers);
+  for (let i = 0; i < googleMarkers.length; i++) {
+    googleMarkers[i].setMap(map);
+  }
 }
 
+
 function showEquipments() {
+  removGoogleMarkers();
   resultElem.innerHTML = "";
   
   let url = "data/imageforplaces.json";
@@ -475,6 +521,7 @@ function convertRating(rating) {
 }
 
 function showRentals() {
+  removGoogleMarkers();
   resultElem.innerHTML = "";
   titleBox.innerHTML = ""; 
   let url = "data/imageforplaces.json";
@@ -520,5 +567,14 @@ function showRentals() {
     .catch(error => {
       console.error("Det finns problem med kommunikationen", error);
     });
+
+}
+
+function removGoogleMarkers() {
+  
+    for (let i = 0; i < googleMarkers.length; i++) {
+      googleMarkers[i].setMap(null);
+    }
+    googleMarkers = []; 
 
 }
