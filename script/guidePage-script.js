@@ -55,7 +55,7 @@ function showinfo() {
 
       let detailElem = data.payload[0];
 
-      let websiteLink = document.querySelector(".button.recensioner").parentNode;
+      let websiteLink = document.querySelector(".button.recensioner").parentNode.parentNode;
       websiteLink.href = detailElem.website;
 
       placeLat = detailElem.lat;
@@ -443,7 +443,7 @@ function initMap(camping) {
   let mapHolder = document.getElementById("map");
   map = new google.maps.Map(mapHolder, {
     center: { lat: lat, lng: lng },
-    zoom: 16,
+    zoom: 10,
   });
 
   let marker = new google.maps.Marker({
