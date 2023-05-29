@@ -438,7 +438,7 @@ function initMap(camping) {
     title: camping.name,
   });
 
-  console.log(googleMarkers);
+ 
   for (let i = 0; i < googleMarkers.length; i++) {
     googleMarkers[i].setMap(map);
   }
