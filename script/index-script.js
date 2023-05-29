@@ -57,7 +57,11 @@ function SelectedOption() {
 
 function showFilterElem(selectedFliterOption, btnSelector) {
   let hiddenElems = document.getElementsByClassName("body-box-2");
-
+  let northOlandFilterOpt = document.getElementsByClassName("north-oland-option")[0];
+  let southOlandFilterOpt = document.getElementsByClassName("south-oland-option")[0]; 
+  let northSmolandFilterOpt = document.getElementsByClassName("north-smoland-option")[0];
+  let southSmolandFilterOpt = document.getElementsByClassName("south-smoland-option")[0];
+  console.log(northOlandFilterOpt); 
   resultatElem.innerHTML = "";
 
   for (let i = 0; i < hiddenElems.length; i++) {
@@ -66,14 +70,24 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
   if (btnSelector.contains("smoland")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping";
-
+    northOlandFilterOpt.style.display = "none";
+    southOlandFilterOpt.style.display = "none";
+    northSmolandFilterOpt.style.display = "block";
+    southSmolandFilterOpt.style.display = "block";      
   }
   else if (btnSelector.contains("oland")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=öland&descriptions=camping";
-
+    northSmolandFilterOpt.style.display = "none";
+    southSmolandFilterOpt.style.display = "none";
+    northOlandFilterOpt.style.display = "block";
+    southOlandFilterOpt.style.display = "block";   
   }
   else if (btnSelector.contains("all-landscape")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&descriptions=camping";
+    northSmolandFilterOpt.style.display = "block";
+    southSmolandFilterOpt.style.display = "block";
+    northOlandFilterOpt.style.display = "block";
+    southOlandFilterOpt.style.display = "block"; 
   }
 
   if (selectedFliterOption === "Pris") {
@@ -84,7 +98,10 @@ function showFilterElem(selectedFliterOption, btnSelector) {
   else if (selectedFliterOption === "Omdöme") {
     url += "&sort_in=DESC&order_by=rating";
   }
-
+  else if (selectedFliterOption === "Norra Öland") {
+    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping";
+  }
+  
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -103,7 +120,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
         container.setAttribute("cid", detailElem[i].id);
 
-        let pElement0 = document.createElement("p");
+        let pElement0 = document.createElement("p");//delete if not used
 
         let pElement = document.createElement("h3");
         pElement.innerText = detailElem[i].name;

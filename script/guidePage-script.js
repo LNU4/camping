@@ -225,9 +225,10 @@ function showWeather() {
       let maxTempResult = weatherElem.temperature_2m_max;
       let minTempResult = weatherElem.temperature_2m_min;
 
+      let weatherdivHolder = document.createElement("div"); 
+      weatherdivHolder.classList.add("weather-holder");
       for (let i = 0; i < timeResult.length; i++) {
-        let weatherdivHolder = document.createElement("div"); 
-        weatherdivHolder.classList.add("weather-holder");
+        
 
         let weatherContainer = document.createElement("div");
         weatherContainer.classList.add("weather-container");
@@ -287,7 +288,7 @@ function showWeather() {
             break;
         }
         weatherContainer.append(weatherDisplay, pElement, pTempHighElement, pTempLowElement);
-        weatherdivHolder.append(weatherContainer); 
+        weatherdivHolder.appendChild(weatherContainer); 
         resultElem.append(weatherdivHolder);
       }
 
@@ -550,22 +551,31 @@ function showRentals() {
 
       for (let i = 0; i < equipmentData.length; i++) {
         let rentObj = equipmentData[i].hyr;
-        let rentDiv = document.createElement("div");
-        rentDiv.classList.add("rentDiv"); 
-        rentDiv.innerHTML = "Uthyrning på Campingen";
+        let rentContainer = document.createElement("div");
+        rentContainer.classList.add("rentContainer"); 
+
+       
      
         if (equipmentData[i].id === id) {
       
+
           for (let j = 0; j < rentObj.length; j++) {
+            let rentDiv = document.createElement("div");
+            rentDiv.classList.add("rentDiv"); 
+           
+
+            let rentName = document.createElement("p"); 
+            rentName.innerText = rentObj[j];
             let rentImg = document.createElement("img");
             rentImg.src = "../rentAssets/" + rentObj[j] + ".png"; 
             rentImg.alt = rentObj[j];
             rentImg.classList.add("equipmentImg");
             rentImg.setAttribute("id", "rentImg");
-            rentDiv.appendChild(rentImg);
+            rentDiv.append(rentName, rentImg);
+            rentContainer.appendChild(rentDiv); 
           }
-    
-          resultElem.append(rentDiv);
+          
+          resultElem.append(rentContainer);
         }
       }
     })

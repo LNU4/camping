@@ -641,7 +641,14 @@ background-color: #ADCACB;
     width: 70px;
     margin-top: 5px;
 }
-
+.rentContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0px;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px; 
+}
 .rentDiv{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     border-radius: 10px;
@@ -650,6 +657,8 @@ background-color: #ADCACB;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1 1 0px;
+
 }
 
 .button  {
@@ -1027,7 +1036,10 @@ background-color: #ADCACB;
     padding: 0;
     
 }
-
+.weather-holder {
+    flex-direction: column;
+    justify-content: center;
+}
 }
 
 @media (max-width: 640px) {
