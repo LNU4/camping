@@ -58,10 +58,10 @@ function SelectedOption() {
 function showFilterElem(selectedFliterOption, btnSelector) {
   let hiddenElems = document.getElementsByClassName("body-box-2");
   let northOlandFilterOpt = document.getElementsByClassName("north-oland-option")[0];
-  let southOlandFilterOpt = document.getElementsByClassName("south-oland-option")[0]; 
+  let southOlandFilterOpt = document.getElementsByClassName("south-oland-option")[0];
   let northSmolandFilterOpt = document.getElementsByClassName("north-smoland-option")[0];
   let southSmolandFilterOpt = document.getElementsByClassName("south-smoland-option")[0];
-  console.log(northOlandFilterOpt); 
+  console.log(northOlandFilterOpt);
   resultatElem.innerHTML = "";
 
   for (let i = 0; i < hiddenElems.length; i++) {
@@ -73,26 +73,26 @@ function showFilterElem(selectedFliterOption, btnSelector) {
     northOlandFilterOpt.style.display = "none";
     southOlandFilterOpt.style.display = "none";
     northSmolandFilterOpt.style.display = "block";
-    southSmolandFilterOpt.style.display = "block";      
+    southSmolandFilterOpt.style.display = "block";
   }
   else if (btnSelector.contains("oland")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=öland&descriptions=camping";
     northSmolandFilterOpt.style.display = "none";
     southSmolandFilterOpt.style.display = "none";
     northOlandFilterOpt.style.display = "block";
-    southOlandFilterOpt.style.display = "block";   
+    southOlandFilterOpt.style.display = "block";
   }
   else if (btnSelector.contains("all-landscape")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&descriptions=camping";
     northSmolandFilterOpt.style.display = "block";
     southSmolandFilterOpt.style.display = "block";
     northOlandFilterOpt.style.display = "block";
-    southOlandFilterOpt.style.display = "block"; 
+    southOlandFilterOpt.style.display = "block";
   }
 
   if (selectedFliterOption === "Pris") {
     url += "&sort_in=ASC&order_by=price_range";
-  
+
 
   }
   else if (selectedFliterOption === "Omdöme") {
@@ -101,7 +101,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
   else if (selectedFliterOption === "Norra Öland") {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping";
   }
-  
+
   fetch(url)
     .then(response => {
       if (response.ok) {
@@ -137,21 +137,21 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         pElement3.classList.add("priceRangeElement");
 
         let pElement4 = document.createElement("p");
-        let lessDetailString = detailElem[i].text.slice(0,100);
+        let lessDetailString = detailElem[i].text.slice(0, 100);
         let moreDetailString = detailElem[i].text.slice(100);
         if (detailElem[i].text == "") {
           pElement4.innerText = "Det finns inga information om platsen";
           pElement4.classList.add("textElement");
         }
         if (detailElem[i].text.length > 0) {
-        let readMorebutton = document.createElement("button");
-        readMorebutton.innerText = " läs mer";
-        readMorebutton.setAttribute("id", "readMoreButton");
-        createDetailButtons(pElement4, readMorebutton, lessDetailString, moreDetailString);
-        
-        pElement4.innerText = lessDetailString + "... ";
-        pElement4.append(readMorebutton);
-        pElement4.classList.add("textElement");
+          let readMorebutton = document.createElement("button");
+          readMorebutton.innerText = " läs mer";
+          readMorebutton.setAttribute("id", "readMoreButton");
+          createDetailButtons(pElement4, readMorebutton, lessDetailString, moreDetailString);
+
+          pElement4.innerText = lessDetailString + "... ";
+          pElement4.append(readMorebutton);
+          pElement4.classList.add("textElement");
         }
 
         let logo = document.createElement("img");
@@ -164,7 +164,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
 
         container.append(
-          pElement0,pElement,pElement2,pElement3,pElement4,logo,linkElement);
+          pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
         resultatElem.append(container);
         imgUrlCall();
 
