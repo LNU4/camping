@@ -8,7 +8,7 @@ var placeLat;
 var titleBox;
 var map;
 var googleMarkers = [];
-
+//init funktion, kallas dirket genom html
 function init() {
 
   let activityButton = document.getElementsByClassName("button aktiviteter")[0];
@@ -28,9 +28,8 @@ function init() {
   showinfo();
   showEquipments();
 }
-
-//window.addEventListener("load", init);
-
+//slut init
+//Funktion som fetchar till SMAPI med ID numret som fås av index sidan
 function showinfo() {
 
   let searchParameter = new URLSearchParams(window.location.search);
@@ -51,7 +50,7 @@ function showinfo() {
       }
     })
     .then(data => {
-
+      //skriver ut data som konverteras till HTML element
       let descBox = document.getElementsByClassName("body-descr-box")[0];
 
       let detailElem = data.payload[0];
@@ -111,9 +110,9 @@ function showinfo() {
 
 
 }
+//slut showInfo
 
-
-
+//Funktion som fetchar till SMAPI och få aktiviteter som finns i närheten till camping stället
 function showActivity() {
   removGoogleMarkers();
   resultElem.innerHTML = "";
@@ -143,6 +142,7 @@ function showActivity() {
         noInfoFound.innerText = "Det finns inga aktiviteter i närheten";
         resultElem.append(noInfoFound);
       }
+      //loopar igenom aktiviteters LatLng och sedan pushar de till google maps markerings variabeln
       googleMarkers = [];
       for (let i = 0; i < activityElem.length; i++) {
         let marker = new google.maps.Marker({
@@ -157,7 +157,7 @@ function showActivity() {
             size: new google.maps.Size(25, 25)
           }
         });
-
+        
         googleMarkers.push(marker);
 
 
@@ -195,7 +195,9 @@ function showActivity() {
     });
 
 }
+//slut showActivity 
 
+//Funktion som fetchar till open-Metro API och få ut väder prognosen genom LatLng
 function showWeather() {
   removGoogleMarkers();
   resultElem.innerHTML = "";
@@ -245,6 +247,8 @@ function showWeather() {
 
         let weatherDisplay = document.createElement("img");
         let weatherCode = weatherResult[i];
+
+        //switchar vädren till bilder
         switch (weatherCode) {
           case 0:
           case 1:
@@ -300,7 +304,9 @@ function showWeather() {
 
 
 }
+//slut showWeather 
 
+//Funktion som skapar en bild element och sedan skicka vädren till FindIn för att matcha med ID numret
 function imgUrlCall() {
   let imgUrl = "data/imageforplaces.json";
 
@@ -327,7 +333,9 @@ function imgUrlCall() {
       console.error("Det finns problem med kommunikationen", error);
     });
 }
+//slut imgUrlCall 
 
+//Funktion som går igenom JSON element och sedan matchar ID nummret med Campingställets ID nummer
 function findIn(stack, key, value) {
 
   for (let i = 0; i < stack.length; i++) {
@@ -338,7 +346,9 @@ function findIn(stack, key, value) {
 
   return null;
 }
+//Slut findIn 
 
+//Funktion som fetchar till SMAPI och få restauranger som finns i närheten till camping stället
 function showRestaurant() {
 
   removGoogleMarkers();
@@ -368,6 +378,8 @@ function showRestaurant() {
         noInfoFound.innerText = "Det finns inga restauranger i närheten";
         resultElem.append(noInfoFound);
       }
+
+      //loopar genom resultatet och pushar Latlng värden till Google markerings variabeln
       for (let i = 0; i < restEelem.length; i++) {
 
         let marker = new google.maps.Marker({
@@ -422,7 +434,9 @@ function showRestaurant() {
     });
 
 }
+//slut show showRestaurant
 
+//Funktion för Google maps kartan!
 function initMap(camping) {
   let lat = parseFloat(camping.lat);
   let lng = parseFloat(camping.lng);
@@ -438,13 +452,13 @@ function initMap(camping) {
     title: camping.name,
   });
 
- 
+ //loopar igenom google markers och sedan tillämpar de genom setmaps
   for (let i = 0; i < googleMarkers.length; i++) {
     googleMarkers[i].setMap(map);
   }
 }
-
-
+//slut initMap
+//Funktion för att visa utrustningar och faciliteter för campingställen
 function showEquipments() {
   removGoogleMarkers();
   resultElem.innerHTML = "";
@@ -477,7 +491,7 @@ function showEquipments() {
 
         if (equipmentData[i].id === id) {
           let equipmentHolder = document.getElementsByClassName("equipments")[0];
-
+          //konvertrar resultatet till bilder
           for (let j = 0; j < facilityObj.length; j++) {
             let facilityImg = document.createElement("img");
             facilityImg.src = "../utrus_FaciAssets/" + facilityObj[j] + ".svg";
@@ -486,7 +500,7 @@ function showEquipments() {
             facilityImg.classList.add("equipmentImg");
             facilityDiv.appendChild(facilityImg);
           }
-
+          //konvertrar resultatet till bilder
           for (let j = 0; j < equipmentsObj.length; j++) {
             let equipmentsImg = document.createElement("img");
             equipmentsImg.src = "../utrus_FaciAssets/" + equipmentsObj[j] + ".svg";
@@ -504,7 +518,8 @@ function showEquipments() {
       console.error("Det finns problem med kommunikationen", error);
     });
 }
-
+//slut på showEquipments 
+//Funktion som konverterar rating värden till bilder
 function convertRating(rating) {
   let starImg = "../SVGassets/fullStar.svg";
   let halfStarImg = "../SVGassets/halfStar.svg";
@@ -528,7 +543,8 @@ function convertRating(rating) {
 
   return ratingHtml;
 }
-
+//slut på convertRating
+//Funktion för att visa hyr utrustningar som finns implementerat i JSON
 function showRentals() {
   removGoogleMarkers();
   resultElem.innerHTML = "";
@@ -564,8 +580,7 @@ function showRentals() {
           for (let j = 0; j < rentObj.length; j++) {
             let rentDiv = document.createElement("div");
             rentDiv.classList.add("rentDiv");
-
-
+            //konvertrar resultatet till bilder
             let rentName = document.createElement("p");
             rentName.innerText = rentObj[j];
             let rentImg = document.createElement("img");
@@ -587,7 +602,8 @@ function showRentals() {
     });
 
 }
-
+//slut showRental
+//Funktion för att ta bort google markeringar från mappen och tömmer google maps variabeln
 function removGoogleMarkers() {
 
   for (let i = 0; i < googleMarkers.length; i++) {

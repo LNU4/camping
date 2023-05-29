@@ -13,11 +13,11 @@ function init() {
 }
 
 window.addEventListener("load", init);
-
+//funktion för händelsehanteraren
 function addClickEventListeners() {
-
+//lägger till change på sortereringen
   document.getElementById("filterDropMenu").addEventListener("change", SelectedOption);
-
+//loopar genom knapparna och lägger till pekkare, det tillkallar selectedoption funktionen
   for (let i = 0; i < campingTypes.length; i++) {
     campingTypes[i].addEventListener("click", SelectedOption);
     campingTypes[i].addEventListener("mouseover", function () {
@@ -28,8 +28,8 @@ function addClickEventListeners() {
 
 
 }
-
-
+//slut på händelsehanteraren
+//funktion för hover effekt
 function wedigtsHoverEffect() {
   let wedigtsdiv = document.querySelectorAll(".landscape div")
   let wedigts = document.querySelectorAll(".logoImg");
@@ -45,23 +45,24 @@ function wedigtsHoverEffect() {
   }
 
 }
-
+//slut på hovereffect funktionen 
+//Funktion som skickar värden av dropdown meny och klassen på de valde knapparna, returner index till 0 också
 function SelectedOption() {
   let filterOption = document.getElementById("filterDropMenu");
   let selectedFliterOption = filterOption.value;
   let btnSelector = this.classList;
   filterOption.selectedIndex = 0;
-  showFilterElem(selectedFliterOption, btnSelector);
+  showFilterElem(selectedFliterOption, btnSelector); //skcikar värden inom parameter
 
 }
-
+//Fetchar till SMAPI och hämtar informationen beroende på knappen samt sorterings metoden
 function showFilterElem(selectedFliterOption, btnSelector) {
   let hiddenElems = document.getElementsByClassName("body-box-2");
   let northOlandFilterOpt = document.getElementsByClassName("north-oland-option")[0];
   let southOlandFilterOpt = document.getElementsByClassName("south-oland-option")[0];
   let northSmolandFilterOpt = document.getElementsByClassName("north-smoland-option")[0];
   let southSmolandFilterOpt = document.getElementsByClassName("south-smoland-option")[0];
-  console.log(northOlandFilterOpt);
+  
   resultatElem.innerHTML = "";
 
   for (let i = 0; i < hiddenElems.length; i++) {
@@ -84,22 +85,29 @@ function showFilterElem(selectedFliterOption, btnSelector) {
   }
   else if (btnSelector.contains("all-landscape")) {
     url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&descriptions=camping";
-    northSmolandFilterOpt.style.display = "block";
-    southSmolandFilterOpt.style.display = "block";
-    northOlandFilterOpt.style.display = "block";
-    southOlandFilterOpt.style.display = "block";
+    northSmolandFilterOpt.style.display = "none";
+    southSmolandFilterOpt.style.display = "none";
+    northOlandFilterOpt.style.display = "none";
+    southOlandFilterOpt.style.display = "none";
   }
 
   if (selectedFliterOption === "Pris") {
     url += "&sort_in=ASC&order_by=price_range";
-
-
   }
   else if (selectedFliterOption === "Omdöme") {
     url += "&sort_in=DESC&order_by=rating";
   }
   else if (selectedFliterOption === "Norra Öland") {
-    url = "https://smapi.lnu.se/api/?api_key=" + myApiKey + "&debug=true&controller=establishment&method=getall&provinces=småland&descriptions=camping";
+    url += "&sort_in=DESC&order_by=lat" 
+  }
+  else if (selectedFliterOption === "Södra Öland") {
+    url += "&sort_in=ASC&order_by=lat" 
+  }
+  else if (selectedFliterOption === "Norra Småland") {
+    url += "&sort_in=DESC&order_by=lat" 
+  }
+  else if (selectedFliterOption === "Södra Småland") {
+    url += "&sort_in=ASC&order_by=lat" 
   }
 
   fetch(url)
@@ -112,15 +120,13 @@ function showFilterElem(selectedFliterOption, btnSelector) {
     })
     .then(data => {
       let detailElem = data.payload;
-
+      //skriver ut informationen som fås av SMAPI och tillägger dem inom html element
       for (let i = 0; i < detailElem.length; i++) {
 
         let container = document.createElement("div");
         container.classList.add("campingRes");
 
         container.setAttribute("cid", detailElem[i].id);
-
-        let pElement0 = document.createElement("p");//delete if not used
 
         let pElement = document.createElement("h3");
         pElement.innerText = detailElem[i].name;
@@ -137,19 +143,19 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         pElement3.classList.add("priceRangeElement");
 
         let pElement4 = document.createElement("p");
-        let lessDetailString = detailElem[i].text.slice(0, 100);
-        let moreDetailString = detailElem[i].text.slice(100);
+        let lessDetailString = detailElem[i].text.slice(0, 100); //delar upp texten inom delar, första delen inhåller upp till 100 ord
+        let moreDetailString = detailElem[i].text.slice(100); //resten av texten
         if (detailElem[i].text == "") {
           pElement4.innerText = "Det finns inga information om platsen";
           pElement4.classList.add("textElement");
         }
         if (detailElem[i].text.length > 0) {
-          let readMorebutton = document.createElement("button");
-          readMorebutton.innerText = " läs mer";
+          let readMorebutton = document.createElement("button"); //skapar läs mer mer knapp
+          readMorebutton.innerText = " läs mer"; 
           readMorebutton.setAttribute("id", "readMoreButton");
-          createDetailButtons(pElement4, readMorebutton, lessDetailString, moreDetailString);
+          createDetailButtons(pElement4, readMorebutton, lessDetailString, moreDetailString); //funktion för läs mindre knappen
 
-          pElement4.innerText = lessDetailString + "... ";
+          pElement4.innerText = lessDetailString + "... "; //inhållet bestäms av less detail string
           pElement4.append(readMorebutton);
           pElement4.classList.add("textElement");
         }
@@ -164,7 +170,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
 
 
         container.append(
-          pElement0, pElement, pElement2, pElement3, pElement4, logo, linkElement);
+           pElement, pElement2, pElement3, pElement4, logo, linkElement);
         resultatElem.append(container);
         imgUrlCall();
 
@@ -176,7 +182,9 @@ function showFilterElem(selectedFliterOption, btnSelector) {
     });
 
 }
+//slut på showfilterElem
 
+//Funktion för läs mer eller läs mindre knapparna
 function createDetailButtons(p4Element, readMorebutton, lessDetailString, moreDetailString) {
   let readLessButton = document.createElement("button");
   readLessButton.innerText = " läs mindre";
@@ -186,14 +194,15 @@ function createDetailButtons(p4Element, readMorebutton, lessDetailString, moreDe
     p4Element.append(readMorebutton)
   })
 
-  readMorebutton.addEventListener("click", () => {
+  readMorebutton.addEventListener("click", () => { //läs mer knappen visar hela texten
     p4Element.innerText = lessDetailString + moreDetailString + " ";
     p4Element.append(readLessButton);
   });
 
 }
+//slut på createDetailButtons
 
-
+//Funktion som konverterar rating värden till bilder
 function convertRating(rating) {
   let starImg = "../SVGassets/fullStar.svg";
   let halfStarImg = "../SVGassets/halfStar.svg";
@@ -217,7 +226,9 @@ function convertRating(rating) {
 
   return ratingHtml;
 }
+//slut på convertRating 
 
+//Funktion som matchar tillämpar bilderna till campingställen
 function imgUrlCall() {
   let imgUrl = "data/imageforplaces.json";
 
@@ -242,7 +253,9 @@ function imgUrlCall() {
       console.error("Det finns problem med kommunikationen", error);
     });
 }
+//slut imgUrlCall 
 
+//Funktion för att matcha bilderna med ID numret, de matchar, tillämpas bilden ifrån JSON
 function findIn(stack, key, value) {
 
   for (let i = 0; i < stack.length; i++) {
@@ -253,8 +266,10 @@ function findIn(stack, key, value) {
 
   return null;
 }
-
+//slut på findIn 
+//Funktion som skickar med id nummret till guidePage
 function linkToFilterPage(id) {
   let url = "guidePage.html?id=" + id;
   window.location.href = url;
 }
+//slut linktoFilterPAge
