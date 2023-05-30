@@ -130,9 +130,9 @@ function showActivity() {
       }
     })
     .then(data => {
-      let titleElement = document.createElement("P");
+      let titleElement = document.createElement("h3");
       titleElement.classList.add("descrElement");
-      titleElement.innerText = "Här visas";
+      titleElement.innerText = "Aktiviter";
       titleBox.append(titleElement);
 
       let activityElem = data.payload;
@@ -216,9 +216,9 @@ function showWeather() {
       }
     })
     .then(data => {
-      let titleElement = document.createElement("P");
+      let titleElement = document.createElement("h3");
       titleElement.classList.add("descrElement");
-      titleElement.innerText = "Här visas";
+      titleElement.innerText = "Väderprognoser för campingen";
       titleBox.append(titleElement);
 
       let weatherElem = data.daily;
@@ -366,9 +366,9 @@ function showRestaurant() {
     })
     .then(data => {
 
-      let titleElement = document.createElement("P");
+      let titleElement = document.createElement("h3");
       titleElement.classList.add("descrElement");
-      titleElement.innerText = "Här visas";
+      titleElement.innerText = "Restauranger";
       titleBox.append(titleElement);
 
       let restEelem = data.payload;
@@ -560,9 +560,9 @@ function showRentals() {
       }
     })
     .then(data => {
-      let titleElement = document.createElement("P");
+      let titleElement = document.createElement("h3");
       titleElement.classList.add("descrElement");
-      titleElement.innerText = "Här visas";
+      titleElement.innerText = "Uthyrningar på campingen";
       titleBox.append(titleElement);
 
       let equipmentData = data.camping;
