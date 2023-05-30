@@ -80,6 +80,11 @@ h4 {
     border: 3px solid #7FB77E;
 }
 
+.logoImg:active{
+    border: 3px solid #7FB77E;
+
+}
+
 .body-global-nav {
     grid-area: body-global-nav;
     display: flex;
@@ -96,6 +101,11 @@ h4 {
     flex-wrap: wrap;
 }
 
+.body-global-nav li a:active {
+    text-decoration: none;
+    color: black;
+}
+
 .body-global-nav li a {
     text-decoration: none;
     padding: 10px;
@@ -110,6 +120,7 @@ h4 {
     text-decoration: none;
     color: black;
 }
+
 
 .desc-banner {
     grid-area: desc-banner;
@@ -242,6 +253,13 @@ background-color: #ADCACB;
     border: 2px solid #7FB77E;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.linkButton:active {
+    border: 2px solid #7FB77E;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    animation-duration: 2s;
 }
 
 
@@ -637,10 +655,12 @@ background-color: #ADCACB;
     grid-area: body-result-desc;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+
 .body-result-box {
-    grid-area: body-result-box;
+    grid-area: body-result-box; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -705,6 +725,12 @@ background-color: #ADCACB;
 .button:focus {
     border: 2px solid #7FB77E;
     border: 2px solid #7FB77E;
+}
+
+.button:active{
+    border: 2px solid #7FB77E;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    animation-duration: 2s;
 }
 
 .equipments-container {
@@ -835,49 +861,46 @@ background-color: #ADCACB;
 .restaurant-img {
     width: 100px;
     height: auto;
+    margin-top: 20px;
 }
 
 * {
     scroll-behavior: smooth;
 }
 
+#tipsPage {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr; 
+    grid-template-rows: max-content max-content max-content max-content max-content max-content 70px;
+    gap: 20px;
+    grid-template-areas:
+        "logo logo body-global-nav body-global-nav"
+        ". camping-tips-img camping-tips-img ."
+        ". campingTypes campingTypes ."
+        ". campingTypes campingTypes ."
+        ". campingTypes campingTypes ."
+        ". campingTypes campingTypes ."
+        "footer footer footer footer";
+    }
 
-.loading {
+.campingTips {
+    grid-area: campingTypes;
     display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 50px;
+}
+
+.camping-tips-img {
+    grid-area: camping-tips-img;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-}
-
-.loading--full-height {
-    align-items: center;
-    height: 100%;
-}
-
-.loading::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    border: 10px solid #dddddd;
-    border-top-color: #009579;
-    border-radius: 50%;
-    transform: rotate(0.16turn);
-    animation: loading 1s ease infinite;
-}
-
-.showMoreButton {
-    color: darkgray;
-    cursor: pointer;
-}
-
-@keyframes loading {
-
-    /* Safari */
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(1turn);
-    }
+    width: 100%;
+    border-radius: 5px;
 }
 
 @media (max-width: 1400px) {
@@ -885,7 +908,6 @@ background-color: #ADCACB;
     .logoImg {
         max-width: 250px;
     }
-
 }
 
 
@@ -980,6 +1002,28 @@ background-color: #ADCACB;
     }
 
     #mainPage h4 {
+        font-size: medium;
+    }
+
+    #tipsPage h1 {
+        font-weight: 400;
+        font-size: x-large;
+    }
+
+    #tipsPage h2 {
+        font-weight: 400;
+        font-size: larger;
+    }
+
+    #tipsPage h3 {
+        font-size: large;
+    }
+
+    #tipsPage h4 {
+        font-size: medium;
+    }
+
+    #tipsPage p {
         font-size: medium;
     }
 
@@ -1082,10 +1126,18 @@ background-color: #ADCACB;
         flex-direction: column;
         justify-content: center;
     }
+
+    .restaurant-img {
+        margin-top: 0px;
+    }
+    
 }
 
 @media (max-width: 640px) {
 
+    #filterDropMenu {
+        margin-left: 0px;
+    }
 
     #mainPage h3 {
         padding-bottom: 10px;
@@ -1154,6 +1206,19 @@ background-color: #ADCACB;
             ". linkButton .";
     }
 
+    .descrElement{
+        font-size: large;
+    }
+
+
+    .activity-Element {
+        font-size: small;
+    }
+
+    #nameElement {
+        font-size: x-small;
+    }
+
 
     #mainPage h2 {
         font-size: large;
@@ -1165,6 +1230,10 @@ background-color: #ADCACB;
 
     #mainPage h4 {
         font-size: small;
+    }
+
+    #tipsPage h2 {
+        font-size: large;
     }
 
     .body-box-4 p {
@@ -1191,6 +1260,10 @@ background-color: #ADCACB;
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+
+    #mainPage .nameElement {
+        font-size: medium;
     }
 
 }

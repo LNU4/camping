@@ -164,7 +164,7 @@ function showFilterElem(selectedFliterOption, btnSelector) {
         logo.classList.add("logoElement");
 
         let linkElement = document.createElement("p");
-        linkElement.innerText = " Se mer "
+        linkElement.innerText = " Välj "
         linkElement.classList.add("linkButton");
         linkElement.addEventListener("click", () => linkToFilterPage(detailElem[i].id));
 
