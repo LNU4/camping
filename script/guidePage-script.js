@@ -1,6 +1,6 @@
 var myMap;
-var gApikey = "AIzaSyB19g_qYmTuOUhxZZ3LrdbTYU8qtCFf36s";
-var myApiKey = "dUZXES2j";
+var gApikey = "xxx";
+var myApiKey = "xx";
 var resultElem;
 var id;
 var placeLng;
